@@ -1,0 +1,42 @@
+.CarouselBox {
+    /* max-width: 1300px; */
+    padding: 40px;
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 0px 4px 0px rgba(174, 174, 174, 0.15);
+    /* transition: 0.3s; */
+}
+
+.testimonialIcon {
+    color: #FC4102;
+    width: 30px !important;
+    height: 30px !important;
+}
+
+.testimonialText p {
+    margin-top: 20px;
+}
+
+.testimonialName {
+    display: flex;
+    align-items: center;
+}
+
+.testimonialImg {
+    background: #FFEDE7;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.testimonialName img {
+    border-radius: 50%;
+    padding: 5px;
+    height: 60px;
+}
+
+.testimonialName h4 {
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 500;
+    margin-bottom: 0px;
+}

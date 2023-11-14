@@ -2,20 +2,25 @@ import styles from "./Home.module.css";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import Carousel from "../Carousel/Carousel";
 import threePointsImage from "../../data/Three ways-2.png";
-import privateBedroomImg from '../../data/private-bedrooms.png';
-import kitchenImg from '../../data/high-end-kitchen.png';
-import livingRoomImg from '../../data/Spacious-living-room.png';
-import balconyImg from '../../data/balcony-view.png';
-import loctionImg from '../../data/Icons-data/Premium Location.png';
-import leaseImg from '../../data/Icons-data/Flexible-lease.png';
-import cleaningImg from '../../data/Icons-data/Daily-cleaning.png';
-import LaundryImg from '../../data/Icons-data/Laundry.png';
-import MaintenanceImg from '../../data/Icons-data/Maintenance.png';
-import swimmingImg from '../../data/Icons-data/Swimming Pool.png';
-import wifiImg from '../../data/Icons-data/High Speed Wifi.png';
-import supportImg from '../../data/Icons-data/247 Support.png';
-import communityImg from '../../data/Icons-data/Great Community.png';
-import parkingImg from '../../data/Icons-data/Parking.png'
+import privateBedroomImg from "../../data/private-bedrooms.png";
+import kitchenImg from "../../data/high-end-kitchen.png";
+import livingRoomImg from "../../data/Spacious-living-room.png";
+import balconyImg from "../../data/balcony-view.png";
+import loctionImg from "../../data/Icons-data/Premium Location.png";
+import leaseImg from "../../data/Icons-data/Flexible-lease.png";
+import cleaningImg from "../../data/Icons-data/Daily-cleaning.png";
+import LaundryImg from "../../data/Icons-data/Laundry.png";
+import MaintenanceImg from "../../data/Icons-data/Maintenance.png";
+import swimmingImg from "../../data/Icons-data/Swimming Pool.png";
+import wifiImg from "../../data/Icons-data/High Speed Wifi.png";
+import supportImg from "../../data/Icons-data/247 Support.png";
+import communityImg from "../../data/Icons-data/Great Community.png";
+import parkingImg from "../../data/Icons-data/Parking.png";
+import Testimonials from "../Testimonials/testimonials";
+import TestmonialsSvg from "../../data/testimonials-vector.png";
+import amenitiesPattern from "../../data/Patterns.png";
+import uspPattern from "../../data/pattern-2.png";
+import ImageGallery from '../Image Gallery/MyGallery';
 
 function Home() {
   return (
@@ -91,9 +96,16 @@ function Home() {
               </p>
             </div>
             <div className={styles.threeImage}>
-              <img src={threePointsImage} className="img-fluid" alt="three-usp-points" />
+              <img
+                src={threePointsImage}
+                className="img-fluid"
+                alt="three-usp-points"
+              />
             </div>
           </div>
+        </div>
+        <div className={styles.threePointsPattern}>
+          <img src={uspPattern} alt="pattern" />
         </div>
       </section>
       <section className={styles.amenitiesSection}>
@@ -112,40 +124,68 @@ function Home() {
             <div className="col-md-3">
               <div className={styles.amenitiesItem}>
                 <div className={styles.amenitiesImg}>
-                <img src={privateBedroomImg} className="img-fluid" alt="bedroom" />
+                  <img
+                    src={privateBedroomImg}
+                    className="img-fluid"
+                    alt="bedroom"
+                  />
                 </div>
                 <div className={styles.amenitiesText}>
-                  <h4>Private<br/>Bedrooms</h4>
+                  <h4>
+                    Private
+                    <br />
+                    Bedrooms
+                  </h4>
                 </div>
               </div>
             </div>
             <div className="col-md-3">
-            <div className={styles.amenitiesItem}>
+              <div className={styles.amenitiesItem}>
                 <div className={styles.amenitiesImg}>
-                <img src={kitchenImg} className="img-fluid" alt="kitchen" />
+                  <img src={kitchenImg} className="img-fluid" alt="kitchen" />
                 </div>
                 <div className={styles.amenitiesText}>
-                  <h4>High<br/>End Kitchen</h4>
+                  <h4>
+                    High
+                    <br />
+                    End Kitchen
+                  </h4>
                 </div>
               </div>
             </div>
             <div className="col-md-3">
-            <div className={styles.amenitiesItem}>
+              <div className={styles.amenitiesItem}>
                 <div className={styles.amenitiesImg}>
-                <img src={livingRoomImg} className="img-fluid" alt="livingroom" />
+                  <img
+                    src={livingRoomImg}
+                    className="img-fluid"
+                    alt="livingroom"
+                  />
                 </div>
                 <div className={styles.amenitiesText}>
-                  <h4>Spacious<br/>Living Rooms</h4>
+                  <h4>
+                    Spacious
+                    <br />
+                    Living Rooms
+                  </h4>
                 </div>
               </div>
             </div>
             <div className="col-md-3">
-            <div className={styles.amenitiesItem}>
+              <div className={styles.amenitiesItem}>
                 <div className={styles.amenitiesImg}>
-                <img src={balconyImg} className="img-fluid" alt="balcony-view"/>
+                  <img
+                    src={balconyImg}
+                    className="img-fluid"
+                    alt="balcony-view"
+                  />
                 </div>
                 <div className={styles.amenitiesText}>
-                  <h4>Balcony<br/>with a view</h4>
+                  <h4>
+                    Balcony
+                    <br />
+                    with a view
+                  </h4>
                 </div>
               </div>
             </div>
@@ -199,16 +239,43 @@ function Home() {
             </div>
           </div>
         </div>
+        <div className={styles.amenitiesPattern}>
+          <img src={amenitiesPattern} alt="pattern" />
+        </div>
       </section>
       <section className={styles.testimonials}>
         <div className="container">
           <div className="row">
             <div className={styles.mainHeading}>
-              <h2>What They <span>Say</span></h2>
+              <h2>
+                What They <span>Say</span>
+              </h2>
             </div>
           </div>
           <div className="row">
-            
+            <Testimonials />
+          </div>
+          <div className={styles.testimonialsSvg}>
+            <img src={TestmonialsSvg} alt="testimonials-vector" />
+          </div>
+        </div>
+      </section>
+      <section className={styles.pictureGallery}>
+        <div className="container">
+          <div className="row">
+            <div className={styles.mainHeading}>
+              <h2>
+                Capturing Coliving's <span>Vibrant</span> Essence
+              </h2>
+              <p>
+                Explore our visual narrative, showcasing the vibrant heart of
+                our coliving spaces. Experience the essence of community living
+                in every snapshot
+              </p>
+            </div>
+            <div className="row">
+              <ImageGallery />
+            </div>
           </div>
         </div>
       </section>
