@@ -1,0 +1,217 @@
+.homepageMain {
+    overflow: hidden;
+}
+
+.homepageBanner {
+    /* position: relative; */
+}
+
+.homepageImage {
+    /* position: absolute; */
+    width: 100%;
+    height: 735px;
+    background-image: url('../../data/homepage-banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.bannerSection {
+    position: absolute;
+    top: 250px;
+    left: 120px;
+}
+
+.mainHeading ul {
+    font-size: 17px;
+    font-weight: 500;
+    display: flex;
+    list-style: none;
+    position: relative;
+    padding: 0px;
+}
+
+.mainHeading ul li {
+    margin-right: 40px;
+    position: relative;
+}
+
+.mainHeading ul li:after {
+    width: 8px;
+    height: 8px;
+    background: #000;
+    border-radius: 100%;
+    position: absolute;
+    content: "";
+    display: block;
+    top: 10px;
+    right: -24px;
+}
+
+.mainHeading ul li:last-child::after {
+    display: none;
+}
+
+.mainHeading h1 {
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 66px;
+    color: #fff;
+    text-transform: capitalize;
+    margin-top: 10px;
+}
+
+.mainBtn {
+    display: flex;
+}
+
+.numberBtn {
+    width: 190px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 20px;
+    margin-top: 10px;
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #FC4102 !important;
+    --bs-btn-border-color: #FC4102 !important;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #FC4102 !important;
+    --bs-btn-hover-border-color: #FC4102 !important;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #FC4102 !important;
+    --bs-btn-active-border-color: #FC4102 !important;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #FC4102 !important;
+    --bs-btn-disabled-border-color: #FC4102 !important;
+}
+
+.telephone {
+    margin-right: 7px;
+}
+
+.visitBtn {
+    width: 190px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 20px;
+    margin-top: 10px;
+    font-weight: 500;
+    --bs-btn-color: #FC4102 !important;
+    --bs-btn-bg: #f8f9fa;
+    --bs-btn-border-color: #f8f9fa;
+    --bs-btn-hover-color: #FC4102 !important;
+    --bs-btn-hover-bg: #d3d4d5;
+    --bs-btn-hover-border-color: #c6c7c8;
+    --bs-btn-focus-shadow-rgb: 211, 212, 213;
+    --bs-btn-active-color: #FC4102 !important;
+    --bs-btn-active-bg: #c6c7c8;
+    --bs-btn-active-border-color: #babbbc;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(255, 255, 255, 0.125) !important;
+    --bs-btn-disabled-color: #FC4102 !important;
+    --bs-btn-disabled-bg: #f8f9fa;
+    --bs-btn-disabled-border-color: #f8f9fa;
+}
+
+.ourProperties {
+    margin-top: 100px;
+}
+
+.mainHeading h2 {
+    font-size: 28px;
+    font-weight: 500;
+    color: #000;
+    line-height: 38px;
+    margin-bottom: 60px;
+}
+
+.mainHeading h2 span {
+    color: #FC4102;
+}
+
+.threePoints {
+    margin-top: 120px;
+    /* position: relative; */
+}
+
+.threePoints .mainHeading h2 {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 55px;
+    margin-bottom: 20px;
+}
+
+.threeImage {
+    /* position: absolute; */
+    z-index: -1;
+    margin-top: -250px;
+}
+
+.threeImage img {
+    height: 786px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.amenitiesSection {
+    margin-top: 100px;
+}
+
+.amenitiesItem {
+    position: relative;
+}
+
+.amenitiesImg {
+    position: relative;
+    z-index: -1;
+}
+
+.amenitiesImg img {
+    height: 330px;
+    width: 100%;
+}
+
+.amenitiesText {
+    position: absolute;
+    top: 50px;
+    left: 20px;
+}
+
+.amenitiesText h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 28px;
+    -webkit-transition: .5s;
+    transition: all .5s;
+    text-transform: capitalize;
+}
+
+.amenitiesContainer {
+    display: flex;
+    margin-top: 60px;
+}
+
+.amenitiesBox{
+    flex: 1;
+    text-align: center;
+}
+
+.amenitiesBox img {
+    height: 50px;
+}
+
+.amenitiesBox h4 {
+    font-size: 18px;
+    color: #000;
+    font-weight: 400;
+    line-height: 28px;
+    margin-top: 10px;
+}
+
+.testimonials{
+    background-color: #FFEDE7;
+    padding-top: 100px;
+    margin-top: 100px;
+}
