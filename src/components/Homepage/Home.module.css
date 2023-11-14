@@ -2,8 +2,6 @@
     overflow: hidden;
 }
 
-
-
 .homepageImage {
     /* position: absolute; */
     width: 100%;
@@ -130,7 +128,7 @@
 
 .threePoints {
     margin-top: 120px;
-    /* position: relative; */
+    position: relative;
 }
 
 .threePoints .mainHeading h2 {
@@ -152,8 +150,20 @@
     object-fit: cover;
 }
 
+.threePointsPattern{
+    position: absolute;
+    top: -100px;
+    left: 0;
+    z-index: -3;
+}
+
+.threePointsPattern img {
+    height: 450px;
+}
+
 .amenitiesSection {
     margin-top: 100px;
+    position: relative;
 }
 
 .amenitiesItem {
@@ -191,7 +201,7 @@
     margin-top: 60px;
 }
 
-.amenitiesBox{
+.amenitiesBox {
     flex: 1;
     text-align: center;
 }
@@ -208,8 +218,52 @@
     margin-top: 10px;
 }
 
-.testimonials{
-    background-color: #FFEDE7;
+.amenitiesPattern {
+    position: absolute;
+    top: -100px;
+    right: 0;
+    z-index: -3;
+}
+
+.amenitiesPattern img{
+    height: 450px;
+}
+
+.testimonials {
+    position: relative;
+    background-image: url(../../data//testimonials-background.png);
     padding-top: 100px;
+    padding-bottom: 100px;
     margin-top: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+.testimonials .mainHeading h2 {
+    margin-bottom: 30px;
+}
+
+.testimonialsSvg {
+    position: absolute;
+    top: 290px;
+    right: 40px;
+}
+
+.testimonialsSvg img {
+    height: 220px;
+}
+
+.pictureGallery{
+    margin-top: 100px;
+}
+
+.pictureGallery .mainHeading h2{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.pictureGallery .mainHeading p{
+    text-align: center;
 }

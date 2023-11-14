@@ -54,15 +54,14 @@ function Navbar() {
                 class={`${styles.navbarRight} navbar-nav me-auto mb-2 mb-lg-0`}
               >
                 <li class="nav-item dropdown">
-                  <a
+                  <p
                     class="nav-link dropdown-toggle"
-                    href=""
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
                     Our Properties
-                  </a>
+                  </p>
                   <ul class="dropdown-menu">
                     <li>
                       <NavLink
@@ -116,80 +115,3 @@ function Navbar() {
 }
 
 export default Navbar;
-
-{
-  /* <div className="container-fluid">
-            <NavLink
-              to="/"
-              className="nav-link active nav-item"
-              aria-current="page"
-            >
-              <img className={`${styles.logo}`} src={Logo} />
-            </NavLink>
-            <button
-              className="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span className="navbar-toggler-icon"></span>
-            </button>
-            <div
-              className="collapse navbar-collapse"
-              id="navbarSupportedContent"
-            >
-              <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                <li className="nav-item dropdown">
-                  <p
-                    className="nav-link dropdown-toggle"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Our Properties
-                  </p>
-                  <ul className="dropdown-menu">
-                    <li>
-                      <NavLink
-                        className="dropdown-item"
-                        to="/our-properties/sector-45"
-                      >
-                        Sector 45
-                      </NavLink>
-                    </li>
-                    <li>
-                      <NavLink
-                        className="dropdown-item"
-                        to="/our-properties/sector-45"
-                      >
-                        Sector 47
-                      </NavLink>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-              <li class="nav-item">
-              <NavLink
-                to="/about-us"
-                className={`${styles.navbarItem} nav-item`}
-              >
-                About Us
-              </NavLink>
-              </li>
-              <li class="nav-item">
-              <NavLink
-                to="/the-idea"
-                className={`${styles.navbarItem} nav-item`}
-              >
-                The Idea
-              </NavLink>
-              </li>
-              <button className="btn btn-outline-success" type="submit">
-                Book a visit
-              </button>
-            </div>
-          </div> */
-}
