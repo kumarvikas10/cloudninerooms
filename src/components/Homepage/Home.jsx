@@ -20,7 +20,8 @@ import Testimonials from "../Testimonials/testimonials";
 import TestmonialsSvg from "../../data/testimonials-vector.png";
 import amenitiesPattern from "../../data/Patterns.png";
 import uspPattern from "../../data/pattern-2.png";
-import ImageGallery from '../Image Gallery/MyGallery';
+import ImageGallery from "../Image Gallery/MyGallery";
+import ContactForm from "../Contact-form/contactForm";
 
 function Home() {
   return (
@@ -273,9 +274,18 @@ function Home() {
                 in every snapshot
               </p>
             </div>
-            <div className="row">
-              <ImageGallery />
+          </div>
+          <div className="row">
+              <div className={styles.gallery}>
+                <ImageGallery />
+              </div>
             </div>
+        </div>
+      </section>
+      <section className={styles.contactForm}>
+        <div className="container">
+          <div className="row">
+            <ContactForm  />
           </div>
         </div>
       </section>
