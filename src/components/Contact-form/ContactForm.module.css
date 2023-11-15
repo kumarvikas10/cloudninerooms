@@ -1,0 +1,48 @@
+.contactDiv {
+    position: relative;
+}
+
+.contactImg img {
+    height: 500px;
+    border-radius: 20px;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.contactImg::after {
+    z-index: 0;
+    width: 640px;
+    height: 500px;
+    background: #FFC2AD;
+    border-radius: 20px;
+    position: absolute;
+    content: "";
+    display: block;
+    right: 760px;
+    top: 120px;
+}
+
+.contactFormDiv {
+    padding: 40px;
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 0px 14px 0px rgba(34, 34, 34, 0.10);
+
+}
+
+.contactFormDiv .mainHeading h2 {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+
+.formDiv{
+
+}
+
+.formDiv img{
+    
+}

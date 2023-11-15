@@ -132,10 +132,10 @@
 }
 
 .threePoints .mainHeading h2 {
-    font-size: 30px;
-    font-weight: 500;
-    line-height: 55px;
-    margin-bottom: 20px;
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 55px;
+        margin-bottom: 20px;
 }
 
 .threeImage {
@@ -266,4 +266,18 @@
 
 .pictureGallery .mainHeading p{
     text-align: center;
+}
+
+.pictureGallery .gallery{
+    margin-top: 40px;
+}
+
+.contactForm{
+    margin-top: 100px;
+    padding: 100px 0px;
+    position: relative;
+    background-image: url(../../data//contact-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
