@@ -186,8 +186,9 @@ function AboutUs() {
         <div className={`${styles.mt100} ${styles.banner}`}>
           <img src={valueBanner} alt="banner" className={styles.banner_image} />
           <div className={styles.banner_text}>
-            <h2 className={styles.heading_team}>
-              Find The Best <span>Rooms</span> For Stay
+            <h2 className={`mb-0 ${styles.heading_team}`}>
+              Find The Best <span style={{ color: "#FC4102" }}>Rooms</span> For
+              Stay
             </h2>
             <p>Where finding the best rooms for your stay is effortless</p>
             <button className={`btn btn-primary ${style.numberBtn}`}>
