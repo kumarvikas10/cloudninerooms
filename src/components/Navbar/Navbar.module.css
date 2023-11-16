@@ -1,4 +1,3 @@
-
 .navbarMain {
     position: absolute;
     left: 120px;
@@ -10,15 +9,15 @@
 }
 
 .fixed {
-	box-shadow: 0px 5px 90px 0px rgba(2, 24, 93, 0.18);
-	animation: slide-down 0.7s;
-	z-index: 9999;
-	position: fixed;
-	width: 100%;
-	top: 0px;
-	left: 0px;
+    box-shadow: 0px 5px 90px 0px rgba(2, 24, 93, 0.18);
+    animation: slide-down 0.7s;
+    z-index: 9999;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0px;
     right: 0px;
-	transform: none;
+    transform: none;
 }
 
 .navbar {
@@ -58,4 +57,23 @@
     --bs-btn-disabled-bg: transparent;
     --bs-btn-disabled-border-color: #FC4102 !important;
     --bs-gradient: none;
+}
+
+@media (max-width: 768px) {
+    .navbarMain {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        height: 80px;
+        z-index: 999;
+        right: 0px;
+        transition: 0.3s;
+    }
+
+    .navbar {
+        background-color: #fff !important;
+        border-radius: 0px;
+        padding: 10px 20px;
+        border-right: none;
+    }
 }
