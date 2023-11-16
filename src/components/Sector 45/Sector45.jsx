@@ -179,7 +179,7 @@ function Sector45() {
               </div>
             </div>
           </div>
-          <div className="row">
+          <div className="row mob_hide">
             <div className="col-md-3">
               <div className={css.amenitiesItem}>
                 <div className={css.amenitiesImg}>
