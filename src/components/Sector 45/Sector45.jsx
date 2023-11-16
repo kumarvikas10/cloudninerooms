@@ -53,7 +53,7 @@ function Sector45() {
           <h2 className="heading text-center">
             Our <span style={{ color: "#FC4102" }}>Accommodation</span>
           </h2>
-          <p className="text-center">
+          <p className="text-center mob_hide">
             Our rooms are spacious, stylish and equipped with all the essential
             amenities to ensure a comfortable stay.
           </p>
@@ -69,12 +69,12 @@ function Sector45() {
                     <span>₹ 30,000/</span> month
                   </p>
                   <p style={{ fontWeight: "400" }} className="mb-0">
-                    High-speed Wi-Fi <GoDotFill className={styles.icon} />{" "}
-                    Fully-furnished room
+                    High-speed Wi-Fi <GoDotFill className={styles.icon} /> 24/7
+                    Support
                   </p>
                   <p style={{ fontWeight: "400" }}>
-                    Daily cleaning <GoDotFill className={styles.icon} /> 24/7
-                    Support
+                    Daily cleaning <GoDotFill className={styles.icon} />{" "}
+                    Fully-furnished room
                   </p>
                   <button
                     className={`commonBtn btn btn-primary ${styles.bookVisitbtn}`}
@@ -95,12 +95,12 @@ function Sector45() {
                     <span>₹ 30,000/</span> month
                   </p>
                   <p style={{ fontWeight: "400" }} className="mb-0">
-                    High-speed Wi-Fi <GoDotFill className={styles.icon} />{" "}
-                    Fully-furnished room
+                    High-speed Wi-Fi <GoDotFill className={styles.icon} /> 24/7
+                    Support
                   </p>
                   <p style={{ fontWeight: "400" }}>
-                    Daily cleaning <GoDotFill className={styles.icon} /> 24/7
-                    Support
+                    Daily cleaning <GoDotFill className={styles.icon} />{" "}
+                    Fully-furnished room
                   </p>
                   <button
                     className={`commonBtn btn btn-primary ${styles.bookVisitbtn}`}
@@ -111,7 +111,7 @@ function Sector45() {
               </div>
             </div>
           </div>
-          <div className="row mt-4">
+          <div className="row mt-md-4">
             <div className="col-md-6">
               <div className={styles.accomodation_card}>
                 <div className={styles.property_img}>
@@ -123,12 +123,12 @@ function Sector45() {
                     <span>₹ 30,000/</span> month
                   </p>
                   <p style={{ fontWeight: "400" }} className="mb-0">
-                    High-speed Wi-Fi <GoDotFill className={styles.icon} />{" "}
-                    Fully-furnished room
+                    High-speed Wi-Fi <GoDotFill className={styles.icon} /> 24/7
+                    Support
                   </p>
                   <p style={{ fontWeight: "400" }}>
-                    Daily cleaning <GoDotFill className={styles.icon} /> 24/7
-                    Support
+                    Daily cleaning <GoDotFill className={styles.icon} />{" "}
+                    Fully-furnished room
                   </p>
                   <button
                     className={`commonBtn btn btn-primary ${styles.bookVisitbtn}`}
@@ -149,12 +149,12 @@ function Sector45() {
                     <span>₹ 30,000/</span> month
                   </p>
                   <p style={{ fontWeight: "400" }} className="mb-0">
-                    High-speed Wi-Fi <GoDotFill className={styles.icon} />{" "}
-                    Fully-furnished room
+                    High-speed Wi-Fi <GoDotFill className={styles.icon} /> 24/7
+                    Support
                   </p>
                   <p style={{ fontWeight: "400" }}>
-                    Daily cleaning <GoDotFill className={styles.icon} /> 24/7
-                    Support
+                    Daily cleaning <GoDotFill className={styles.icon} />{" "}
+                    Fully-furnished room
                   </p>
                   <button
                     className={`commonBtn btn btn-primary ${styles.bookVisitbtn}`}

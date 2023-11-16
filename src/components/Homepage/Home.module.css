@@ -281,3 +281,11 @@
     background-size: cover;
     background-position: center center;
 }
+
+@media screen and (max-width: 768px) {
+    .numberBtn {
+        width: 130px;
+        padding: 6px;
+        font-size: 13px;
+    }
+}
