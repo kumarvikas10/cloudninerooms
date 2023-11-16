@@ -282,9 +282,9 @@ function Home() {
             </div>
         </div>
       </section>
-      <section className={styles.contactForm}>
+      <section className={styles.contactFormSection}>
         <div className="container">
-          <div className="row">
+          <div className={`${styles.contactForm} row`}>
             <ContactForm  />
           </div>
         </div>

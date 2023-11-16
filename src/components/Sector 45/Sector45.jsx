@@ -18,6 +18,9 @@ import wifiImg from "../../data/Icons-data/High Speed Wifi.png";
 import supportImg from "../../data/Icons-data/247 Support.png";
 import communityImg from "../../data/Icons-data/Great Community.png";
 import parkingImg from "../../data/Icons-data/Parking.png";
+import homepageStyles  from '../Homepage/Home.module.css';
+import ImageGallery from "../Image Gallery/MyGallery";
+import ContactForm from "../Contact-form/contactForm";
 
 function Sector45() {
   return (
@@ -284,6 +287,34 @@ function Sector45() {
                 <h4>Parking</h4>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      <section className={homepageStyles.pictureGallery}>
+        <div className="container">
+          <div className="row">
+            <div className={homepageStyles.mainHeading}>
+              <h2>
+                Capturing Coliving's <span>Vibrant</span> Essence
+              </h2>
+              <p>
+                Explore our visual narrative, showcasing the vibrant heart of
+                our coliving spaces. Experience the essence of community living
+                in every snapshot
+              </p>
+            </div>
+          </div>
+          <div className="row">
+              <div className={homepageStyles.gallery}>
+                <ImageGallery />
+              </div>
+            </div>
+        </div>
+      </section>
+      <section className={homepageStyles.contactFormSection}>
+        <div className="container">
+          <div className={`${homepageStyles.contactForm} row`}>
+            <ContactForm  />
           </div>
         </div>
       </section>

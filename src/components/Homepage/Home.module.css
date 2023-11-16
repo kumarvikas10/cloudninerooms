@@ -132,10 +132,10 @@
 }
 
 .threePoints .mainHeading h2 {
-        font-size: 30px;
-        font-weight: 500;
-        line-height: 55px;
-        margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 55px;
+    margin-bottom: 20px;
 }
 
 .threeImage {
@@ -150,7 +150,7 @@
     object-fit: cover;
 }
 
-.threePointsPattern{
+.threePointsPattern {
     position: absolute;
     top: -100px;
     left: 0;
@@ -225,7 +225,7 @@
     z-index: -3;
 }
 
-.amenitiesPattern img{
+.amenitiesPattern img {
     height: 450px;
 }
 
@@ -255,24 +255,24 @@
     height: 220px;
 }
 
-.pictureGallery{
+.pictureGallery {
     margin-top: 100px;
 }
 
-.pictureGallery .mainHeading h2{
+.pictureGallery .mainHeading h2 {
     text-align: center;
     margin-bottom: 10px;
 }
 
-.pictureGallery .mainHeading p{
+.pictureGallery .mainHeading p {
     text-align: center;
 }
 
-.pictureGallery .gallery{
+.pictureGallery .gallery {
     margin-top: 40px;
 }
 
-.contactForm{
+.contactFormSection {
     margin-top: 100px;
     padding: 100px 0px;
     position: relative;
@@ -282,10 +282,52 @@
     background-position: center center;
 }
 
-@media screen and (max-width: 768px) {
+.contactForm {
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+
+    .homepageImage {
+        height:500px;
+    }
+
+    .bannerSection {
+        top: 160px;
+        left: 30px;
+    }
+
+    .mainHeading ul {
+        font-size: 14px;
+    }
+
+    .mainHeading ul li{
+        margin-right: 30px;
+    }
+
+    .mainHeading ul li:after {
+        width: 7px;
+        height: 7px;
+        top: 7px;
+        right: -15px;
+    }
+
+    .mainHeading h1{
+        font-size: 30px;
+        line-height: 50px;
+    }
     .numberBtn {
         width: 130px;
         padding: 6px;
         font-size: 13px;
+        text-decoration: none;
     }
+
+    .visitBtn{
+        width: 130px;
+        padding: 6px;
+        font-size: 13px;
+    }
+
+    
 }

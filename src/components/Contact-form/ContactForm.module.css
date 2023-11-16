@@ -24,12 +24,18 @@
     top: 120px;
 }
 
+.contactFormContainer {
+    padding-left: 0px;
+}
+
 .contactFormDiv {
-    padding: 40px;
-    border-radius: 20px;
+    padding: 40px 40px;
+    border-radius: 0px 20px 20px 0px;
     background: #FFF;
     box-shadow: 0px 0px 14px 0px rgba(34, 34, 34, 0.10);
-
+    margin-top: 40px;
+    /* border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px; */
 }
 
 .contactFormDiv .mainHeading h2 {
@@ -39,10 +45,68 @@
     margin-bottom: 10px;
 }
 
-.formDiv{
-
+.formDiv:first-child{
+    margin-top: 30px;
 }
 
-.formDiv img{
-    
+.formDiv {
+    margin-top: 40px;
+}
+
+.formItem{
+    position: relative;
+}
+
+.formItem .requiredItem{
+    color: red;
+    font-size: 12px;
+    margin-left: 10px;
+    position: absolute;
+    top: 50px;
+}
+
+.formItem input {
+    width: 100%;
+    padding: 10px;
+    box-shadow: 0px 0px 16px 0px rgba(33, 37, 41, 0.05);
+    border: none;
+    border-radius: 10px;
+}
+
+.formItem .selectItem {
+    border: none !important;
+    width: 100%;
+    padding: 10px;
+    box-shadow: 0px 0px 16px 0px rgba(33, 37, 41, 0.05);
+    border-radius: 10px;
+    background: #fff;
+}
+
+.formItem .numberBtn {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #FC4102 !important;
+    --bs-btn-border-color: #FC4102 !important;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #FC4102 !important;
+    --bs-btn-hover-border-color: #FC4102 !important;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #FC4102 !important;
+    --bs-btn-active-border-color: #FC4102 !important;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #FC4102 !important;
+    --bs-btn-disabled-border-color: #FC4102 !important;
+}
+
+.contactDetails {
+    margin-top: 30px;
+}
+
+.Details {
+    display: inline-block;
+    margin-right: 20px;
 }
