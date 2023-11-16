@@ -6,14 +6,36 @@ import teammember2 from "../../data/girl.png";
 import ourValues from "../../data/our-values.jpg";
 import valueBanner from "../../data/banner.jpg";
 import style from "../Homepage/Home.module.css";
+import ReadMoreLess from "../read-more-less-btn/ReadMoreLess";
 
 function AboutUs() {
+  const missionText = `At Cloud Nine Rooms, our mission is to create a haven where
+  comfort, community, and modern living converge to provide a
+  seamless co-living experience. We are dedicated to offering a
+  vibrant yet cozy living environment in the heart of Gurugram. Our
+  commitment is to facilitate the diverse needs of our residents, be
+  it solo travelers exploring new horizons or remote professionals
+  seeking a home away from home. We aim to continuously redefine the
+  standards of co-living, fostering connections and shared
+  experiences that turn a place to live into a place to belong`;
+
+  const storyText = `Founded with a passion for reimagining modern living, Cloud Nine Rooms is
+      not just a co-living space; it's a lifestyle. Our journey began with a
+      simple yet powerful vision: to provide a home away from home where comfort
+      and community seamlessly intertwine.
+
+      Nestled in the heart of Gurugram, our story is woven into the very fabric
+      of this vibrant city. We started this venture because we realized the need
+      for a place where people from diverse backgrounds and walks of life could
+      come together, share experiences, and feel part of a community.`;
+
   return (
     <>
       <div className={styles.about_bg}>
         <div className="container">
           <h1 className={styles.main_heading}>
-            Where Comfort Meets Community in <br /> The Heart Of Gurugram
+            Where Comfort Meets Community in <br className="mob_hide" /> The
+            Heart Of Gurugram
           </h1>
         </div>
       </div>
@@ -22,15 +44,7 @@ function AboutUs() {
           <div className="col-md-6">
             <h2 className={styles.heading_h2}>Our Mission</h2>
             <p className={styles.mission_p}>
-              At Cloud Nine Rooms, our mission is to create a haven where
-              comfort, community, and modern living converge to provide a
-              seamless co-living experience. We are dedicated to offering a
-              vibrant yet cozy living environment in the heart of Gurugram. Our
-              commitment is to facilitate the diverse needs of our residents, be
-              it solo travelers exploring new horizons or remote professionals
-              seeking a home away from home. We aim to continuously redefine the
-              standards of co-living, fostering connections and shared
-              experiences that turn a place to live into a place to belong
+              <ReadMoreLess text={missionText} maxLength={238} />
             </p>
           </div>
           <div className="col-md-6">
@@ -40,7 +54,7 @@ function AboutUs() {
           </div>
         </div>
         <div className={`row align-items-center ${styles.mt100}`}>
-          <div className="col-md-6">
+          <div className="col-md-6 mob_hide">
             <div className={`${styles.mission_img} text-start`}>
               <img src={story} alt="mission1-cloud-nine" />
             </div>
@@ -48,26 +62,21 @@ function AboutUs() {
           <div className="col-md-6">
             <h2 className={styles.heading_h2}>Our Story</h2>
             <p className={styles.mission_p}>
-              Founded with a passion for reimagining modern living, Cloud Nine
-              Rooms is not just a co-living space; it's a lifestyle. Our journey
-              began with a simple yet powerful vision: to provide a home away
-              from home where comfort and community seamlessly intertwine.
-              <br />
-              <br />
-              Nestled in the heart of Gurugram, our story is woven into the very
-              fabric of this vibrant city. We started this venture because we
-              realized the need for a place where people from diverse
-              backgrounds and walks of life could come together, share
-              experiences, and feel part of a community.
+              <ReadMoreLess text={storyText} maxLength={255} />
             </p>
+          </div>
+          <div className="col-md-6 desk_hide">
+            <div className={`${styles.mission_img} text-start`}>
+              <img src={story} alt="mission1-cloud-nine" />
+            </div>
           </div>
         </div>
       </div>
       <div className={styles.our_team_bg}>
         <div className={`${styles.our_team_container} container`}>
           <h2 className={styles.heading_team}>Meet Our Team</h2>
-          <div className="row">
-            <div className="col-md-3">
+          <div className={`row ${styles.team_row}`}>
+            <div className="col-3 w65">
               <div className={`card ${styles.team_card}`}>
                 <img
                   src={teammember1}
@@ -82,7 +91,7 @@ function AboutUs() {
                 </div>
               </div>
             </div>
-            <div className="col-md-3">
+            <div className="col-3 w65">
               <div className={`card ${styles.team_card}`}>
                 <img
                   src={teammember2}
@@ -95,7 +104,7 @@ function AboutUs() {
                 </div>
               </div>
             </div>
-            <div className="col-md-3">
+            <div className="col-3 w65">
               <div className={`card ${styles.team_card}`}>
                 <img
                   src={teammember1}
@@ -110,7 +119,7 @@ function AboutUs() {
                 </div>
               </div>
             </div>
-            <div className="col-md-3">
+            <div className="col-3 w65">
               <div className={`card ${styles.team_card}`}>
                 <img
                   src={teammember2}
@@ -127,13 +136,13 @@ function AboutUs() {
         </div>
       </div>
       <div className={`container ${styles.mt100}`}>
-        <h2 className={`text-center mb-0 ${styles.heading_team}`}>
+        <h2 className={`text-center mb-0 ${styles.heading_team} mob_hide`}>
           Our <span>Values</span>
         </h2>
-        <p className={styles.subtitles}>
+        <p className={`mob_hide ${styles.subtitles}`}>
           Embracing Excellence, Building Connections, and Fostering Comfort.
         </p>
-        <div className={`row ${styles.our_values_row}`}>
+        <div className={`row ${styles.our_values_row} mob_hide`}>
           <div className="col-md-6">
             <div className={styles.ourValues_img}>
               <img src={ourValues} alt="our values" />
@@ -190,8 +199,10 @@ function AboutUs() {
               Find The Best <span style={{ color: "#FC4102" }}>Rooms</span> For
               Stay
             </h2>
-            <p>Where finding the best rooms for your stay is effortless</p>
-            <button className={`btn btn-primary ${style.numberBtn}`}>
+            <p className="mob_hide">
+              Where finding the best rooms for your stay is effortless
+            </p>
+            <button className={`btn btn-primary mt0 ${style.numberBtn}`}>
               Book a visit
             </button>
           </div>
