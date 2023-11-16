@@ -46,3 +46,41 @@ body {
     --bs-btn-disabled-bg: #FC4102 !important;
     --bs-btn-disabled-border-color: #FC4102 !important;
 }
+.desk_hide {
+  display: none;
+}
+.footer_logo {
+  width: 130px;
+}
+
+@media screen and (max-width: 768px) {
+  .mob_hide {
+    display: none;
+  }
+  .desk_hide {
+    display: block;
+  }
+  .w65 {
+    width: 65%;
+  }
+  .card-title {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+  .card-text {
+    font-size: 13px;
+  }
+  .mt0 {
+    margin-top: 0 !important;
+  }
+  .mt100 {
+    margin-top: 40px;
+  }
+  .footer_logo {
+    width: 100px;
+  }
+  .heading {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}

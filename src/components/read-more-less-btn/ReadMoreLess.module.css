@@ -1,0 +1,10 @@
+.read_btn {
+    background: transparent;
+    border: none;
+    font-size: 13px;
+    font-weight: 500;
+}
+.icon {
+    font-size: 18px;
+    margin-left: -3px;
+}

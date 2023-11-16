@@ -1,118 +1,168 @@
 .about_bg {
-    position: relative;
-    width: 100%;
-    height: 470px;
-    background-image: url('../../data/about-us-main-bg.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+  position: relative;
+  width: 100%;
+  height: 470px;
+  background-image: url("../../data/about-us-main-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 .main_heading {
-    font-size: 50px;
-    font-weight: 500;
-    line-height: 66px;
-    color: #fff;
-    text-transform: capitalize;
-    position: absolute;
-    bottom: 92px;
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 66px;
+  color: #fff;
+  text-transform: capitalize;
+  position: absolute;
+  bottom: 92px;
 }
 .heading_h2 {
-    font-size: 28px;
-    font-weight: 500;
-    color: #000;
-    line-height: 38px;
-    position: relative;
+  font-size: 28px;
+  font-weight: 500;
+  color: #000;
+  line-height: 38px;
+  position: relative;
 }
 .heading_team {
-    font-size: 28px;
-    font-weight: 500;
-    color: #000;
-    line-height: 38px;
-    position: relative;
-    margin-bottom: 30px;
+  font-size: 28px;
+  font-weight: 500;
+  color: #000;
+  line-height: 38px;
+  position: relative;
+  margin-bottom: 30px;
 }
 .heading_h2::after {
-    content: "";
-    position: absolute;
-    background-color: #FC4102;
-    width: 15%;
-    height: 4px;
-    left: 0;
-    bottom: -5px;
-    border-radius: 4px;
+  content: "";
+  position: absolute;
+  background-color: #fc4102;
+  width: 15%;
+  height: 4px;
+  left: 0;
+  bottom: -5px;
+  border-radius: 4px;
 }
 .about_container {
-    margin-top: 100px;
+  margin-top: 100px;
 }
 .mission_p {
-    margin-top: 20px;
-    font-size: 15px;
+  margin-top: 20px;
+  font-size: 15px;
 }
 .mission_img {
-    text-align: right;
+  text-align: right;
 }
 .mission_img img {
-    width: 89%;
+  width: 89%;
 }
 .mt100 {
-    margin-top: 100px;
+  margin-top: 100px;
 }
 .our_team_bg {
-    background-image: url("../../data/meet-our-team.png");
-    width: 100%;
-    height: auto;
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin-top: 100px;
+  background-image: url("../../data/meet-our-team.png");
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 100px;
 }
 .our_team_container {
-    padding: 80px 0 65px;
+  padding: 80px 0 65px;
 }
 .card_text {
-    color: #FC4102;
+  color: #fc4102;
 }
 .card_img {
-    border-radius: 17px 17px 0 0;
+  border-radius: 17px 17px 0 0;
 }
 .team_card {
-    border-radius: 17px !important;
-    box-shadow: 0px 0px 4px 0px rgba(253, 65, 1, 0.15) !important;
+  border-radius: 17px !important;
+  box-shadow: 0px 0px 4px 0px rgba(253, 65, 1, 0.15) !important;
 }
 .heading_team span {
-    color: #FC4102;
+  color: #fc4102;
 }
 .subtitles {
-    text-align: center;
-    font-weight: 500;
+  text-align: center;
+  font-weight: 500;
 }
 .ourValues_img img {
-    width: 100%;
+  width: 100%;
 }
 .values_card {
-    padding: 50px 20px;
-    height: 256.1px;
-    border-radius: 20px;
-    box-shadow: 4px 4px 4px 0px rgba(253, 65, 1, 0.30);
+  padding: 50px 20px;
+  height: 256.1px;
+  border-radius: 20px;
+  box-shadow: 4px 4px 4px 0px rgba(253, 65, 1, 0.3);
 }
 .numbers {
-    font-size: 35px;
-    font-weight: 600;
-    color: #FC4102;
+  font-size: 35px;
+  font-weight: 600;
+  color: #fc4102;
 }
 .our_values_row {
-    margin-top: 40px;
+  margin-top: 40px;
 }
 .banner_image {
-    width: 100%;
+  width: 100%;
 }
 .banner {
-    position: relative;
+  position: relative;
 }
 .banner_text {
-    position: absolute;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 87px;
+}
+
+@media screen and (max-width: 768px) {
+  .main_heading {
+    font-size: 30px;
+    line-height: 39px;
+    bottom: 106px;
+  }
+  .about_container {
+    margin-top: 40px;
+  }
+  .heading_h2 {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .mission_p {
+    margin-top: 15px;
+    font-size: 13px;
+  }
+  .mission_img {
+    text-align: center;
+  }
+  .mission_img img {
     width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    padding: 87px;
+  }
+  .mt100 {
+    margin-top: 40px;
+  }
+  .our_team_bg {
+    margin-top: 40px;
+    background-size: cover;
+  }
+  .our_team_container {
+    padding: 30px 20px 35px;
+  }
+  .heading_team {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .our_team_bg .team_row {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+  }
+  .our_team_bg .team_row::-webkit-scrollbar {
+    display: none;
+  }
+  .banner_text {
+    padding: 0 20px;
+  }
 }

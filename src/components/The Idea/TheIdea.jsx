@@ -11,7 +11,8 @@ function TheIdea() {
       <div className={styles.idea_bg}>
         <div className="container">
           <h1 className={style.main_heading}>
-            Comfortable Communities At <br /> Cloud Nine Rooms
+            Comfortable Communities At <br className="mob_hide" /> Cloud Nine
+            Rooms
           </h1>
         </div>
       </div>
@@ -21,7 +22,7 @@ function TheIdea() {
             <p style={{ color: "#fc4102", fontWeight: "500" }}>Book a Visit</p>
             <h2 className={styles.heading}>
               Explore Our Available Rooms,
-              <br />
+              <br className="mob_hide" />
               Amenities and Pricing
             </h2>
             <p>
@@ -41,7 +42,7 @@ function TheIdea() {
           </div>
         </div>
         <div className={`row align-items-center ${style.mt100}`}>
-          <div className="col-md-6">
+          <div className="col-md-6 mob_hide">
             <div className={`text-start ${styles.cloudNineRooms}`}>
               <img src={theIdea2} alt="book cloud nine room" />
             </div>
@@ -60,6 +61,11 @@ function TheIdea() {
               your details, including your name, and contact details. Make sure
               to double-check your reservation details to ensure accuracy.
             </p>
+          </div>
+          <div className="col-md-6 desk_hide">
+            <div className={`text-start ${styles.cloudNineRooms}`}>
+              <img src={theIdea2} alt="book cloud nine room" />
+            </div>
           </div>
         </div>
         <div className={`row align-items-center ${style.mt100}`}>
@@ -91,7 +97,9 @@ function TheIdea() {
               Find The Best <span style={{ color: "#FC4102" }}>Rooms</span> For
               Stay
             </h2>
-            <p>Where finding the best rooms for your stay is effortless</p>
+            <p className="mob_hide">
+              Where finding the best rooms for your stay is effortless
+            </p>
             <button className={`btn btn-primary ${styles.numberBtn}`}>
               Book a visit
             </button>
