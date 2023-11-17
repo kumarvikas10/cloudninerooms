@@ -30,7 +30,7 @@ const SignupSchema = Yup.object().shape({
 function contactForm() {
   return (
     <>
-      <div className="col-md-6">
+      <div className="col-md-6 mob_hide">
         <div className={styles.contactImg}>
           <img src={contactImage} alt="contact-form" />
         </div>
@@ -38,8 +38,13 @@ function contactForm() {
       <div className={`${styles.contactFormContainer} col-md-6`}>
         <div className={styles.contactFormDiv}>
           <div className={styles.mainHeading}>
-            <h2>Connect with Cloud Nine Rooms expert</h2>
-            <p>Write down your query to us for quick solution</p>
+            <h2>
+              Connect with{" "}
+              <span style={{ color: "#fc4102" }}>Cloud Nine Rooms</span> expert
+            </h2>
+            <p className="mob_hide">
+              Write down your query to us for quick solution
+            </p>
           </div>
           <Formik
             initialValues={{
@@ -159,15 +164,10 @@ function contactForm() {
           <div className={`${styles.contactDetails} row`}>
             <div className="col-md-12">
               <div className={styles.Details}>
-                <a href="tel:9999998992" class="Footer_footer_link__tGhJf">
-                  Call : 9999-998-992
-                </a>
+                <a href="tel:9999998992">Call : 9999-998-992</a>
               </div>
               <div className={styles.Details}>
-                <a
-                  href="mailto:support@cloud9rooms.com"
-                  class="Footer_footer_link__tGhJf"
-                >
+                <a href="mailto:support@cloud9rooms.com">
                   Email : support@cloud9rooms.com
                 </a>
               </div>

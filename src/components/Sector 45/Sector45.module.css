@@ -100,4 +100,22 @@
   .accomodation_card {
     margin-bottom: 22px;
   }
+  .main_bg {
+    height: 386px;
+  }
+  .mob_amenities {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .amenity_box {
+    width: 39%;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  .amenity_box div img {
+    width: 20px;
+  }
 }
