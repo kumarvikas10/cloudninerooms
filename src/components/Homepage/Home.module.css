@@ -83,6 +83,12 @@
   --bs-btn-disabled-border-color: #fc4102 !important;
 }
 
+.numberBtn a{
+    text-decoration: none;
+    color: #fff;
+
+}
+
 .telephone {
   margin-right: 7px;
 }
@@ -306,6 +312,10 @@
     left: 20px;
   }
 
+    .bannerSection {
+        top: 160px;
+        left: 20px;
+    }
   .mainHeading ul {
     font-size: 14px;
   }
@@ -332,41 +342,53 @@
     text-decoration: none;
   }
 
-  .visitBtn {
-    width: 130px;
-    padding: 6px;
-    font-size: 13px;
-  }
-  .mainHeading h2 {
-    font-size: 18px;
-    line-height: 28px;
-    margin-bottom: 0;
-  }
-  .amenitiesSection {
-    margin-top: 40px;
-  }
-  .pictureGallery {
-    margin-top: 40px;
-  }
-  .contactFormSection {
-    padding: 0 0 40px;
-  }
-  .mob_amenities {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  .amenity_box {
-    width: 39%;
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
-  }
-  .amenity_box div img {
-    width: 20px;
-  }
-  .ourProperties {
-    margin-top: 40px;
-  }
+    .mainHeading h1{
+        font-size: 30px;
+        line-height: 50px;
+    }
+    .numberBtn {
+        width: 140px;
+        padding: 6px;
+        font-size: 13px;
+        text-decoration: none;
+        margin-right: 10px;
+    }
+
+    .visitBtn {
+        width: 130px;
+        padding: 6px;
+        font-size: 13px;
+      }
+      .mainHeading h2 {
+        font-size: 18px;
+        line-height: 28px;
+        margin-bottom: 0;
+      }
+      .amenitiesSection {
+        margin-top: 40px;
+      }
+      .pictureGallery {
+        margin-top: 40px;
+      }
+      .contactFormSection {
+        padding: 0 0 40px;
+      }
+      .mob_amenities {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .amenity_box {
+        width: 39%;
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+      }
+      .amenity_box div img {
+        width: 20px;
+      }
+      .ourProperties {
+        margin-top: 40px;
+      } 
 }

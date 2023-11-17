@@ -49,8 +49,10 @@ function Home() {
                     type="button"
                     className={`${styles.numberBtn} btn btn-primary`}
                   >
-                    <BsFillTelephoneFill className={styles.telephone} />{" "}
-                    99926-31999
+                    <BsFillTelephoneFill className={styles.telephone} />
+                    <a href="tel:9999998992">
+                      9999-998-992
+                    </a>
                   </button>
                   <button
                     type="button"
@@ -64,7 +66,8 @@ function Home() {
           </div>
         </div>
       </section>
-      <section className={styles.ourProperties}>
+      <section className="mt100">
+        <div className="container">
         <div className="row">
           <div className="col-md-12 text-center">
             <div className={styles.mainHeading}>
@@ -73,6 +76,13 @@ function Home() {
               </h2>
             </div>
           </div>
+          {/* <div className="col-md-12">
+          <Carousel />
+            <div className={styles.CarouselBox}>
+              
+            </div>
+          </div> */}
+        </div>
           <div className="col-md-12 mob_hide">
             <div className={styles.CarouselBox}>
               <Carousel />
