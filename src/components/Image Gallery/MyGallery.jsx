@@ -12,7 +12,7 @@ import styles from "./MyGallery.module.css";
 const MyGallery = () => (
   <Gallery>
     <div className={styles.gallery}>
-      <div className={`${styles.galleryDiv} ${styles.w4}`}>
+      <div className={`${styles.galleryDiv} ${styles.w4} ${styles.rowSpan}`}>
         <div className={styles.galleryItem}>
           <div className={styles.galleryImg}>
             <Item original={image1} thumbnail={image1} width="850" height="500">
@@ -80,7 +80,7 @@ const MyGallery = () => (
           </div>
         </div>
       </div>
-      <div className={`${styles.galleryDiv} ${styles.w4}`}>
+      <div className={`${styles.galleryDiv} ${styles.w4} ${styles.rowSpan}`}>
         <div className={styles.galleryItem}>
           <div className={styles.galleryImg}>
             <Item original={image5} thumbnail={image5} width="850" height="500">
@@ -114,7 +114,7 @@ const MyGallery = () => (
           </div>
         </div>
       </div>
-      <div className={`${styles.galleryDiv} ${styles.w3}`}>
+      <div className={`${styles.galleryDiv} ${styles.w3} ${styles.w12}`}>
         <div className={styles.galleryItem}>
           <div className={styles.galleryImg}>
             <Item original={image7} thumbnail={image7} width="850" height="500">
