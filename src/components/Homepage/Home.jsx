@@ -2,6 +2,7 @@ import styles from "./Home.module.css";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import Carousel from "../Carousel/Carousel";
 import threePointsImage from "../../data/Three ways-2.png";
+import threePointsMobImage from '../../data/three-mobile-points.png'
 import privateBedroomImg from "../../data/private-bedrooms.png";
 import kitchenImg from "../../data/high-end-kitchen.png";
 import livingRoomImg from "../../data/Spacious-living-room.png";
@@ -76,12 +77,6 @@ function Home() {
               </h2>
             </div>
           </div>
-          {/* <div className="col-md-12">
-          <Carousel />
-            <div className={styles.CarouselBox}>
-              
-            </div>
-          </div> */}
         </div>
           <div className="col-md-12 mob_hide">
             <div className={styles.CarouselBox}>
@@ -198,28 +193,36 @@ function Home() {
           </div>
         </div>
       </section>
-      <section className={styles.threePoints}>
+      <section className={`${styles.threePoints} mt-100`}>
         <div className="container">
           <div className="row">
             <div className="col-lg-9 col-md-9">
               <div className={styles.mainHeading}>
                 <h2>
                   Are you a working professional in <span>Gurugram</span>{" "}
-                  seeking a<br />
+                  seeking a <br className="mob_hide" />
                   secure and safe <span>Coliving</span> solution
                 </h2>
               </div>
             </div>
-            <div className="col-lg-5 col-md-5">
+            <div className="col-lg-5 col-md-5 mob_hide">
               <p>
                 Our commitment to convenience, Comfort and Budget Friendly sets
                 us apart – making us the preferred choice for those seeking a
                 unique living experience in Gurugram
               </p>
             </div>
-            <div className={styles.threeImage}>
+            <div className={`${styles.threeImage} mob_hide `}>
               <img
                 src={threePointsImage}
+                className="img-fluid"
+                alt="three-usp-points"
+              />
+            </div>
+
+            <div className={`${styles.threeMobImage} desk_hide  `}>
+              <img
+                src={threePointsMobImage}
                 className="img-fluid"
                 alt="three-usp-points"
               />
