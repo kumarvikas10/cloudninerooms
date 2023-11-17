@@ -49,6 +49,37 @@ body {
 .desk_hide {
   display: none;
 }
+
+.testimonialSlider  .slick-slide {
+	padding: 10px;
+}
+
+.testimonialSlider .slick-slider .slick-dots li button::before{
+	content: "\f111";
+	font-family: "FontAwesome";
+}
+
+.carouselSlider .slick-next::before, .slick-prev::before {
+	font-size: 20px;
+	line-height: 1;
+	opacity: .75;
+	color: #FC4102 !important;
+}
+
+.carouselSlider  .slick-slide {
+	padding: 10px;
+}
+
+.slick-next::before {
+	content: "\f054";
+	font-family: "FontAwesome";
+}
+
+.slick-prev::before {
+	content: "\f053";
+	font-family: "FontAwesome";
+}
+
 .footer_logo {
   width: 130px;
 }

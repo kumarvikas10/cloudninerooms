@@ -83,6 +83,12 @@
     --bs-btn-disabled-border-color: #FC4102 !important;
 }
 
+.numberBtn a{
+    text-decoration: none;
+    color: #fff;
+
+}
+
 .telephone {
     margin-right: 7px;
 }
@@ -110,9 +116,6 @@
     --bs-btn-disabled-border-color: #f8f9fa;
 }
 
-.ourProperties {
-    margin-top: 100px;
-}
 
 .mainHeading h2 {
     font-size: 28px;
@@ -294,7 +297,7 @@
 
     .bannerSection {
         top: 160px;
-        left: 30px;
+        left: 20px;
     }
 
     .mainHeading ul {
@@ -317,14 +320,15 @@
         line-height: 50px;
     }
     .numberBtn {
-        width: 130px;
+        width: 140px;
         padding: 6px;
         font-size: 13px;
         text-decoration: none;
+        margin-right: 10px;
     }
 
     .visitBtn{
-        width: 130px;
+        width: 140px;
         padding: 6px;
         font-size: 13px;
     }

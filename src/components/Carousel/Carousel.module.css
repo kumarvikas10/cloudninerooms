@@ -1,12 +1,14 @@
 
 
 .CarouselBox {
-    width: 433.33px;
+    width: 420.33px;
     border-radius: 20px;
     background: #FFF;
     box-shadow: 0px 0px 4px 0px rgba(174, 174, 174, 0.15);
-    margin-right: 20px !important;
     transition: 0.3s;
+}
+.CarouselBox:not(:last-child) {
+    margin-right: 20px !important;
 }
 
 .CarouselBox:last-child{
@@ -80,4 +82,16 @@
 	--bs-btn-disabled-bg: transparent;
 	--bs-btn-disabled-border-color: #FC4102 !important;
 	--bs-gradient: none;
+}
+
+.carouselSlider .slick-prev::before{
+    color: #FC4102 !important;
+}
+
+
+.slick-next::before, .slick-prev::before {
+	font-size: 20px;
+	line-height: 1;
+	opacity: .75;
+	color: #FC4102 !important;
 }
