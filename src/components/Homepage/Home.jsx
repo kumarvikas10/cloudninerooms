@@ -22,6 +22,9 @@ import amenitiesPattern from "../../data/Patterns.png";
 import uspPattern from "../../data/pattern-2.png";
 import ImageGallery from "../Image Gallery/MyGallery";
 import ContactForm from "../Contact-form/contactForm";
+import propertyImage from "../../data/property-1.png";
+import carouselStyles from "../Carousel/Carousel.module.css";
+import { FaLocationDot } from "react-icons/fa6";
 
 function Home() {
   return (
@@ -70,9 +73,117 @@ function Home() {
               </h2>
             </div>
           </div>
-          <div className="col-md-12">
+          <div className="col-md-12 mob_hide">
             <div className={styles.CarouselBox}>
               <Carousel />
+            </div>
+          </div>
+        </div>
+        <div className={`desk_hide row ${styles.property_row}`}>
+          <div
+            className={`${carouselStyles.CarouselBox}`}
+            style={{
+              width: "250px",
+              marginLeft: "30px",
+              marginRight: "30px !important",
+              padding: "0",
+            }}
+          >
+            <img
+              src={propertyImage}
+              className={`${carouselStyles.CarouselImage} img-fluid`}
+              alt="property"
+            />
+            <div className={carouselStyles.CarouselText}>
+              <h4>Cloud Nine Rooms Girls PG</h4>
+              <p>
+                <FaLocationDot className={carouselStyles.loction} /> Sector 45,
+                Gurugram
+              </p>
+              <div className={carouselStyles.CarouselBtn}>
+                <button
+                  type="button"
+                  class={`${carouselStyles.exploreBtn} btn btn-primary`}
+                >
+                  Explore Now
+                </button>
+                <button
+                  type="button"
+                  class={`${carouselStyles.visitBtn} btn btn-outline-primary`}
+                >
+                  Book a Visit
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            className={`${carouselStyles.CarouselBox}`}
+            style={{
+              width: "250px",
+              marginRight: "30px !important",
+              padding: "0",
+            }}
+          >
+            <img
+              src={propertyImage}
+              className={`${carouselStyles.CarouselImage} img-fluid`}
+              alt="property"
+            />
+            <div className={carouselStyles.CarouselText}>
+              <h4>Cloud Nine Rooms Girls PG</h4>
+              <p>
+                <FaLocationDot className={carouselStyles.loction} /> Sector 45,
+                Gurugram
+              </p>
+              <div className={carouselStyles.CarouselBtn}>
+                <button
+                  type="button"
+                  class={`${carouselStyles.exploreBtn} btn btn-primary`}
+                >
+                  Explore Now
+                </button>
+                <button
+                  type="button"
+                  class={`${carouselStyles.visitBtn} btn btn-outline-primary`}
+                >
+                  Book a Visit
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            className={`${carouselStyles.CarouselBox}`}
+            style={{
+              width: "250px",
+              marginRight: "30px !important",
+              padding: "0",
+            }}
+          >
+            <img
+              src={propertyImage}
+              className={`${carouselStyles.CarouselImage} img-fluid`}
+              alt="property"
+            />
+            <div className={carouselStyles.CarouselText}>
+              <h4>Cloud Nine Rooms Girls PG</h4>
+              <p>
+                <FaLocationDot className={carouselStyles.loction} /> Sector 45,
+                Gurugram
+              </p>
+              <div className={carouselStyles.CarouselBtn}>
+                <button
+                  type="button"
+                  class={`${carouselStyles.exploreBtn} btn btn-primary`}
+                >
+                  Explore Now
+                </button>
+                <button
+                  type="button"
+                  class={`${carouselStyles.visitBtn} btn btn-outline-primary`}
+                >
+                  Book a Visit
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -191,7 +302,7 @@ function Home() {
               </div>
             </div>
           </div>
-          <div className="row">
+          <div className="row mob_hide">
             <div className={styles.amenitiesContainer}>
               <div className={styles.amenitiesBox}>
                 <img src={loctionImg} alt="location" />
@@ -215,7 +326,7 @@ function Home() {
               </div>
             </div>
           </div>
-          <div className="row">
+          <div className="row mob_hide">
             <div className={styles.amenitiesContainer}>
               <div className={styles.amenitiesBox}>
                 <img src={swimmingImg} alt="location" />
@@ -236,6 +347,88 @@ function Home() {
               <div className={styles.amenitiesBox}>
                 <img src={parkingImg} alt="location" />
                 <h4>Parking</h4>
+              </div>
+            </div>
+          </div>
+          <div className={`desk_hide ${styles.mob_amenities}`}>
+            <div className={styles.amenity_box}>
+              <div>
+                <img src={loctionImg} alt="location" />
+              </div>
+              <div>
+                <p className="mb-0 ms-2">Premium Location</p>
+              </div>
+            </div>
+            <div className={styles.amenity_box}>
+              <div>
+                <img src={leaseImg} alt="lease" />
+              </div>
+              <div>
+                <p className="mb-0 ms-2">Flexible Lease</p>
+              </div>
+            </div>
+            <div className={styles.amenity_box}>
+              <div>
+                <img src={cleaningImg} alt="Daily Cleaning" />
+              </div>
+              <div>
+                <p className="mb-0 ms-2">Daily Cleaning</p>
+              </div>
+            </div>
+            <div className={styles.amenity_box}>
+              <div>
+                <img src={LaundryImg} alt="Laundry" />
+              </div>
+              <div>
+                <p className="mb-0 ms-2">Laundry</p>
+              </div>
+            </div>
+            <div className={styles.amenity_box}>
+              <div>
+                <img src={MaintenanceImg} alt="Maintenance" />
+              </div>
+              <div>
+                <p className="mb-0 ms-2">Maintenance</p>
+              </div>
+            </div>
+            <div className={styles.amenity_box}>
+              <div>
+                <img src={swimmingImg} alt="Swimming Pool" />
+              </div>
+              <div>
+                <p className="mb-0 ms-2">Swimming Pool</p>
+              </div>
+            </div>
+            <div className={styles.amenity_box}>
+              <div>
+                <img src={wifiImg} alt="High Speed Wifi" />
+              </div>
+              <div>
+                <p className="mb-0 ms-2">High Speed Wifi</p>
+              </div>
+            </div>
+            <div className={styles.amenity_box}>
+              <div>
+                <img src={supportImg} alt="24/7 Support" />
+              </div>
+              <div>
+                <p className="mb-0 ms-2">24/7 Support</p>
+              </div>
+            </div>
+            <div className={styles.amenity_box}>
+              <div>
+                <img src={communityImg} alt="Great Community" />
+              </div>
+              <div>
+                <p className="mb-0 ms-2">Great Community</p>
+              </div>
+            </div>
+            <div className={styles.amenity_box}>
+              <div>
+                <img src={parkingImg} alt="Parking" />
+              </div>
+              <div>
+                <p className="mb-0 ms-2">Parking</p>
               </div>
             </div>
           </div>
@@ -276,16 +469,16 @@ function Home() {
             </div>
           </div>
           <div className="row">
-              <div className={styles.gallery}>
-                <ImageGallery />
-              </div>
+            <div className={styles.gallery}>
+              <ImageGallery />
             </div>
+          </div>
         </div>
       </section>
-      <section className={styles.contactForm}>
+      <section className={styles.contactFormSection}>
         <div className="container">
-          <div className="row">
-            <ContactForm  />
+          <div className={`${styles.contactForm} row`}>
+            <ContactForm />
           </div>
         </div>
       </section>

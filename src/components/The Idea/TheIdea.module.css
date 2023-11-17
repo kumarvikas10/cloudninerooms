@@ -43,6 +43,9 @@
 }
 
 @media screen and (max-width: 768px) {
+  .idea_bg {
+    height: 386px;
+  }
   .heading {
     font-size: 18px;
     line-height: 28px;

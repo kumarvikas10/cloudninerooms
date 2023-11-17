@@ -18,6 +18,9 @@ import wifiImg from "../../data/Icons-data/High Speed Wifi.png";
 import supportImg from "../../data/Icons-data/247 Support.png";
 import communityImg from "../../data/Icons-data/Great Community.png";
 import parkingImg from "../../data/Icons-data/Parking.png";
+import homepageStyles  from '../Homepage/Home.module.css';
+import ImageGallery from "../Image Gallery/MyGallery";
+import ContactForm from "../Contact-form/contactForm";
 
 function Sector45() {
   return (
@@ -173,7 +176,8 @@ function Sector45() {
             <div className="col-md-12 text-center">
               <div className={css.mainHeading}>
                 <h2>
-                  Every Cloud <span>Nine Rooms</span> comes <br /> with{" "}
+                  Every Cloud <span>Nine Rooms</span> comes{" "}
+                  <br className="mob_hide" /> with{" "}
                   <span>Premium Amenities</span>
                 </h2>
               </div>
@@ -237,7 +241,7 @@ function Sector45() {
               </div>
             </div>
           </div>
-          <div className="row">
+          <div className="row mob_hide">
             <div className={css.amenitiesContainer}>
               <div className={css.amenitiesBox}>
                 <img src={loctionImg} alt="location" />
@@ -261,7 +265,7 @@ function Sector45() {
               </div>
             </div>
           </div>
-          <div className="row">
+          <div className="row mob_hide">
             <div className={css.amenitiesContainer}>
               <div className={css.amenitiesBox}>
                 <img src={swimmingImg} alt="location" />
@@ -284,6 +288,116 @@ function Sector45() {
                 <h4>Parking</h4>
               </div>
             </div>
+          </div>
+          <div className={`desk_hide ${styles.mob_amenities}`}>
+            <div className={styles.amenity_box}>
+              <div>
+                <img src={loctionImg} alt="location" />
+              </div>
+              <div>
+                <p className="mb-0 ms-2">Premium Location</p>
+              </div>
+            </div>
+            <div className={styles.amenity_box}>
+              <div>
+                <img src={leaseImg} alt="lease" />
+              </div>
+              <div>
+                <p className="mb-0 ms-2">Flexible Lease</p>
+              </div>
+            </div>
+            <div className={styles.amenity_box}>
+              <div>
+                <img src={cleaningImg} alt="Daily Cleaning" />
+              </div>
+              <div>
+                <p className="mb-0 ms-2">Daily Cleaning</p>
+              </div>
+            </div>
+            <div className={styles.amenity_box}>
+              <div>
+                <img src={LaundryImg} alt="Laundry" />
+              </div>
+              <div>
+                <p className="mb-0 ms-2">Laundry</p>
+              </div>
+            </div>
+            <div className={styles.amenity_box}>
+              <div>
+                <img src={MaintenanceImg} alt="Maintenance" />
+              </div>
+              <div>
+                <p className="mb-0 ms-2">Maintenance</p>
+              </div>
+            </div>
+            <div className={styles.amenity_box}>
+              <div>
+                <img src={swimmingImg} alt="Swimming Pool" />
+              </div>
+              <div>
+                <p className="mb-0 ms-2">Swimming Pool</p>
+              </div>
+            </div>
+            <div className={styles.amenity_box}>
+              <div>
+                <img src={wifiImg} alt="High Speed Wifi" />
+              </div>
+              <div>
+                <p className="mb-0 ms-2">High Speed Wifi</p>
+              </div>
+            </div>
+            <div className={styles.amenity_box}>
+              <div>
+                <img src={supportImg} alt="24/7 Support" />
+              </div>
+              <div>
+                <p className="mb-0 ms-2">24/7 Support</p>
+              </div>
+            </div>
+            <div className={styles.amenity_box}>
+              <div>
+                <img src={communityImg} alt="Great Community" />
+              </div>
+              <div>
+                <p className="mb-0 ms-2">Great Community</p>
+              </div>
+            </div>
+            <div className={styles.amenity_box}>
+              <div>
+                <img src={parkingImg} alt="Parking" />
+              </div>
+              <div>
+                <p className="mb-0 ms-2">Parking</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className={homepageStyles.pictureGallery}>
+        <div className="container">
+          <div className="row">
+            <div className={homepageStyles.mainHeading}>
+              <h2>
+                Capturing Coliving's <span>Vibrant</span> Essence
+              </h2>
+              <p className="mob_hide">
+                Explore our visual narrative, showcasing the vibrant heart of
+                our coliving spaces. Experience the essence of community living
+                in every snapshot
+              </p>
+            </div>
+          </div>
+          <div className="row">
+            <div className={homepageStyles.gallery}>
+              <ImageGallery />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className={homepageStyles.contactFormSection}>
+        <div className="container">
+          <div className={`${homepageStyles.contactForm} row`}>
+            <ContactForm />
           </div>
         </div>
       </section>

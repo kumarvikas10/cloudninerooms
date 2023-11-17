@@ -18,7 +18,8 @@
     "react-simply-carousel": "^9.0.5",
     "react-slick": "^0.29.0",
     "slick-carousel": "^1.8.1",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "yup": "^1.3.2"
   },
   "scripts": {
     "start": "react-scripts start",
