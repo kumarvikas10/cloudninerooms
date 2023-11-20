@@ -27,36 +27,36 @@ body {
 }
 .commonBtn {
   width: 190px;
-    padding: 10px;
-    border-radius: 10px;
-    margin-right: 20px;
-    margin-top: 10px;
-    --bs-btn-color: #fff;
-    --bs-btn-bg: #FC4102 !important;
-    --bs-btn-border-color: #FC4102 !important;
-    --bs-btn-hover-color: #fff;
-    --bs-btn-hover-bg: #FC4102 !important;
-    --bs-btn-hover-border-color: #FC4102 !important;
-    --bs-btn-focus-shadow-rgb: 49, 132, 253;
-    --bs-btn-active-color: #fff;
-    --bs-btn-active-bg: #FC4102 !important;
-    --bs-btn-active-border-color: #FC4102 !important;
-    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-    --bs-btn-disabled-color: #fff;
-    --bs-btn-disabled-bg: #FC4102 !important;
-    --bs-btn-disabled-border-color: #FC4102 !important;
+  padding: 10px;
+  border-radius: 10px;
+  margin-right: 20px;
+  margin-top: 10px;
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #fc4102 !important;
+  --bs-btn-border-color: #fc4102 !important;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #fc4102 !important;
+  --bs-btn-hover-border-color: #fc4102 !important;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #fc4102 !important;
+  --bs-btn-active-border-color: #fc4102 !important;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #fc4102 !important;
+  --bs-btn-disabled-border-color: #fc4102 !important;
 }
 .desk_hide {
   display: none;
 }
 
-.testimonialSlider  .slick-slide {
-	padding: 10px;
+.testimonialSlider .slick-slide {
+  padding: 10px;
 }
 
-.testimonialSlider .slick-slider .slick-dots li button::before{
-	content: "\f111";
-	font-family: "FontAwesome";
+.testimonialSlider .slick-slider .slick-dots li button::before {
+  content: "\f111";
+  font-family: "FontAwesome";
 }
 
 .testimonialSlider .slick-dots li.slick-active button::before {
@@ -73,23 +73,105 @@ body {
 	opacity: .75;
 	color: #FC4102 !important;
 }
+.carouselSlider .slick-next::before,
+.slick-prev::before {
+  font-size: 20px;
+  line-height: 1;
+  opacity: 0.75;
+  color: #fc4102 !important;
+}
 
-.carouselSlider  .slick-slide {
-	padding: 10px;
+.carouselSlider .slick-slide {
+  padding: 10px;
 }
 
 .slick-next::before {
-	content: "\f054";
-	font-family: "FontAwesome";
+  content: "\f054";
+  font-family: "FontAwesome";
 }
 
 .slick-prev::before {
-	content: "\f053";
-	font-family: "FontAwesome";
+  content: "\f053";
+  font-family: "FontAwesome";
 }
 
 .footer_logo {
   width: 130px;
+}
+.modal-backdrop.show {
+  z-index: -1;
+}
+.modal {
+  background-color: #00000082;
+}
+.modal-content {
+  background: #ffede7;
+  border-radius: 20px;
+}
+.close_btn {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  position: absolute;
+  right: -14px;
+  top: -13px;
+}
+.close_btn .btn-close {
+  margin: 0 !important;
+  width: auto !important;
+  height: auto !important;
+  padding: 6px !important;
+}
+.mt40 {
+  margin-top: 30px;
+}
+.modal-header {
+  border-bottom: none !important;
+  padding: 11px !important;
+}
+.modal-dialog {
+  width: 404px !important;
+}
+.modal-body {
+  padding: 23px 23px 31px !important;
+}
+.modal_contact_details {
+  margin-top: 20px;
+}
+.modal_contact_details a {
+  display: block;
+  color: #222;
+  text-decoration: none;
+  font-size: 13px;
+}
+.btn-close:focus {
+  box-shadow: none !important;
+}
+.modal_title {
+  font-size: 22px;
+  font-weight: 500;
+}
+.modal_input input {
+  padding: 8px !important;
+  font-size: 13px;
+}
+.modal_btn button {
+  padding: 7px !important;
+  font-size: 13px;
+}
+.modal_input select {
+  padding: 9px 9px 9px 4px !important;
+  font-size: 13px;
+}
+.error_message {
+  color: red;
+  font-size: 11px;
+  margin-left: 3px;
+  position: absolute;
 }
 
 .testimonialSlider .slick-slider .slick-dots li{
@@ -97,6 +179,12 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  .modal-dialog {
+    width: 94% !important;
+  }
+  .modal_item {
+    margin-top: 0;
+  }
   .mob_hide {
     display: none;
   }
@@ -126,6 +214,4 @@ body {
     font-size: 18px;
     line-height: 28px;
   }
-
-  
 }

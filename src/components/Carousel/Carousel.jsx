@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import {FaLocationDot} from 'react-icons/fa6'
 import styles from './Carousel.module.css';
 import propertyImage from '../../data/property-1.png';
+import ContactFormModal from "../contact-form-modal/ContactFormModal";
 
 function Carousel() {
   var settings = {
@@ -34,12 +35,13 @@ function Carousel() {
               >
                 Explore Now
               </button>
-              <button
+              {/* <button
                 type="button"
                 class={`${styles.visitBtn} btn btn-outline-primary`}
               >
                 Book a Visit
-              </button>
+              </button> */}
+              <ContactFormModal />
             </div>
           </div>
         </div>

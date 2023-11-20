@@ -28,6 +28,7 @@ import ContactForm from "../Contact-form/contactForm";
 import propertyImage from "../../data/property-1.png";
 import carouselStyles from "../Carousel/Carousel.module.css";
 import { FaLocationDot } from "react-icons/fa6";
+import ContactFormModal from "../contact-form-modal/ContactFormModal";
 
 function Home() {
   return (
@@ -55,12 +56,13 @@ function Home() {
                     <BsFillTelephoneFill className={styles.telephone} />
                     <a href="tel:9999998992">9999-998-992</a>
                   </button>
-                  <button
+                  {/* <button
                     type="button"
                     className={`${styles.visitBtn} btn btn-light`}
                   >
                     Book a Visit
-                  </button>
+                  </button> */}
+                  <ContactFormModal />
                 </div>
               </div>
             </div>
