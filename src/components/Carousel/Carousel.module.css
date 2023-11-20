@@ -1,9 +1,4 @@
 .CarouselBox {
-    width: 420.33px;
-    border-radius: 20px;
-    background: #FFF;
-    box-shadow: 0px 0px 4px 0px rgba(174, 174, 174, 0.15);
-    transition: 0.3s;
   width: 433.33px;
   border-radius: 20px;
   background: #fff;
@@ -94,12 +89,14 @@
     font-weight: 600 !important;
   }
   .CarouselText {
-    padding: 10px;
+    padding: 10px 10px 20px 10px;
   }
   .CarouselText p {
     font-size: 13px;
     line-height: 16px;
+    margin-bottom: 12px !important;
   }
+
   .exploreBtn {
     font-size: 13px;
   }
@@ -108,17 +105,6 @@
   }
   .CarouselBox {
     box-shadow: 0px 0px 4px 0px rgba(174, 174, 174, 0.95);
+    width:300px !important;
   }
-}
-
-.carouselSlider .slick-prev::before{
-    color: #FC4102 !important;
-}
-
-
-.slick-next::before, .slick-prev::before {
-	font-size: 20px;
-	line-height: 1;
-	opacity: .75;
-	color: #FC4102 !important;
 }

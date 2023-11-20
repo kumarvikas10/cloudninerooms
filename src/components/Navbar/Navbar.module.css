@@ -27,6 +27,9 @@
     border-right: 5px solid #FC4102;
 }
 
+.navbar .navbarRight p{
+    margin-bottom: 0px ;
+}
 
 
 .navbarRight {
