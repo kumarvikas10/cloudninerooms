@@ -59,6 +59,14 @@ body {
 	font-family: "FontAwesome";
 }
 
+.testimonialSlider .slick-dots li.slick-active button::before {
+	color: #fc4102;
+}
+
+.testimonialSlider .slick-dots li button::before {
+	color: #fc4102;
+}
+
 .carouselSlider .slick-next::before, .slick-prev::before {
 	font-size: 20px;
 	line-height: 1;
@@ -82,6 +90,10 @@ body {
 
 .footer_logo {
   width: 130px;
+}
+
+.testimonialSlider .slick-slider .slick-dots li{
+  margin: 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -114,4 +126,6 @@ body {
     font-size: 18px;
     line-height: 28px;
   }
+
+  
 }

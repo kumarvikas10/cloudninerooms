@@ -413,8 +413,71 @@
         height: 160px;
     }
 
-    .threeMobImage img {
-        width: 100%;
+    .threeMobPoints {
+        margin-top: 40px;
+    }
+
+    .PointOneConvenience {
+        height: 170px;
+        background-color: #FFEDE7;
+        border-radius: 10px;
+        position: relative;
+        margin: 10px 0px;
+    }
+
+    .convenienceImg {
+        position: absolute;
+        left: -3px;
+        top: -20px;
+    }
+
+    .convenienceImg img {
+        height: 190px;
+    }
+
+    .PointOneText {
+        display: flex;
+        align-items: center;
+    }
+
+    .PointOneText h3 {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .PointTwoComfort {
+        height: 170px;
+        background-color: #F0FFF8;
+        border-radius: 10px;
+        position: relative;
+        margin: 10px 0px;
+        margin-top: 40px;
+    }
+
+    .PointThreeBudget {
+        height: 170px;
+        background-color: #F2F7FF;
+        border-radius: 10px;
+        position: relative;
+        margin: 10px 0px;
+        margin-top: 40px;
+    }
+
+    .comfortImg img {
+        height: 140px;
+    }
+
+    .comfortDiv {
+        display: flex;
+        align-items: center;
+    }
+
+    .BudgetImg img {
+        height: 140px;
+    }
+
+    .threeMobPoints p {
+        font-size: 12px;
     }
 
     .threePoints .mainHeading h2 {
@@ -428,11 +491,47 @@
         top: -30px;
     }
 
+    .amenitiesMobDiv {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        margin-top: 30px;
+    }
+
+    .amenitiesMobDiv::-webkit-scrollbar {
+        display: none;
+      }
+
+    .amenitiesMobItem {
+        width: 65% !important;
+    }
+
+    .amenitiesImg img {
+        height: 250px;
+    }
+
+    .amenitiesText h4 {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .amenitiesPattern{
+        top:-20px
+    }
+
+    .amenitiesPattern img{
+        height: 130px;
+    }
+
     .testimonials {
         margin-top: 40px;
         padding-top: 40px;
         padding-bottom: 40px;
         background-position: initial;
+    }
+
+    .testimonials .mainHeading h2{
+        margin-bottom: 0px !important;
     }
 
     .testimonialsSvg {
@@ -444,12 +543,16 @@
         height: 130px;
     }
 
-    .contactFormSection{
+    .contactFormSection {
         margin-top: 40px;
         background-position: initial;
     }
 
-    .testimonials .mainHeading h2{
+    .testimonials .mainHeading h2 {
         margin-bottom: 20px;
+    }
+
+    .pictureGallery .gallery {
+        margin-top: 20px;
     }
 }

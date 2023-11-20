@@ -8,7 +8,7 @@ function Testimonials() {
   var settings = {
     dots: true,
     arrows: false,
-    infinite: true,
+    infinite: false,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -52,7 +52,9 @@ function Testimonials() {
             </p>
           </div>
           <div className={styles.testimonialName}>
-            <img src={photoImg} alt="person-img" />
+            <div className={styles.testimonialImg}>
+              <img src={photoImg} alt="person-img" />
+            </div>
             <h4>Kathrin Beckinsale</h4>
           </div>
         </div>
@@ -71,7 +73,9 @@ function Testimonials() {
             </p>
           </div>
           <div className={styles.testimonialName}>
-            <img src={photoImg} alt="person-img" />
+            <div className={styles.testimonialImg}>
+              <img src={photoImg} alt="person-img" />
+            </div>
             <h4>Kathrin Beckinsale</h4>
           </div>
         </div>
@@ -90,7 +94,9 @@ function Testimonials() {
             </p>
           </div>
           <div className={styles.testimonialName}>
-            <img src={photoImg} alt="person-img" />
+            <div className={styles.testimonialImg}>
+              <img src={photoImg} alt="person-img" />
+            </div>
             <h4>Kathrin Beckinsale</h4>
           </div>
         </div>
