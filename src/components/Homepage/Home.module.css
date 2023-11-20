@@ -83,10 +83,9 @@
   --bs-btn-disabled-border-color: #fc4102 !important;
 }
 
-.numberBtn a{
-    text-decoration: none;
-    color: #fff;
-
+.numberBtn a {
+  text-decoration: none;
+  color: #fff;
 }
 
 .telephone {
@@ -301,6 +300,7 @@
     overflow-x: scroll;
     padding-bottom: 2px;
     margin-top: 20px;
+    padding-right: 30px;
   }
   .property_row::-webkit-scrollbar {
     display: none;
@@ -312,10 +312,10 @@
     left: 20px;
   }
 
-    .bannerSection {
-        top: 160px;
-        left: 20px;
-    }
+  .bannerSection {
+    top: 160px;
+    left: 20px;
+  }
   .mainHeading ul {
     font-size: 14px;
   }
@@ -342,53 +342,72 @@
     text-decoration: none;
   }
 
-    .mainHeading h1{
-        font-size: 30px;
-        line-height: 50px;
-    }
-    .numberBtn {
-        width: 140px;
-        padding: 6px;
-        font-size: 13px;
-        text-decoration: none;
-        margin-right: 10px;
-    }
+  .mainHeading h1 {
+    font-size: 30px;
+    line-height: 50px;
+  }
+  .numberBtn {
+    width: 140px;
+    padding: 6px;
+    font-size: 13px;
+    text-decoration: none;
+    margin-right: 10px;
+  }
 
-    .visitBtn {
-        width: 130px;
-        padding: 6px;
-        font-size: 13px;
-      }
-      .mainHeading h2 {
-        font-size: 18px;
-        line-height: 28px;
-        margin-bottom: 0;
-      }
-      .amenitiesSection {
-        margin-top: 40px;
-      }
-      .pictureGallery {
-        margin-top: 40px;
-      }
-      .contactFormSection {
-        padding: 0 0 40px;
-      }
-      .mob_amenities {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        flex-wrap: wrap;
-      }
-      .amenity_box {
-        width: 39%;
-        display: flex;
-        align-items: center;
-        margin-top: 10px;
-      }
-      .amenity_box div img {
-        width: 20px;
-      }
-      .ourProperties {
-        margin-top: 40px;
-      } 
+  .visitBtn {
+    width: 130px;
+    padding: 6px;
+    font-size: 13px;
+  }
+  .mainHeading h2 {
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 0;
+  }
+  .amenitiesSection {
+    margin-top: 40px;
+  }
+  .pictureGallery {
+    margin-top: 40px;
+  }
+  .contactFormSection {
+    padding: 0 0 40px;
+  }
+  .mob_amenities {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .amenity_box {
+    width: 39%;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  .amenity_box div img {
+    width: 20px;
+  }
+  .ourProperties {
+    margin-top: 40px;
+  }
+  .threePoints {
+    margin-top: 40px;
+  }
+  .threePoints .mainHeading h2 {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 600;
+  }
+  .home_amenities_row {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+  }
+  .home_amenities_row .col-md-3 {
+    width: 280px !important;
+  }
+  .amenitiesImg img {
+    height: auto;
+  }
 }

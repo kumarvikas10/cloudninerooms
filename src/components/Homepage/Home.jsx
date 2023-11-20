@@ -50,9 +50,7 @@ function Home() {
                     className={`${styles.numberBtn} btn btn-primary`}
                   >
                     <BsFillTelephoneFill className={styles.telephone} />
-                    <a href="tel:9999998992">
-                      9999-998-992
-                    </a>
+                    <a href="tel:9999998992">9999-998-992</a>
                   </button>
                   <button
                     type="button"
@@ -68,21 +66,15 @@ function Home() {
       </section>
       <section className="mt100">
         <div className="container">
-        <div className="row">
-          <div className="col-md-12 text-center">
-            <div className={styles.mainHeading}>
-              <h2>
-                Our <span>Properties</span>
-              </h2>
+          <div className="row">
+            <div className="col-md-12 text-center">
+              <div className={styles.mainHeading}>
+                <h2>
+                  Our <span>Properties</span>
+                </h2>
+              </div>
             </div>
           </div>
-          {/* <div className="col-md-12">
-          <Carousel />
-            <div className={styles.CarouselBox}>
-              
-            </div>
-          </div> */}
-        </div>
           <div className="col-md-12 mob_hide">
             <div className={styles.CarouselBox}>
               <Carousel />
@@ -210,7 +202,7 @@ function Home() {
                 </h2>
               </div>
             </div>
-            <div className="col-lg-5 col-md-5">
+            <div className="col-lg-5 col-md-5 mob_hide">
               <p>
                 Our commitment to convenience, Comfort and Budget Friendly sets
                 us apart – making us the preferred choice for those seeking a
@@ -242,7 +234,7 @@ function Home() {
               </div>
             </div>
           </div>
-          <div className="row">
+          <div className={`row ${styles.home_amenities_row}`}>
             <div className="col-md-3">
               <div className={styles.amenitiesItem}>
                 <div className={styles.amenitiesImg}>
