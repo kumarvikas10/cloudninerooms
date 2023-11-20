@@ -2,6 +2,7 @@ import styles from "./Home.module.css";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import Carousel from "../Carousel/Carousel";
 import threePointsImage from "../../data/Three ways-2.png";
+import threePointsMobImage from '../../data/three-mobile-points.png'
 import privateBedroomImg from "../../data/private-bedrooms.png";
 import kitchenImg from "../../data/high-end-kitchen.png";
 import livingRoomImg from "../../data/Spacious-living-room.png";
@@ -25,6 +26,7 @@ import ContactForm from "../Contact-form/contactForm";
 import propertyImage from "../../data/property-1.png";
 import carouselStyles from "../Carousel/Carousel.module.css";
 import { FaLocationDot } from "react-icons/fa6";
+import ContactFormModal from "../contact-form-modal/ContactFormModal";
 
 function Home() {
   return (
@@ -52,12 +54,13 @@ function Home() {
                     <BsFillTelephoneFill className={styles.telephone} />
                     <a href="tel:9999998992">9999-998-992</a>
                   </button>
-                  <button
+                  {/* <button
                     type="button"
                     className={`${styles.visitBtn} btn btn-light`}
                   >
                     Book a Visit
-                  </button>
+                  </button> */}
+                  <ContactFormModal />
                 </div>
               </div>
             </div>
@@ -190,14 +193,14 @@ function Home() {
           </div>
         </div>
       </section>
-      <section className={styles.threePoints}>
+      <section className={`${styles.threePoints} mt-100`}>
         <div className="container">
           <div className="row">
             <div className="col-lg-9 col-md-9">
               <div className={styles.mainHeading}>
                 <h2>
                   Are you a working professional in <span>Gurugram</span>{" "}
-                  seeking a<br />
+                  seeking a <br className="mob_hide" />
                   secure and safe <span>Coliving</span> solution
                 </h2>
               </div>
@@ -209,9 +212,17 @@ function Home() {
                 unique living experience in Gurugram
               </p>
             </div>
-            <div className={styles.threeImage}>
+            <div className={`${styles.threeImage} mob_hide `}>
               <img
                 src={threePointsImage}
+                className="img-fluid"
+                alt="three-usp-points"
+              />
+            </div>
+
+            <div className={`${styles.threeMobImage} desk_hide  `}>
+              <img
+                src={threePointsMobImage}
                 className="img-fluid"
                 alt="three-usp-points"
               />
@@ -234,7 +245,7 @@ function Home() {
               </div>
             </div>
           </div>
-          <div className={`row ${styles.home_amenities_row}`}>
+          <div className="row">
             <div className="col-md-3">
               <div className={styles.amenitiesItem}>
                 <div className={styles.amenitiesImg}>

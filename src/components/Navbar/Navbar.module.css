@@ -57,6 +57,10 @@
     --bs-btn-disabled-bg: transparent;
     --bs-btn-disabled-border-color: #FC4102 !important;
     --bs-gradient: none;
+    background: #fff;
+}
+.visitBtn:hover {
+    background: #FC4102 !important;
 }
 
 @media (max-width: 768px) {
