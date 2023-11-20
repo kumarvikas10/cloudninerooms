@@ -1,31 +1,7 @@
 import styles from "./ContactForm.module.css";
 import contactImage from "../../data/contact-Image.jpg";
 import React from "react";
-import { Formik, Form, Field, ErrorMessage } from "formik";
-import * as Yup from "yup";
-
-const digitsOnly = (value) => /^\d+$/.test(value);
-
-const SignupSchema = Yup.object().shape({
-  name: Yup.string()
-    .min(5, "Too Short!")
-    .max(25, "Too Long!")
-    .required("Required"),
-  email: Yup.string().email("Invalid email").required("Required"),
-  phone: Yup.string()
-    .required("please_enter_mobile")
-    .test("Digits only", "digits_only", digitsOnly)
-    .min(10, "please_enter_valid_mobile")
-    .max(15, "Maximum number limits"),
-  typeofspace: Yup.string()
-    .min(5, "Too Short!")
-    .max(25, "Too Long!")
-    .required("Required"),
-  city: Yup.string()
-    .min(5, "Too Short!")
-    .max(25, "Too Long!")
-    .required("Required"),
-});
+import FormFields from "../form-fields/FormFields";
 
 function contactForm() {
   return (
@@ -46,7 +22,7 @@ function contactForm() {
               Write down your query to us for quick solution
             </p>
           </div>
-          <Formik
+          {/* <Formik
             initialValues={{
               name: "",
               email: "",
@@ -160,7 +136,8 @@ function contactForm() {
                 </div>
               </Form>
             )}
-          </Formik>
+          </Formik> */}
+          <FormFields isModal={false} />
           <div className={`${styles.contactDetails} row`}>
             <div className="col-md-12">
               <div className={styles.Details}>

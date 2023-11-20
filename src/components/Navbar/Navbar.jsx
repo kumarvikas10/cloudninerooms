@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom";
 import styles from "./Navbar.module.css";
 import Logo from "../../data/logo.png";
 import React, { useState, useEffect } from "react";
+import ContactFormModal from "../contact-form-modal/ContactFormModal";
 
 function Navbar() {
   const [isFixed, setIsFixed] = useState(false);
@@ -35,7 +36,11 @@ function Navbar() {
                 className="nav-link active nav-item"
                 aria-current="page"
               >
-                <img className={`${styles.logo}`} src={Logo} alt="cloud-nine-logo" />
+                <img
+                  className={`${styles.logo}`}
+                  src={Logo}
+                  alt="cloud-nine-logo"
+                />
               </NavLink>
             </div>
             <button
@@ -98,12 +103,15 @@ function Navbar() {
                   </NavLink>
                 </li>
                 <li class="nav-item">
-                  <button
+                  {/* <button
                     class={`${styles.visitBtn} btn btn-outline-primary`}
-                    type="submit"
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
                   >
                     Book a Visit
-                  </button>
+                  </button> */}
+                  <ContactFormModal />
                 </li>
               </ul>
             </div>

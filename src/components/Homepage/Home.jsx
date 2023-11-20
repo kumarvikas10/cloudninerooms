@@ -26,6 +26,7 @@ import ContactForm from "../Contact-form/contactForm";
 import propertyImage from "../../data/property-1.png";
 import carouselStyles from "../Carousel/Carousel.module.css";
 import { FaLocationDot } from "react-icons/fa6";
+import ContactFormModal from "../contact-form-modal/ContactFormModal";
 
 function Home() {
   return (
@@ -51,16 +52,15 @@ function Home() {
                     className={`${styles.numberBtn} btn btn-primary`}
                   >
                     <BsFillTelephoneFill className={styles.telephone} />
-                    <a href="tel:9999998992">
-                      9999-998-992
-                    </a>
+                    <a href="tel:9999998992">9999-998-992</a>
                   </button>
-                  <button
+                  {/* <button
                     type="button"
                     className={`${styles.visitBtn} btn btn-light`}
                   >
                     Book a Visit
-                  </button>
+                  </button> */}
+                  <ContactFormModal />
                 </div>
               </div>
             </div>
@@ -69,15 +69,15 @@ function Home() {
       </section>
       <section className="mt100">
         <div className="container">
-        <div className="row">
-          <div className="col-md-12 text-center">
-            <div className={styles.mainHeading}>
-              <h2>
-                Our <span>Properties</span>
-              </h2>
+          <div className="row">
+            <div className="col-md-12 text-center">
+              <div className={styles.mainHeading}>
+                <h2>
+                  Our <span>Properties</span>
+                </h2>
+              </div>
             </div>
           </div>
-        </div>
           <div className="col-md-12 mob_hide">
             <div className={styles.CarouselBox}>
               <Carousel />
