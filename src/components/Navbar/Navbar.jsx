@@ -16,7 +16,7 @@ function Navbar() {
       try {
         const response = await axios.get(`/db.json`);
         setPropertiesData(response.data.colivingSpaces);
-        console.log(response.data.colivingSpaces);
+        // console.log(response.data.colivingSpaces);
       } catch (error) {
         console.error("Error fetching data:", error.message);
       }

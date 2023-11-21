@@ -39,7 +39,7 @@ function Sector45() {
       try {
         const response = await axios.get(`/db.json`);
         setPropertiesData(response.data.colivingSpaces);
-        console.log(response.data.colivingSpaces);
+        // console.log(response.data.colivingSpaces);
       } catch (error) {
         console.error("Error fetching data:", error.message);
       }
@@ -54,9 +54,11 @@ function Sector45() {
   });
 
   useEffect(() => {
-    setFilteredProperty(newData);
-  }, [newData]);
-  console.log(filteredProperty);
+    if (newData) {
+      setFilteredProperty(newData);
+    }
+  }, [propertiesData, slug]);
+  // console.log(filteredProperty);
 
   const aboutText = `Welcome to Cloud Nine Rooms Girls PG, your home away from home in the
   heart of Sector 45! We understand that finding a comfortable and
@@ -496,7 +498,7 @@ function Sector45() {
           <div className="container-fluid">
             <div className={`${styles.fixedBottomDiv} row`}>
               <div className="col-6">
-                <div class={styles.numberBtnDiv}>
+                <div className={styles.numberBtnDiv}>
                   <button
                     type="button"
                     className={`${styles.numberBtn} btn btn-primary`}
