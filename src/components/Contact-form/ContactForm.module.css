@@ -85,7 +85,7 @@
 
 .formItem .numberBtn {
   width: 100%;
-  padding: 10px;
+  padding: 7px;
   border-radius: 10px;
   --bs-btn-color: #fff;
   --bs-btn-bg: #fc4102 !important;
@@ -121,16 +121,17 @@
     font-size: 18px;
     line-height: 28px;
     text-align: center;
+    margin-top: 20px;
   }
   .contactFormContainer {
     padding-left: 15px;
   }
   .contactFormDiv {
     border-radius: 20px;
-    padding: 20px;
+    padding: 20px 40px;
   }
   .formDiv:first-child {
-    margin-top: 0px;
+    margin-top: -20px;
   }
   .formItem input, .formItem .selectItem {
     -webkit-box-shadow: 0px 0px 16px 0px rgba(33, 37, 41, 0.09) !important;
@@ -159,5 +160,6 @@
     font-size: 13px;
     font-weight: 500;
     text-align: center;
+    margin-top: 20px;
   }
 }

@@ -2,7 +2,9 @@ import styles from "./Home.module.css";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import Carousel from "../Carousel/Carousel";
 import threePointsImage from "../../data/Three ways-2.png";
-import threePointsMobImage from '../../data/three-mobile-points.png'
+import ConvenienceImg from "../../data/convenienceImg.png";
+import ComfortImg from "../../data/comfortImg.png";
+import BudgetImg from '../../data/BudgetImg.png'
 import privateBedroomImg from "../../data/private-bedrooms.png";
 import kitchenImg from "../../data/high-end-kitchen.png";
 import livingRoomImg from "../../data/Spacious-living-room.png";
@@ -54,13 +56,7 @@ function Home() {
                     <BsFillTelephoneFill className={styles.telephone} />
                     <a href="tel:9999998992">9999-998-992</a>
                   </button>
-                  {/* <button
-                    type="button"
-                    className={`${styles.visitBtn} btn btn-light`}
-                  >
-                    Book a Visit
-                  </button> */}
-                  <ContactFormModal />
+                  <ContactFormModal modalId={"exampleModal1"} />
                 </div>
               </div>
             </div>
@@ -108,13 +104,43 @@ function Home() {
               <div className={carouselStyles.CarouselBtn}>
                 <button
                   type="button"
-                  class={`${carouselStyles.exploreBtn} btn btn-primary`}
+                  className={`${carouselStyles.exploreBtn} btn btn-primary`}
+                >
+                  Explore Now
+                </button>
+                <ContactFormModal modalId={"exampleModal1"} />
+              </div>
+            </div>
+          </div>
+          <div
+            className={`${carouselStyles.CarouselBox}`}
+            style={{
+              width: "250px",
+              marginRight: "30px !important",
+              padding: "0",
+            }}
+          >
+            <img
+              src={propertyImage}
+              className={`${carouselStyles.CarouselImage} img-fluid`}
+              alt="property"
+            />
+            <div className={carouselStyles.CarouselText}>
+              <h4>Cloud Nine Rooms Girls PG</h4>
+              <p>
+                <FaLocationDot className={carouselStyles.loction} /> Sector 45,
+                Gurugram
+              </p>
+              <div className={carouselStyles.CarouselBtn}>
+                <button
+                  type="button"
+                  className={`${carouselStyles.exploreBtn} btn btn-primary`}
                 >
                   Explore Now
                 </button>
                 <button
                   type="button"
-                  class={`${carouselStyles.visitBtn} btn btn-outline-primary`}
+                  className={`${carouselStyles.visitBtn} btn btn-outline-primary`}
                 >
                   Book a Visit
                 </button>
@@ -143,48 +169,13 @@ function Home() {
               <div className={carouselStyles.CarouselBtn}>
                 <button
                   type="button"
-                  class={`${carouselStyles.exploreBtn} btn btn-primary`}
+                  className={`${carouselStyles.exploreBtn} btn btn-primary`}
                 >
                   Explore Now
                 </button>
                 <button
                   type="button"
-                  class={`${carouselStyles.visitBtn} btn btn-outline-primary`}
-                >
-                  Book a Visit
-                </button>
-              </div>
-            </div>
-          </div>
-          <div
-            className={`${carouselStyles.CarouselBox}`}
-            style={{
-              width: "250px",
-              marginRight: "30px !important",
-              padding: "0",
-            }}
-          >
-            <img
-              src={propertyImage}
-              className={`${carouselStyles.CarouselImage} img-fluid`}
-              alt="property"
-            />
-            <div className={carouselStyles.CarouselText}>
-              <h4>Cloud Nine Rooms Girls PG</h4>
-              <p>
-                <FaLocationDot className={carouselStyles.loction} /> Sector 45,
-                Gurugram
-              </p>
-              <div className={carouselStyles.CarouselBtn}>
-                <button
-                  type="button"
-                  class={`${carouselStyles.exploreBtn} btn btn-primary`}
-                >
-                  Explore Now
-                </button>
-                <button
-                  type="button"
-                  class={`${carouselStyles.visitBtn} btn btn-outline-primary`}
+                  className={`${carouselStyles.visitBtn} btn btn-outline-primary`}
                 >
                   Book a Visit
                 </button>
@@ -219,13 +210,56 @@ function Home() {
                 alt="three-usp-points"
               />
             </div>
-
-            <div className={`${styles.threeMobImage} desk_hide  `}>
-              <img
-                src={threePointsMobImage}
-                className="img-fluid"
-                alt="three-usp-points"
-              />
+          </div>
+          <div className={`${styles.threeMobPoints} desk_hide `}>
+            <div className={`${styles.PointOneConvenience} row`}>
+              <div className="col-6">
+                <div className={styles.convenienceImg}>
+                  <img src={ConvenienceImg} alt="convenience" />
+                </div>
+              </div>
+              <div className={`${styles.PointOneText} col-6`}>
+                <div>
+                  <h3>Convenience</h3>
+                  <p>
+                    Experience the ultimate convenience in coliving with our
+                    thoughtfully designed spaces and hassle-free amenities
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className={`${styles.PointTwoComfort} row`}>
+              <div className={`${styles.PointOneText} col-6`}>
+                <div>
+                  <h3>Comfort</h3>
+                  <p>
+                    Experience the pinnacle of comfort in our coliving spaces,
+                    where convenience meets community.
+                  </p>
+                </div>
+              </div>
+              <div className={`${styles.comfortDiv} col-6`}>
+                <div className={styles.comfortImg}>
+                  <img src={ComfortImg} alt="Comfort" />
+                </div>
+              </div>
+            </div>
+            <div className={`${styles.PointThreeBudget} row`}>
+              <div className={`${styles.comfortDiv} col-6`}>
+                <div className={styles.BudgetImg}>
+                  <img src={BudgetImg} alt="Comfort" />
+                </div>
+              </div>
+              <div className={`${styles.PointOneText} col-6`}>
+                <div>
+                  <h3>Budget Friendly</h3>
+                  <p>
+                    Affordable coliving without compromising on quality - your
+                    budget-friendly solution for a comfortable home away from
+                    home
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -245,8 +279,8 @@ function Home() {
               </div>
             </div>
           </div>
-          <div className="row">
-            <div className="col-md-3">
+          <div className={`${styles.amenitiesMobDiv} row`}>
+            <div className={`${styles.amenitiesMobItem} col-md-3`}>
               <div className={styles.amenitiesItem}>
                 <div className={styles.amenitiesImg}>
                   <img
@@ -264,7 +298,7 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div className="col-md-3">
+            <div className={`${styles.amenitiesMobItem} col-md-3`}>
               <div className={styles.amenitiesItem}>
                 <div className={styles.amenitiesImg}>
                   <img src={kitchenImg} className="img-fluid" alt="kitchen" />
@@ -278,7 +312,7 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div className="col-md-3">
+            <div className={`${styles.amenitiesMobItem} col-md-3`}>
               <div className={styles.amenitiesItem}>
                 <div className={styles.amenitiesImg}>
                   <img
@@ -296,7 +330,7 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div className="col-md-3">
+            <div className={`${styles.amenitiesMobItem} col-md-3`}>
               <div className={styles.amenitiesItem}>
                 <div className={styles.amenitiesImg}>
                   <img
@@ -363,88 +397,6 @@ function Home() {
               </div>
             </div>
           </div>
-          <div className={`desk_hide ${styles.mob_amenities}`}>
-            <div className={styles.amenity_box}>
-              <div>
-                <img src={loctionImg} alt="location" />
-              </div>
-              <div>
-                <p className="mb-0 ms-2">Premium Location</p>
-              </div>
-            </div>
-            <div className={styles.amenity_box}>
-              <div>
-                <img src={leaseImg} alt="lease" />
-              </div>
-              <div>
-                <p className="mb-0 ms-2">Flexible Lease</p>
-              </div>
-            </div>
-            <div className={styles.amenity_box}>
-              <div>
-                <img src={cleaningImg} alt="Daily Cleaning" />
-              </div>
-              <div>
-                <p className="mb-0 ms-2">Daily Cleaning</p>
-              </div>
-            </div>
-            <div className={styles.amenity_box}>
-              <div>
-                <img src={LaundryImg} alt="Laundry" />
-              </div>
-              <div>
-                <p className="mb-0 ms-2">Laundry</p>
-              </div>
-            </div>
-            <div className={styles.amenity_box}>
-              <div>
-                <img src={MaintenanceImg} alt="Maintenance" />
-              </div>
-              <div>
-                <p className="mb-0 ms-2">Maintenance</p>
-              </div>
-            </div>
-            <div className={styles.amenity_box}>
-              <div>
-                <img src={swimmingImg} alt="Swimming Pool" />
-              </div>
-              <div>
-                <p className="mb-0 ms-2">Swimming Pool</p>
-              </div>
-            </div>
-            <div className={styles.amenity_box}>
-              <div>
-                <img src={wifiImg} alt="High Speed Wifi" />
-              </div>
-              <div>
-                <p className="mb-0 ms-2">High Speed Wifi</p>
-              </div>
-            </div>
-            <div className={styles.amenity_box}>
-              <div>
-                <img src={supportImg} alt="24/7 Support" />
-              </div>
-              <div>
-                <p className="mb-0 ms-2">24/7 Support</p>
-              </div>
-            </div>
-            <div className={styles.amenity_box}>
-              <div>
-                <img src={communityImg} alt="Great Community" />
-              </div>
-              <div>
-                <p className="mb-0 ms-2">Great Community</p>
-              </div>
-            </div>
-            <div className={styles.amenity_box}>
-              <div>
-                <img src={parkingImg} alt="Parking" />
-              </div>
-              <div>
-                <p className="mb-0 ms-2">Parking</p>
-              </div>
-            </div>
-          </div>
         </div>
         <div className={styles.amenitiesPattern}>
           <img src={amenitiesPattern} alt="pattern" />
@@ -474,7 +426,7 @@ function Home() {
               <h2>
                 Capturing Coliving's <span>Vibrant</span> Essence
               </h2>
-              <p>
+              <p className="mob_hide">
                 Explore our visual narrative, showcasing the vibrant heart of
                 our coliving spaces. Experience the essence of community living
                 in every snapshot

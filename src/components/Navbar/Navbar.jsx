@@ -45,7 +45,7 @@ function Navbar() {
           ref={navbarRef}
           className={` ${styles.navbar} navbar navbar-expand-lg bg-body-tertiary`}
         >
-          <div class="container">
+          <div className="container">
             <div>
               <NavLink
                 to="/"
@@ -60,7 +60,7 @@ function Navbar() {
               </NavLink>
             </div>
             <button
-              class="navbar-toggler"
+              className="navbar-toggler"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarSupportedContent"
@@ -69,25 +69,25 @@ function Navbar() {
               aria-label="Toggle navigation"
               onClick={() => setMenuOpen(!isMenuOpen)}
             >
-              <span class="navbar-toggler-icon"></span>
+              <span className="navbar-toggler-icon"></span>
             </button>
             <div
               className={`collapse navbar-collapse ${isMenuOpen ? "show" : ""}`}
               id="navbarSupportedContent"
             >
               <ul
-                class={`${styles.navbarRight} navbar-nav me-auto mb-2 mb-lg-0`}
+                className={`${styles.navbarRight} navbar-nav me-auto mb-2 mb-lg-0`}
               >
-                <li class="nav-item dropdown">
+                <li className="nav-item dropdown">
                   <p
-                    class="nav-link dropdown-toggle"
+                    className="nav-link dropdown-toggle"
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
                     Our Properties
                   </p>
-                  <ul class="dropdown-menu">
+                  <ul className="dropdown-menu">
                     <li>
                       <NavLink
                         className="dropdown-item"
@@ -106,7 +106,7 @@ function Navbar() {
                     </li>
                   </ul>
                 </li>
-                <li class="nav-item">
+                <li className="nav-item">
                   <NavLink
                     to="/about-us"
                     className={`${styles.navbarItem} nav-link`}
@@ -114,7 +114,7 @@ function Navbar() {
                     About Us
                   </NavLink>
                 </li>
-                <li class="nav-item">
+                <li className="nav-item">
                   <NavLink
                     to="/the-idea"
                     className={`${styles.navbarItem} nav-link`}
@@ -122,8 +122,8 @@ function Navbar() {
                     The Idea
                   </NavLink>
                 </li>
-                <li class="nav-item mob_hide">
-                  <ContactFormModal />
+                <li className="nav-item mob_hide">
+                  <ContactFormModal modalId={"exampleModal"} />
                 </li>
               </ul>
             </div>

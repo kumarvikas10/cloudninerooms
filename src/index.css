@@ -59,6 +59,20 @@ body {
   font-family: "FontAwesome";
 }
 
+.testimonialSlider .slick-dots li.slick-active button::before {
+	color: #fc4102;
+}
+
+.testimonialSlider .slick-dots li button::before {
+	color: #fc4102;
+}
+
+.carouselSlider .slick-next::before, .slick-prev::before {
+	font-size: 20px;
+	line-height: 1;
+	opacity: .75;
+	color: #FC4102 !important;
+}
 .carouselSlider .slick-next::before,
 .slick-prev::before {
   font-size: 20px;
@@ -89,6 +103,7 @@ body {
 }
 .modal {
   background-color: #00000082;
+  z-index: 9999;
 }
 .modal-content {
   background: #ffede7;
@@ -158,6 +173,10 @@ body {
   font-size: 11px;
   margin-left: 3px;
   position: absolute;
+}
+
+.testimonialSlider .slick-slider .slick-dots li{
+  margin: 0;
 }
 
 @media screen and (max-width: 768px) {

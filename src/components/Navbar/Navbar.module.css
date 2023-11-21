@@ -27,6 +27,9 @@
   border-right: 5px solid #fc4102;
 }
 
+.navbar .navbarRight p {
+  margin-bottom: 0px;
+}
 .navbarRight {
   width: 100%;
   justify-content: end;
@@ -71,6 +74,9 @@
     right: 0px;
     transition: 0.3s;
   }
+  .navbar .navbarRight p {
+    margin-bottom: 8px;
+  }
 
   .navbar {
     background-color: #fff !important;
@@ -89,11 +95,14 @@
     position: absolute;
     background: #fff;
     right: 8px;
-    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.10);
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
   }
   .navbarRight > li {
     padding-left: 10px;
     border-bottom: 1px solid #fc41023d;
+  }
+  .visitBtn {
+    font-size: 13px;
   }
 }
