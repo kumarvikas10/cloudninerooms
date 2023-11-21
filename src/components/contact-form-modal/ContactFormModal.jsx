@@ -6,7 +6,7 @@ function ContactFormModal() {
   return (
     <>
       <button
-        className={`${styles.visitBtn} btn btn-outline-primary bg-white`}
+        className={`${styles.visitBtn} btn btn-outline-primary`}
         type="button"
         data-bs-toggle="modal"
         data-bs-target="#exampleModal"

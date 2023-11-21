@@ -22,121 +22,6 @@ function contactForm() {
               Write down your query to us for quick solution
             </p>
           </div>
-          {/* <Formik
-            initialValues={{
-              name: "",
-              email: "",
-              phone: "",
-              typeofspace: "",
-              city: "",
-            }}
-            validationSchema={SignupSchema}
-            onSubmit={(values, { setSubmitting }) => {
-              setTimeout(() => {
-                alert(JSON.stringify(values, null, 2));
-
-                setSubmitting(false);
-              }, 400);
-            }}
-          >
-            {({ errors, touched, isSubmitting }) => (
-              <Form>
-                <div className={`${styles.formDiv} row`}>
-                  <div className="col-md-6">
-                    <div className={styles.formItem}>
-                      <Field type="text" name="name" placeholder="Name*" />
-                      {errors.name && touched.name ? (
-                        <div
-                          className={styles.requiredItem}
-                        >{`Please Enter your Name`}</div>
-                      ) : null}
-                    </div>
-                  </div>
-                  <div className="col-md-6">
-                    <div className={styles.formItem}>
-                      <Field type="email" name="email" placeholder="Email*" />
-                      {errors.email && touched.email ? (
-                        <div
-                          className={styles.requiredItem}
-                        >{`Please Enter your Email`}</div>
-                      ) : null}
-                    </div>
-                  </div>
-                </div>
-                <div className={`${styles.formDiv} row`}>
-                  <div className="col-md-6">
-                    <div className={styles.formItem}>
-                      <Field type="tel" name="phone" placeholder="Phone*" />
-                      <ErrorMessage name="phone">
-                        {(msg) => (
-                          <div
-                            className={styles.requiredItem}
-                          >{`Please Enter your Phone`}</div>
-                        )}
-                      </ErrorMessage>
-                    </div>
-                  </div>
-                  <div className="col-md-6">
-                    <div className={styles.formItem}>
-                      <Field
-                        as="select"
-                        name="typeofspace"
-                        className={styles.selectItem}
-                      >
-                        <option value="" selected disabled>
-                          Type of Space
-                        </option>
-                        <option value="Private Room">Private Room</option>
-                        <option value="Double Sharing">Double Sharing</option>
-                        <option value="Triple Sharing">Triple Sharing</option>
-                      </Field>
-                      <ErrorMessage name="typeofspace">
-                        {(msg) => (
-                          <div
-                            className={styles.requiredItem}
-                          >{`Please Select your Space`}</div>
-                        )}
-                      </ErrorMessage>
-                    </div>
-                  </div>
-                </div>
-                <div className={`${styles.formDiv} row`}>
-                  <div className="col-md-6">
-                    <div className={styles.formItem}>
-                      <Field
-                        as="select"
-                        name="city"
-                        className={styles.selectItem}
-                      >
-                        <option value="" selected disabled>
-                          Select City
-                        </option>
-                        <option value="Gurugram">Gurugram</option>
-                      </Field>
-                      <ErrorMessage name="city">
-                        {(msg) => (
-                          <div
-                            className={styles.requiredItem}
-                          >{`Please Select your city`}</div>
-                        )}
-                      </ErrorMessage>
-                    </div>
-                  </div>
-                  <div className="col-md-6">
-                    <div className={styles.formItem}>
-                      <button
-                        type="submit"
-                        disabled={isSubmitting}
-                        className={`${styles.numberBtn} btn btn-primary`}
-                      >
-                        Submit
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </Form>
-            )}
-          </Formik> */}
           <FormFields isModal={false} />
           <div className={`${styles.contactDetails} row`}>
             <div className="col-md-12">
@@ -153,7 +38,7 @@ function contactForm() {
         </div>
       </div>
     </>
-  );
+  ); 
 }
 
 export default contactForm;

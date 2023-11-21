@@ -1,83 +1,99 @@
 .navbarMain {
-    position: absolute;
-    left: 120px;
-    top: 60px;
-    height: 80px;
-    z-index: 999;
-    right: 120px;
-    transition: 0.3s;
+  position: absolute;
+  left: 120px;
+  top: 60px;
+  height: 80px;
+  z-index: 999;
+  right: 120px;
+  transition: 0.3s;
 }
 
 .fixed {
-    box-shadow: 0px 5px 90px 0px rgba(2, 24, 93, 0.18);
-    animation: slide-down 0.7s;
-    z-index: 9999;
-    position: fixed;
-    width: 100%;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    transform: none;
+  box-shadow: 0px 5px 90px 0px rgba(2, 24, 93, 0.18);
+  animation: slide-down 0.7s;
+  z-index: 9999;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  transform: none;
 }
 
 .navbar {
-    background-color: #fff !important;
-    border-radius: 4px 0px 0px 4px;
-    padding: 20px;
-    border-right: 5px solid #FC4102;
+  background-color: #fff !important;
+  border-radius: 4px 0px 0px 4px;
+  padding: 20px;
+  border-right: 5px solid #fc4102;
 }
 
-
-
 .navbarRight {
-    width: 100%;
-    justify-content: end;
+  width: 100%;
+  justify-content: end;
 }
 
 .navbarItem {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 .logo {
-    height: 50px;
+  height: 50px;
 }
 
 .visitBtn {
-    --bs-btn-color: #FC4102 !important;
-    --bs-btn-border-color: #FC4102 !important;
-    --bs-btn-hover-color: #fff;
-    --bs-btn-hover-bg: #FC4102 !important;
-    --bs-btn-hover-border-color: #FC4102 !important;
-    --bs-btn-focus-shadow-rgb: 13, 110, 253;
-    --bs-btn-active-color: #fff;
-    --bs-btn-active-bg: #FC4102 !important;
-    --bs-btn-active-border-color: #FC4102 !important;
-    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-    --bs-btn-disabled-color: #FC4102 !important;
-    --bs-btn-disabled-bg: transparent;
-    --bs-btn-disabled-border-color: #FC4102 !important;
-    --bs-gradient: none;
-    background: #fff;
+  --bs-btn-color: #fc4102 !important;
+  --bs-btn-border-color: #fc4102 !important;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #fc4102 !important;
+  --bs-btn-hover-border-color: #fc4102 !important;
+  --bs-btn-focus-shadow-rgb: 13, 110, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #fc4102 !important;
+  --bs-btn-active-border-color: #fc4102 !important;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fc4102 !important;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #fc4102 !important;
+  --bs-gradient: none;
+  background: #fff;
 }
 .visitBtn:hover {
-    background: #FC4102 !important;
+  background: #fc4102 !important;
 }
 
 @media (max-width: 768px) {
-    .navbarMain {
-        position: absolute;
-        left: 0px;
-        top: 0px;
-        height: 80px;
-        z-index: 999;
-        right: 0px;
-        transition: 0.3s;
-    }
+  .navbarMain {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 80px;
+    z-index: 999;
+    right: 0px;
+    transition: 0.3s;
+  }
 
-    .navbar {
-        background-color: #fff !important;
-        border-radius: 0px;
-        padding: 10px 20px;
-        border-right: none;
-    }
+  .navbar {
+    background-color: #fff !important;
+    border-radius: 0px;
+    padding: 10px 20px;
+    border-right: none;
+  }
+  .logo {
+    height: 35px;
+  }
+  .navbar {
+    padding: 10px 0px;
+  }
+  .navbarRight {
+    width: 50%;
+    position: absolute;
+    background: #fff;
+    right: 8px;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.10);
+    border-radius: 10px;
+  }
+  .navbarRight > li {
+    padding-left: 10px;
+    border-bottom: 1px solid #fc41023d;
+  }
 }

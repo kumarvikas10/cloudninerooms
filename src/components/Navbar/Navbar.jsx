@@ -1,11 +1,13 @@
 import { NavLink } from "react-router-dom";
 import styles from "./Navbar.module.css";
 import Logo from "../../data/logo.png";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import ContactFormModal from "../contact-form-modal/ContactFormModal";
 
 function Navbar() {
   const [isFixed, setIsFixed] = useState(false);
+  const [isMenuOpen, setMenuOpen] = useState(false);
+  const navbarRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -23,10 +25,24 @@ function Navbar() {
     };
   }, []);
 
+  const handleDocumentClick = (event) => {
+    if (navbarRef.current && !navbarRef.current.contains(event.target)) {
+      setMenuOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("click", handleDocumentClick);
+    return () => {
+      document.removeEventListener("click", handleDocumentClick);
+    };
+  }, []);
+
   return (
     <>
       <div className={`${styles.navbarMain} ${isFixed ? styles.fixed : ""}`}>
         <nav
+          ref={navbarRef}
           className={` ${styles.navbar} navbar navbar-expand-lg bg-body-tertiary`}
         >
           <div class="container">
@@ -51,10 +67,14 @@ function Navbar() {
               aria-controls="navbarSupportedContent"
               aria-expanded="false"
               aria-label="Toggle navigation"
+              onClick={() => setMenuOpen(!isMenuOpen)}
             >
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div
+              className={`collapse navbar-collapse ${isMenuOpen ? "show" : ""}`}
+              id="navbarSupportedContent"
+            >
               <ul
                 class={`${styles.navbarRight} navbar-nav me-auto mb-2 mb-lg-0`}
               >
@@ -73,7 +93,7 @@ function Navbar() {
                         className="dropdown-item"
                         to="/our-properties/sector-45"
                       >
-                        Sector 45
+                        Cloud Nine Rooms 679
                       </NavLink>
                     </li>
                     <li>
@@ -81,7 +101,7 @@ function Navbar() {
                         className="dropdown-item"
                         to="/our-properties/sector-47"
                       >
-                        Sector 47
+                        Cloud Nine Rooms 56
                       </NavLink>
                     </li>
                   </ul>
@@ -102,15 +122,7 @@ function Navbar() {
                     The Idea
                   </NavLink>
                 </li>
-                <li class="nav-item">
-                  {/* <button
-                    class={`${styles.visitBtn} btn btn-outline-primary`}
-                    type="button"
-                    data-bs-toggle="modal"
-                    data-bs-target="#exampleModal"
-                  >
-                    Book a Visit
-                  </button> */}
+                <li class="nav-item mob_hide">
                   <ContactFormModal />
                 </li>
               </ul>
