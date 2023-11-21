@@ -56,13 +56,7 @@ function Home() {
                     <BsFillTelephoneFill className={styles.telephone} />
                     <a href="tel:9999998992">9999-998-992</a>
                   </button>
-                  {/* <button
-                    type="button"
-                    className={`${styles.visitBtn} btn btn-light`}
-                  >
-                    Book a Visit
-                  </button> */}
-                  <ContactFormModal />
+                  <ContactFormModal modalId={"exampleModal1"} />
                 </div>
               </div>
             </div>
@@ -110,13 +104,43 @@ function Home() {
               <div className={carouselStyles.CarouselBtn}>
                 <button
                   type="button"
-                  class={`${carouselStyles.exploreBtn} btn btn-primary`}
+                  className={`${carouselStyles.exploreBtn} btn btn-primary`}
+                >
+                  Explore Now
+                </button>
+                <ContactFormModal modalId={"exampleModal1"} />
+              </div>
+            </div>
+          </div>
+          <div
+            className={`${carouselStyles.CarouselBox}`}
+            style={{
+              width: "250px",
+              marginRight: "30px !important",
+              padding: "0",
+            }}
+          >
+            <img
+              src={propertyImage}
+              className={`${carouselStyles.CarouselImage} img-fluid`}
+              alt="property"
+            />
+            <div className={carouselStyles.CarouselText}>
+              <h4>Cloud Nine Rooms Girls PG</h4>
+              <p>
+                <FaLocationDot className={carouselStyles.loction} /> Sector 45,
+                Gurugram
+              </p>
+              <div className={carouselStyles.CarouselBtn}>
+                <button
+                  type="button"
+                  className={`${carouselStyles.exploreBtn} btn btn-primary`}
                 >
                   Explore Now
                 </button>
                 <button
                   type="button"
-                  class={`${carouselStyles.visitBtn} btn btn-outline-primary`}
+                  className={`${carouselStyles.visitBtn} btn btn-outline-primary`}
                 >
                   Book a Visit
                 </button>
@@ -145,48 +169,13 @@ function Home() {
               <div className={carouselStyles.CarouselBtn}>
                 <button
                   type="button"
-                  class={`${carouselStyles.exploreBtn} btn btn-primary`}
+                  className={`${carouselStyles.exploreBtn} btn btn-primary`}
                 >
                   Explore Now
                 </button>
                 <button
                   type="button"
-                  class={`${carouselStyles.visitBtn} btn btn-outline-primary`}
-                >
-                  Book a Visit
-                </button>
-              </div>
-            </div>
-          </div>
-          <div
-            className={`${carouselStyles.CarouselBox}`}
-            style={{
-              width: "250px",
-              marginRight: "30px !important",
-              padding: "0",
-            }}
-          >
-            <img
-              src={propertyImage}
-              className={`${carouselStyles.CarouselImage} img-fluid`}
-              alt="property"
-            />
-            <div className={carouselStyles.CarouselText}>
-              <h4>Cloud Nine Rooms Girls PG</h4>
-              <p>
-                <FaLocationDot className={carouselStyles.loction} /> Sector 45,
-                Gurugram
-              </p>
-              <div className={carouselStyles.CarouselBtn}>
-                <button
-                  type="button"
-                  class={`${carouselStyles.exploreBtn} btn btn-primary`}
-                >
-                  Explore Now
-                </button>
-                <button
-                  type="button"
-                  class={`${carouselStyles.visitBtn} btn btn-outline-primary`}
+                  className={`${carouselStyles.visitBtn} btn btn-outline-primary`}
                 >
                   Book a Visit
                 </button>
