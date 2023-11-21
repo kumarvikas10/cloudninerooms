@@ -154,7 +154,7 @@ function FormFields({ isModal }) {
                   }
                 >
                   <Field as="select" name="city" className={styles.selectItem}>
-                    <option value="" selected disabled>
+                    <option defaultValue="Select City" disabled>
                       Select City
                     </option>
                     <option value="Gurugram">Gurugram</option>

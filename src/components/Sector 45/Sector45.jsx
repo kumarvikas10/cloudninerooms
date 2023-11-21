@@ -1,5 +1,6 @@
 import style from "../About Us/AboutUs.module.css";
 import styles from "./Sector45.module.css";
+import { BsFillTelephoneFill } from "react-icons/bs";
 import { FaLocationDot } from "react-icons/fa6";
 import property from "../../data/property-1.png";
 import { GoDotFill } from "react-icons/go";
@@ -8,27 +9,44 @@ import roomImg from "../../data/room.png";
 import breakfast from "../../data/breakfast.png";
 import cleaning from "../../data/food-boy.png";
 import gaming from "../../data/pool-girl.png";
+import ChefImg from "../../data/Icons-data/chefImg.png";
+import cctvCameraImg from "../../data/Icons-data/cctv-cameraImg.png";
 import loctionImg from "../../data/Icons-data/Premium Location.png";
-import leaseImg from "../../data/Icons-data/Flexible-lease.png";
 import cleaningImg from "../../data/Icons-data/Daily-cleaning.png";
 import LaundryImg from "../../data/Icons-data/Laundry.png";
 import MaintenanceImg from "../../data/Icons-data/Maintenance.png";
-import swimmingImg from "../../data/Icons-data/Swimming Pool.png";
 import wifiImg from "../../data/Icons-data/High Speed Wifi.png";
 import supportImg from "../../data/Icons-data/247 Support.png";
 import communityImg from "../../data/Icons-data/Great Community.png";
 import parkingImg from "../../data/Icons-data/Parking.png";
-import homepageStyles  from '../Homepage/Home.module.css';
+import homepageStyles from "../Homepage/Home.module.css";
 import ImageGallery from "../Image Gallery/MyGallery";
 import ContactForm from "../Contact-form/contactForm";
+import BedTypeImg from "../../data/Icons-data/BedType.png";
+import DepositImg from "../../data/Icons-data/deposit.png";
+import foodImg from "../../data/Icons-data/Food.png";
+import ReadMoreLess from "../read-more-less-btn/ReadMoreLess";
 
 function Sector45() {
+  const aboutText = ` Welcome to Cloud Nine Rooms Girls PG, your home away from home in the
+  heart of Sector 45! We understand that finding a comfortable and
+  secure place to live while pursuing your dreams is of utmost
+  importance. That's why we have created a unique and welcoming
+  co-living experience designed exclusively for young women.
+  
+
+  At Cloud Nine Rooms, we offer a range of well-furnished and
+  thoughtfully designed rooms to suit your individual preferences.
+  Whether you're looking for a private room or a shared one with
+  like-minded roommates, we have options that cater to all your needs.
+  Our rooms are spacious, stylish, and equipped with all the essential
+  amenities to ensure a comfortable stay.`;
   return (
     <>
       <div className={styles.main_bg}>
         <div className="container">
           <h1 className={`${style.main_heading} ${styles.main_heading}`}>
-            Cloud Nine Rooms Girsl PG
+            Cloud Nine Rooms Girls PG
           </h1>
           <p className={styles.main_subheading}>
             <FaLocationDot className={styles.location_icon} /> Sector 45,
@@ -36,14 +54,68 @@ function Sector45() {
           </p>
         </div>
       </div>
-      <div className="container mt100">
-        <p>
+      <div className={`${styles.mobUspPoints} container desk_hide`}>
+        <div className={`${styles.mobUspPointsDiv} row`}>
+          <div className="col-6">
+            <div className="row">
+              <div className={`${styles.mobIcon} col-3`}>
+                <img src={BedTypeImg} alt="Property type" />
+              </div>
+              <div className={`${styles.mobIconText} col-9`}>
+                <p>Type</p>
+                <h4>Single Sharing</h4>
+              </div>
+            </div>
+          </div>
+          <div className="col-6">
+            <div className="row">
+              <div className={`${styles.mobIcon} col-3`}>
+                <img src={DepositImg} alt="Deposit" />
+              </div>
+              <div className={`${styles.mobIconText} col-9`}>
+                <p>Deposit</p>
+                <h4>Yes</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className={`${styles.mobUspPointsDiv} row`}>
+          <div className="col-6">
+            <div className="row">
+              <div className={`${styles.mobIcon} col-3`}>
+                <img src={foodImg} alt="Property type" />
+              </div>
+              <div className={`${styles.mobIconText} col-9`}>
+                <p>Food & Bevarages</p>
+                <h4>Yes</h4>
+              </div>
+            </div>
+          </div>
+          <div className="col-6">
+            <div className="row">
+              <div className={`${styles.mobIcon} col-3`}>
+                <img src={cleaningImg} alt="Deposit" />
+              </div>
+              <div className={`${styles.mobIconText} col-9`}>
+                <p>Cleaning</p>
+                <h4>Daily Basis</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className={`${styles.aboutDiv} container`}>
+        <div className="row desk_hide">
+          <ReadMoreLess text={aboutText} maxLength={326} className="" />
+        </div>
+        <p className="mob_hide">
           Welcome to Cloud Nine Rooms Girls PG, your home away from home in the
           heart of Sector 45! We understand that finding a comfortable and
           secure place to live while pursuing your dreams is of utmost
           importance. That's why we have created a unique and welcoming
           co-living experience designed exclusively for young women. <br />
-          <br /> At Cloud Nine Rooms, we offer a range of well-furnished and
+          <br />
+          At CloudNine Rooms, we offer a range of well-furnished and
           thoughtfully designed rooms to suit your individual preferences.
           Whether you're looking for a private room or a shared one with
           like-minded roommates, we have options that cater to all your needs.
@@ -248,8 +320,8 @@ function Sector45() {
                 <h4>Premium Location</h4>
               </div>
               <div className={css.amenitiesBox}>
-                <img src={leaseImg} alt="location" />
-                <h4>Flexible Lease</h4>
+                <img src={ChefImg} alt="location" />
+                <h4>Experience Chef</h4>
               </div>
               <div className={css.amenitiesBox}>
                 <img src={cleaningImg} alt="location" />
@@ -268,8 +340,8 @@ function Sector45() {
           <div className="row mob_hide">
             <div className={css.amenitiesContainer}>
               <div className={css.amenitiesBox}>
-                <img src={swimmingImg} alt="location" />
-                <h4>Swimming Pool</h4>
+                <img src={cctvCameraImg} alt="location" />
+                <h4>CCTV Surveillance</h4>
               </div>
               <div className={css.amenitiesBox}>
                 <img src={wifiImg} alt="location" />
@@ -300,10 +372,10 @@ function Sector45() {
             </div>
             <div className={styles.amenity_box}>
               <div>
-                <img src={leaseImg} alt="lease" />
+                <img src={ChefImg} alt="Experience Chef" />
               </div>
               <div>
-                <p className="mb-0 ms-2">Flexible Lease</p>
+                <p className="mb-0 ms-2">Experience Chef</p>
               </div>
             </div>
             <div className={styles.amenity_box}>
@@ -332,10 +404,10 @@ function Sector45() {
             </div>
             <div className={styles.amenity_box}>
               <div>
-                <img src={swimmingImg} alt="Swimming Pool" />
+                <img src={cctvCameraImg} alt="CCTV Surveillance" />
               </div>
               <div>
-                <p className="mb-0 ms-2">Swimming Pool</p>
+                <p className="mb-0 ms-2">CCTV Surveillance</p>
               </div>
             </div>
             <div className={styles.amenity_box}>
@@ -400,6 +472,35 @@ function Sector45() {
             <ContactForm />
           </div>
         </div>
+      </section>
+      <section className="desk_hide">
+        <nav className="navbar fixed-bottom bg-body-tertiary">
+          <div className="container-fluid">
+            <div className={`${styles.fixedBottomDiv} row`}>
+              <div className="col-6">
+                <div class={styles.numberBtnDiv}>
+                  <button
+                    type="button"
+                    className={`${styles.numberBtn} btn btn-primary`}
+                  >
+                    <BsFillTelephoneFill className={styles.telephone} />
+                    <a href="tel:9999998992">9999-998-992</a>
+                  </button> 
+                </div>
+              </div>
+              <div className="col-6">
+                <div className={styles.visitBtnDiv}>
+                <button
+                  type="button"
+                  className={`${styles.visitBtn} btn btn-light`}
+                >
+                  Book a Visit
+                </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
       </section>
     </>
   );
