@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import style from "../About Us/AboutUs.module.css";
 import styles from "./Sector45.module.css";
 import { BsFillTelephoneFill } from "react-icons/bs";
@@ -26,9 +27,38 @@ import BedTypeImg from "../../data/Icons-data/BedType.png";
 import DepositImg from "../../data/Icons-data/deposit.png";
 import foodImg from "../../data/Icons-data/Food.png";
 import ReadMoreLess from "../read-more-less-btn/ReadMoreLess";
+import axios from "axios";
+import { useParams } from "react-router-dom";
 
 function Sector45() {
-  const aboutText = ` Welcome to Cloud Nine Rooms Girls PG, your home away from home in the
+  const [propertiesData, setPropertiesData] = useState([]);
+  const [filteredProperty, setFilteredProperty] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get(`/db.json`);
+        setPropertiesData(response.data.colivingSpaces);
+        console.log(response.data.colivingSpaces);
+      } catch (error) {
+        console.error("Error fetching data:", error.message);
+      }
+    };
+
+    fetchData();
+  }, []);
+  const { slug } = useParams();
+
+  const newData = propertiesData?.filter((property) => {
+    return property?.slug === slug;
+  });
+
+  useEffect(() => {
+    setFilteredProperty(newData);
+  }, [newData]);
+  console.log(filteredProperty);
+
+  const aboutText = `Welcome to Cloud Nine Rooms Girls PG, your home away from home in the
   heart of Sector 45! We understand that finding a comfortable and
   secure place to live while pursuing your dreams is of utmost
   importance. That's why we have created a unique and welcoming
@@ -41,16 +71,17 @@ function Sector45() {
   like-minded roommates, we have options that cater to all your needs.
   Our rooms are spacious, stylish, and equipped with all the essential
   amenities to ensure a comfortable stay.`;
+
   return (
     <>
       <div className={styles.main_bg}>
         <div className="container">
           <h1 className={`${style.main_heading} ${styles.main_heading}`}>
-            Cloud Nine Rooms Girls PG
+            {filteredProperty[0]?.name}
           </h1>
           <p className={styles.main_subheading}>
-            <FaLocationDot className={styles.location_icon} /> Sector 45,
-            Gurugram
+            <FaLocationDot className={styles.location_icon} />{" "}
+            {filteredProperty[0]?.address}
           </p>
         </div>
       </div>
@@ -106,22 +137,9 @@ function Sector45() {
       </div>
       <div className={`${styles.aboutDiv} container`}>
         <div className="row desk_hide">
-          <ReadMoreLess text={aboutText} maxLength={326} className="" />
+          <ReadMoreLess text={aboutText} maxLength={326} />
         </div>
-        <p className="mob_hide">
-          Welcome to Cloud Nine Rooms Girls PG, your home away from home in the
-          heart of Sector 45! We understand that finding a comfortable and
-          secure place to live while pursuing your dreams is of utmost
-          importance. That's why we have created a unique and welcoming
-          co-living experience designed exclusively for young women. <br />
-          <br />
-          At CloudNine Rooms, we offer a range of well-furnished and
-          thoughtfully designed rooms to suit your individual preferences.
-          Whether you're looking for a private room or a shared one with
-          like-minded roommates, we have options that cater to all your needs.
-          Our rooms are spacious, stylish, and equipped with all the essential
-          amenities to ensure a comfortable stay.
-        </p>
+        <p className="mob_hide">{filteredProperty[0]?.descriptions}</p>
       </div>
       <div className={`mt100 ${styles.accomadation_banner}`}>
         <div className={`container ${styles.accomodation_container}`}>
@@ -485,17 +503,17 @@ function Sector45() {
                   >
                     <BsFillTelephoneFill className={styles.telephone} />
                     <a href="tel:9999998992">9999-998-992</a>
-                  </button> 
+                  </button>
                 </div>
               </div>
               <div className="col-6">
                 <div className={styles.visitBtnDiv}>
-                <button
-                  type="button"
-                  className={`${styles.visitBtn} btn btn-light`}
-                >
-                  Book a Visit
-                </button>
+                  <button
+                    type="button"
+                    className={`${styles.visitBtn} btn btn-light`}
+                  >
+                    Book a Visit
+                  </button>
                 </div>
               </div>
             </div>

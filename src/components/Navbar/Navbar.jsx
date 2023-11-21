@@ -3,11 +3,27 @@ import styles from "./Navbar.module.css";
 import Logo from "../../data/logo.png";
 import React, { useState, useEffect, useRef } from "react";
 import ContactFormModal from "../contact-form-modal/ContactFormModal";
+import axios from "axios";
 
 function Navbar() {
   const [isFixed, setIsFixed] = useState(false);
   const [isMenuOpen, setMenuOpen] = useState(false);
+  const [propertiesData, setPropertiesData] = useState([]);
   const navbarRef = useRef(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get(`/db.json`);
+        setPropertiesData(response.data.colivingSpaces);
+        console.log(response.data.colivingSpaces);
+      } catch (error) {
+        console.error("Error fetching data:", error.message);
+      }
+    };
+
+    fetchData();
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -88,22 +104,18 @@ function Navbar() {
                     Our Properties
                   </p>
                   <ul className="dropdown-menu">
-                    <li>
-                      <NavLink
-                        className="dropdown-item"
-                        to="/our-properties/sector-45"
-                      >
-                        Cloud Nine Rooms 679
-                      </NavLink>
-                    </li>
-                    <li>
-                      <NavLink
-                        className="dropdown-item"
-                        to="/our-properties/sector-47"
-                      >
-                        Cloud Nine Rooms 56
-                      </NavLink>
-                    </li>
+                    {propertiesData?.map((property, i) => {
+                      return (
+                        <li key={i}>
+                          <NavLink
+                            className="dropdown-item"
+                            to={`/our-properties/${property?.slug}`}
+                          >
+                            {property?.name}
+                          </NavLink>
+                        </li>
+                      );
+                    })}
                   </ul>
                 </li>
                 <li className="nav-item">
