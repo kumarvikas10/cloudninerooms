@@ -31,17 +31,11 @@ function Carousel() {
             <div className={styles.CarouselBtn}>
               <button
                 type="button"
-                class={`${styles.exploreBtn} btn btn-primary`}
+                className={`${styles.exploreBtn} btn btn-primary`}
               >
                 Explore Now
               </button>
-              {/* <button
-                type="button"
-                class={`${styles.visitBtn} btn btn-outline-primary`}
-              >
-                Book a Visit
-              </button> */}
-              <ContactFormModal />
+              <ContactFormModal modalId={"exampleModal1"} />
             </div>
           </div>
         </div>
@@ -59,13 +53,13 @@ function Carousel() {
             <div className={styles.CarouselBtn}>
               <button
                 type="button"
-                class={`${styles.exploreBtn} btn btn-primary`}
+                className={`${styles.exploreBtn} btn btn-primary`}
               >
                 Explore Now
               </button>
               <button
                 type="button"
-                class={`${styles.visitBtn} btn btn-outline-primary`}
+                className={`${styles.visitBtn} btn btn-outline-primary`}
               >
                 Book a Visit
               </button>
@@ -86,13 +80,13 @@ function Carousel() {
             <div className={styles.CarouselBtn}>
               <button
                 type="button"
-                class={`${styles.exploreBtn} btn btn-primary`}
+                className={`${styles.exploreBtn} btn btn-primary`}
               >
                 Explore Now
               </button>
               <button
                 type="button"
-                class={`${styles.visitBtn} btn btn-outline-primary`}
+                className={`${styles.visitBtn} btn btn-outline-primary`}
               >
                 Book a Visit
               </button>
@@ -113,13 +107,13 @@ function Carousel() {
             <div className={styles.CarouselBtn}>
               <button
                 type="button"
-                class={`${styles.exploreBtn} btn btn-primary`}
+                className={`${styles.exploreBtn} btn btn-primary`}
               >
                 Explore Now
               </button>
               <button
                 type="button"
-                class={`${styles.visitBtn} btn btn-outline-primary`}
+                className={`${styles.visitBtn} btn btn-outline-primary`}
               >
                 Book a Visit
               </button>

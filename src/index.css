@@ -103,6 +103,7 @@ body {
 }
 .modal {
   background-color: #00000082;
+  z-index: 9999;
 }
 .modal-content {
   background: #ffede7;
@@ -213,5 +214,33 @@ body {
   .heading {
     font-size: 18px;
     line-height: 28px;
+  }
+  .navbar-nav .dropdown-menu {
+    margin-left: -10px;
+    padding-left: 11px;
+    border-top: 1px solid #fc41023d;
+    border-right: none;
+    border-left: none;
+    border-bottom: none;
+    border-radius: 0;
+  }
+  .navbar-nav .dropdown-menu li {
+    padding: 3px 0;
+  }
+  .dropdown-toggle {
+    padding-bottom: 0;
+  }
+  .nav-link {
+    font-size: 14px;
+  }
+  .dropdown-item {
+    font-size: 14px;
+  }
+  .navbar-toggler {
+    border: none !important;
+    padding: 0 !important;
+  }
+  .navbar-toggler:focus {
+    box-shadow: none !important;
   }
 }

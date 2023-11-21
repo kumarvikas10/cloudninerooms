@@ -2,21 +2,21 @@ import React from "react";
 import styles from "../Navbar/Navbar.module.css";
 import FormFields from "../form-fields/FormFields";
 
-function ContactFormModal() {
+function ContactFormModal({ modalId }) {
   return (
     <>
       <button
-        className={`${styles.visitBtn} btn btn-outline-primary bg-white`}
+        className={`${styles.visitBtn} btn btn-outline-primary`}
         type="button"
         data-bs-toggle="modal"
-        data-bs-target="#exampleModal"
+        data-bs-target={`#${modalId}`}
       >
         Book a Visit
       </button>
       <div
         className="modal fade"
-        id="exampleModal"
-        tabindex="-1"
+        id={modalId}
+        tabIndex="-1"
         aria-labelledby="exampleModalLabel"
         aria-hidden="true"
       >
