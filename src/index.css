@@ -214,6 +214,7 @@ body {
   .heading {
     font-size: 18px;
     line-height: 28px;
+    margin-bottom: 20px;
   }
   .navbar-nav .dropdown-menu {
     margin-left: -10px;

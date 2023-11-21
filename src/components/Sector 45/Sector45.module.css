@@ -7,28 +7,39 @@
   background-size: cover;
   background-position: center center;
 }
+
 .main_subheading {
   bottom: 107px;
   position: absolute;
   color: white;
   font-size: 24px;
 }
+
 .main_heading {
   bottom: 153px;
 }
+
+.aboutDiv {
+  margin-top: 100px;
+}
+
 .location_icon {
   margin-bottom: 5px;
 }
+
 .accomadation_banner {
   background-image: url("../../data/Our-Accommodation.png");
   width: 100%;
   height: auto;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center center;
 }
+
 .accomodation_container {
   padding: 80px 0;
 }
+
 .accomodation_card {
   display: flex;
   justify-content: space-between;
@@ -37,89 +48,198 @@
   box-shadow: 0px 0px 4px 0px rgba(253, 65, 1, 0.15);
   border-radius: 20px;
 }
+
 .accomodation_card div {
   width: 50%;
 }
+
 .property_img img {
   width: 100%;
   border-radius: 20px 0 0 20px;
 }
+
 .accomodation_card_text {
   padding-left: 22px;
   padding-right: 10px;
 }
+
 .bookVisitbtn {
   padding: 6px !important;
 }
+
 .accomodation_card_text h4 {
   font-size: 19px;
 }
+
 .accomodation_card_text p {
   font-size: 15px;
   font-weight: 500;
 }
+
 .accomodation_card_text p span {
   color: #fc4102;
 }
+
 .accomodation_card_text .icon {
   color: #fc4102;
 }
 
+.fixedBottomDiv {
+  width: 100%;
+  margin: 10px 0px;
+}
+
+.numberBtn {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #fc4102 !important;
+  --bs-btn-border-color: #fc4102 !important;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #fc4102 !important;
+  --bs-btn-hover-border-color: #fc4102 !important;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #fc4102 !important;
+  --bs-btn-active-border-color: #fc4102 !important;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #fc4102 !important;
+  --bs-btn-disabled-border-color: #fc4102 !important;
+}
+
+.numberBtnDiv .numberBtn a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+}
+
+.telephone {
+  margin-right: 7px;
+}
+
+.visitBtn {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  --bs-btn-color: #FC4102 !important;
+  --bs-btn-border-color: #FC4102 !important;
+  --bs-btn-hover-color: #fff !important;
+  --bs-btn-hover-bg: #FC4102 !important;
+  --bs-btn-hover-border-color: #FC4102 !important;
+  --bs-btn-focus-shadow-rgb: 13, 110, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #FC4102 !important;
+  --bs-btn-active-border-color: #FC4102 !important;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #FC4102 !important;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #FC4102 !important;
+  --bs-gradient: none;
+  /* background: #fff;
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-white-rgb), var(--bs-bg-opacity)) !important; */
+}
+
 @media screen and (max-width: 768px) {
 
-  .main_heading{
+  .main_heading {
     font-size: 26px;
+  }
+
+  .mobUspPoints .mobUspPointsDiv {
+    margin-top: 30px;
+  }
+
+  .mobUspPoints .mobIcon img {
+    width: 40px;
+  }
+
+  /* .mobIconText{
+    padding: 0px;
+  } */
+
+  .mobUspPoints .mobIconText p {
+    color: #fc4102;
+    font-size: 12px;
+    margin: 0px;
+  }
+
+  .mobUspPoints .mobIconText h4 {
+    font-size: 14px;
+  }
+
+  .aboutDiv {
+    margin-top: 30px;
+  }
+
+  .accomadation_banner {
+    background-position: initial;
   }
 
   .accomodation_card_text h4 {
     font-size: 15px;
     margin-bottom: 0;
   }
+
   .accomodation_card_text p:nth-child(1) {
     font-size: 13px;
   }
+
   .accomodation_container {
     padding: 40px 10px;
   }
+
   .accomodation_card div:nth-child(1) {
     width: 35%;
   }
+
   .accomodation_card div:nth-child(2) {
     width: 65%;
   }
+
   .accomodation_card_text {
     padding-left: 17px;
     padding-top: 10px;
     padding-bottom: 10px;
   }
+
   .accomodation_card_text p {
     font-size: 12px;
   }
+
   .bookVisitbtn {
     font-size: 12px;
     width: 100px;
   }
+
   .property_img img {
     height: 150px;
   }
+
   .accomodation_card {
     margin-bottom: 22px;
   }
+
   .main_bg {
     height: 386px;
   }
+
   .mob_amenities {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
   }
+
   .amenity_box {
     width: 39%;
     display: flex;
     align-items: center;
     margin-top: 10px;
   }
+
   .amenity_box div img {
     width: 20px;
   }

@@ -10,11 +10,11 @@ import kitchenImg from "../../data/high-end-kitchen.png";
 import livingRoomImg from "../../data/Spacious-living-room.png";
 import balconyImg from "../../data/balcony-view.png";
 import loctionImg from "../../data/Icons-data/Premium Location.png";
-import leaseImg from "../../data/Icons-data/Flexible-lease.png";
+import ChefImg from "../../data/Icons-data/chefImg.png";
 import cleaningImg from "../../data/Icons-data/Daily-cleaning.png";
 import LaundryImg from "../../data/Icons-data/Laundry.png";
 import MaintenanceImg from "../../data/Icons-data/Maintenance.png";
-import swimmingImg from "../../data/Icons-data/Swimming Pool.png";
+import cctvCameraImg from "../../data/Icons-data/cctv-cameraImg.png";
 import wifiImg from "../../data/Icons-data/High Speed Wifi.png";
 import supportImg from "../../data/Icons-data/247 Support.png";
 import communityImg from "../../data/Icons-data/Great Community.png";
@@ -356,8 +356,8 @@ function Home() {
                 <h4>Premium Location</h4>
               </div>
               <div className={styles.amenitiesBox}>
-                <img src={leaseImg} alt="location" />
-                <h4>Flexible Lease</h4>
+                <img src={ChefImg} alt="location" />
+                <h4>Experience Chef</h4>
               </div>
               <div className={styles.amenitiesBox}>
                 <img src={cleaningImg} alt="location" />
@@ -376,8 +376,8 @@ function Home() {
           <div className="row mob_hide">
             <div className={styles.amenitiesContainer}>
               <div className={styles.amenitiesBox}>
-                <img src={swimmingImg} alt="location" />
-                <h4>Swimming Pool</h4>
+                <img src={cctvCameraImg} alt="location" />
+                <h4>CCTV Surveillance</h4>
               </div>
               <div className={styles.amenitiesBox}>
                 <img src={wifiImg} alt="location" />
