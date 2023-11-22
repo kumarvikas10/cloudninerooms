@@ -4,6 +4,7 @@ import theIdea1 from "../../data/the-idea1.png";
 import theIdea2 from "../../data/book-a-visit.png";
 import theIdea3 from "../../data/welcome-cloud-nine.png";
 import valueBanner from "../../data/banner.jpg";
+import ContactFormModal from "../contact-form-modal/ContactFormModal";
 
 function TheIdea() {
   return (
@@ -100,9 +101,7 @@ function TheIdea() {
             <p className="mob_hide">
               Where finding the best rooms for your stay is effortless
             </p>
-            <button className={`btn btn-primary ${styles.numberBtn}`}>
-              Book a visit
-            </button>
+            <ContactFormModal modalId={"exampleModal3"} isBanner={true} />
           </div>
         </div>
       </div>

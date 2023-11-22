@@ -3,7 +3,7 @@ import styles from "./Navbar.module.css";
 import Logo from "../../data/logo.png";
 import React, { useState, useEffect, useRef } from "react";
 import ContactFormModal from "../contact-form-modal/ContactFormModal";
-import axios from "axios";
+import { allPropertiesData } from "../../service/PropertyService";
 
 function Navbar() {
   const [isFixed, setIsFixed] = useState(false);
@@ -11,18 +11,16 @@ function Navbar() {
   const [propertiesData, setPropertiesData] = useState([]);
   const navbarRef = useRef(null);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await axios.get(`/db.json`);
-        setPropertiesData(response.data.colivingSpaces);
-        // console.log(response.data.colivingSpaces);
-      } catch (error) {
-        console.error("Error fetching data:", error.message);
-      }
-    };
+  const handleFetchProperties = async () => {
+    try {
+      await allPropertiesData(setPropertiesData);
+    } catch (error) {
+      console.error(error.message);
+    }
+  };
 
-    fetchData();
+  useEffect(() => {
+    handleFetchProperties();
   }, []);
 
   useEffect(() => {
@@ -135,7 +133,7 @@ function Navbar() {
                   </NavLink>
                 </li>
                 <li className="nav-item mob_hide">
-                  <ContactFormModal modalId={"exampleModal"} />
+                  <ContactFormModal modalId={"exampleModal"} isBanner={false} />
                 </li>
               </ul>
             </div>

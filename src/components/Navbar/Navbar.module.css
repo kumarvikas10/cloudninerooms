@@ -63,6 +63,16 @@
 .visitBtn:hover {
   background: #fc4102 !important;
 }
+.visitBtnDark {
+  background-color: #fc4102;
+  color: #fff;
+  width: 150px;
+}
+.visitBtnDark:hover {
+  background-color: #fff;
+  border-color: #fc4102;
+  color: #fc4102;
+}
 
 @media (max-width: 768px) {
   .navbarMain {

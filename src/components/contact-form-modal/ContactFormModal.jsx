@@ -2,11 +2,15 @@ import React from "react";
 import styles from "../Navbar/Navbar.module.css";
 import FormFields from "../form-fields/FormFields";
 
-function ContactFormModal({ modalId }) {
+function ContactFormModal({ modalId, isBanner }) {
   return (
     <>
       <button
-        className={`${styles.visitBtn} btn btn-outline-primary`}
+        className={
+          isBanner
+            ? `${styles.visitBtnDark} btn`
+            : `${styles.visitBtn} btn btn-outline-primary`
+        }
         type="button"
         data-bs-toggle="modal"
         data-bs-target={`#${modalId}`}

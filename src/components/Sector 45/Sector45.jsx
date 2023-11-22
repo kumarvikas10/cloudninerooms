@@ -27,26 +27,26 @@ import BedTypeImg from "../../data/Icons-data/BedType.png";
 import DepositImg from "../../data/Icons-data/deposit.png";
 import foodImg from "../../data/Icons-data/Food.png";
 import ReadMoreLess from "../read-more-less-btn/ReadMoreLess";
-import axios from "axios";
 import { useParams } from "react-router-dom";
+import ContactFormModal from "../contact-form-modal/ContactFormModal";
+import { allPropertiesData } from "../../service/PropertyService";
 
 function Sector45() {
   const [propertiesData, setPropertiesData] = useState([]);
   const [filteredProperty, setFilteredProperty] = useState([]);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await axios.get(`/db.json`);
-        setPropertiesData(response.data.colivingSpaces);
-        // console.log(response.data.colivingSpaces);
-      } catch (error) {
-        console.error("Error fetching data:", error.message);
-      }
-    };
+  const handleFetchProperties = async () => {
+    try {
+      await allPropertiesData(setPropertiesData);
+    } catch (error) {
+      console.error(error.message);
+    }
+  };
 
-    fetchData();
+  useEffect(() => {
+    handleFetchProperties();
   }, []);
+
   const { slug } = useParams();
 
   const newData = propertiesData?.filter((property) => {
@@ -153,7 +153,37 @@ function Sector45() {
             amenities to ensure a comfortable stay.
           </p>
           <div className="row">
-            <div className="col-md-6">
+            {filteredProperty[0]?.price?.map((price, i) => {
+              return (
+                <div className="col-md-6 mt-3" key={i}>
+                  <div className={styles.accomodation_card}>
+                    <div className={styles.property_img}>
+                      <img src={property} alt="cloud nine room" />
+                    </div>
+                    <div className={styles.accomodation_card_text}>
+                      <h4>{price?.type}</h4>
+                      <p>
+                        <span>₹ {price?.price}/</span> month
+                      </p>
+                      <p style={{ fontWeight: "400" }} className="mb-0">
+                        High-speed Wi-Fi <GoDotFill className={styles.icon} />{" "}
+                        24/7 Support
+                      </p>
+                      <p style={{ fontWeight: "400" }}>
+                        Daily cleaning <GoDotFill className={styles.icon} />{" "}
+                        Fully-furnished room
+                      </p>
+                      <ContactFormModal
+                        modalId={"modalExample4"}
+                        isBanner={true}
+                      />
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+
+            {/* <div className="col-md-6">
               <div className={styles.accomodation_card}>
                 <div className={styles.property_img}>
                   <img src={property} alt="cloud nine room" />
@@ -178,35 +208,9 @@ function Sector45() {
                   </button>
                 </div>
               </div>
-            </div>
-            <div className="col-md-6">
-              <div className={styles.accomodation_card}>
-                <div className={styles.property_img}>
-                  <img src={property} alt="cloud nine room" />
-                </div>
-                <div className={styles.accomodation_card_text}>
-                  <h4>Private Room</h4>
-                  <p>
-                    <span>₹ 30,000/</span> month
-                  </p>
-                  <p style={{ fontWeight: "400" }} className="mb-0">
-                    High-speed Wi-Fi <GoDotFill className={styles.icon} /> 24/7
-                    Support
-                  </p>
-                  <p style={{ fontWeight: "400" }}>
-                    Daily cleaning <GoDotFill className={styles.icon} />{" "}
-                    Fully-furnished room
-                  </p>
-                  <button
-                    className={`commonBtn btn btn-primary ${styles.bookVisitbtn}`}
-                  >
-                    Book a Visit
-                  </button>
-                </div>
-              </div>
-            </div>
+            </div> */}
           </div>
-          <div className="row mt-md-4">
+          {/* <div className="row mt-md-4">
             <div className="col-md-6">
               <div className={styles.accomodation_card}>
                 <div className={styles.property_img}>
@@ -259,7 +263,7 @@ function Sector45() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       <section className={css.amenitiesSection}>
