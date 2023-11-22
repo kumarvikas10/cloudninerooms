@@ -3,7 +3,6 @@ import style from "../About Us/AboutUs.module.css";
 import styles from "./Sector45.module.css";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { FaLocationDot } from "react-icons/fa6";
-import property from "../../data/property-1.png";
 import { GoDotFill } from "react-icons/go";
 import css from "../Homepage/Home.module.css";
 import roomImg from "../../data/room.png";
@@ -58,7 +57,6 @@ function Sector45() {
       setFilteredProperty(newData);
     }
   }, [propertiesData, slug]);
-  // console.log(filteredProperty);
 
   const aboutText = `Welcome to Cloud Nine Rooms Girls PG, your home away from home in the
   heart of Sector 45! We understand that finding a comfortable and
@@ -158,7 +156,10 @@ function Sector45() {
                 <div className="col-md-6 mt-3" key={i}>
                   <div className={styles.accomodation_card}>
                     <div className={styles.property_img}>
-                      <img src={property} alt="cloud nine room" />
+                      <img
+                        src={filteredProperty[0]?.images[i]?.image}
+                        alt="cloud nine room"
+                      />
                     </div>
                     <div className={styles.accomodation_card_text}>
                       <h4>{price?.type}</h4>
@@ -182,88 +183,7 @@ function Sector45() {
                 </div>
               );
             })}
-
-            {/* <div className="col-md-6">
-              <div className={styles.accomodation_card}>
-                <div className={styles.property_img}>
-                  <img src={property} alt="cloud nine room" />
-                </div>
-                <div className={styles.accomodation_card_text}>
-                  <h4>Private Room</h4>
-                  <p>
-                    <span>₹ 30,000/</span> month
-                  </p>
-                  <p style={{ fontWeight: "400" }} className="mb-0">
-                    High-speed Wi-Fi <GoDotFill className={styles.icon} /> 24/7
-                    Support
-                  </p>
-                  <p style={{ fontWeight: "400" }}>
-                    Daily cleaning <GoDotFill className={styles.icon} />{" "}
-                    Fully-furnished room
-                  </p>
-                  <button
-                    className={`commonBtn btn btn-primary ${styles.bookVisitbtn}`}
-                  >
-                    Book a Visit
-                  </button>
-                </div>
-              </div>
-            </div> */}
           </div>
-          {/* <div className="row mt-md-4">
-            <div className="col-md-6">
-              <div className={styles.accomodation_card}>
-                <div className={styles.property_img}>
-                  <img src={property} alt="cloud nine room" />
-                </div>
-                <div className={styles.accomodation_card_text}>
-                  <h4>Private Room</h4>
-                  <p>
-                    <span>₹ 30,000/</span> month
-                  </p>
-                  <p style={{ fontWeight: "400" }} className="mb-0">
-                    High-speed Wi-Fi <GoDotFill className={styles.icon} /> 24/7
-                    Support
-                  </p>
-                  <p style={{ fontWeight: "400" }}>
-                    Daily cleaning <GoDotFill className={styles.icon} />{" "}
-                    Fully-furnished room
-                  </p>
-                  <button
-                    className={`commonBtn btn btn-primary ${styles.bookVisitbtn}`}
-                  >
-                    Book a Visit
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-6">
-              <div className={styles.accomodation_card}>
-                <div className={styles.property_img}>
-                  <img src={property} alt="cloud nine room" />
-                </div>
-                <div className={styles.accomodation_card_text}>
-                  <h4>Private Room</h4>
-                  <p>
-                    <span>₹ 30,000/</span> month
-                  </p>
-                  <p style={{ fontWeight: "400" }} className="mb-0">
-                    High-speed Wi-Fi <GoDotFill className={styles.icon} /> 24/7
-                    Support
-                  </p>
-                  <p style={{ fontWeight: "400" }}>
-                    Daily cleaning <GoDotFill className={styles.icon} />{" "}
-                    Fully-furnished room
-                  </p>
-                  <button
-                    className={`commonBtn btn btn-primary ${styles.bookVisitbtn}`}
-                  >
-                    Book a Visit
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div> */}
         </div>
       </div>
       <section className={css.amenitiesSection}>
@@ -485,7 +405,15 @@ function Sector45() {
           </div>
           <div className="row">
             <div className={homepageStyles.gallery}>
-              <ImageGallery />
+              <ImageGallery
+                image1={filteredProperty[0]?.images[0]?.image}
+                image2={filteredProperty[0]?.images[1]?.image}
+                image3={filteredProperty[0]?.images[2]?.image}
+                image4={filteredProperty[0]?.images[3]?.image}
+                image5={filteredProperty[0]?.images[4]?.image}
+                image6={filteredProperty[0]?.images[5]?.image}
+                image7={filteredProperty[0]?.images[6]?.image}
+              />
             </div>
           </div>
         </div>

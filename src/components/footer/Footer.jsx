@@ -44,13 +44,15 @@ function Footer() {
             {propertiesData?.map((property, i) => {
               return (
                 <p key={i} className={`p${i}`}>
-                  {property?.name}
+                  <Link
+                    to={`/our-properties/${property?.slug}`}
+                    className="footer_link"
+                  >
+                    {property?.name}
+                  </Link>
                 </p>
               );
             })}
-            {/* <p className={styles.first_p}>Sector 45, Gurugram</p>
-            <p>Sector 43, Gurugram</p>
-            <p>Sector 38, Gurugram</p> */}
           </div>
           <div className="col-md-2 col-4">
             <h4 className={styles.footer_heading}>Our Company</h4>
@@ -60,12 +62,9 @@ function Footer() {
               </Link>
             </p>
             <p>
-              <Link to="the-idea" className={styles.footer_link}>
+              <Link to="/the-idea" className={styles.footer_link}>
                 The Idea
               </Link>
-            </p>
-            <p>
-              <Link className={styles.footer_link}>Privacy Policy</Link>
             </p>
           </div>
         </div>
