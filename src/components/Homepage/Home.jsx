@@ -26,11 +26,9 @@ import amenitiesPattern from "../../data/Patterns.png";
 import uspPattern from "../../data/pattern-2.png";
 import ImageGallery from "../Image Gallery/MyGallery";
 import ContactForm from "../Contact-form/contactForm";
-import propertyImage from "../../data/property-1.png";
 import carouselStyles from "../Carousel/Carousel.module.css";
 import { FaLocationDot } from "react-icons/fa6";
 import ContactFormModal from "../contact-form-modal/ContactFormModal";
-import axios from "axios";
 import { NavLink } from "react-router-dom";
 import { allPropertiesData } from "../../service/PropertyService";
 
@@ -45,19 +43,6 @@ function Home() {
     }
   };
 
-  // useEffect(() => {
-  //   const fetchData = async () => {
-  //     try {
-  //       const response = await axios.get(`/db.json`);
-  //       setPropertiesData(response.data.colivingSpaces);
-  //       // console.log(response.data.colivingSpaces);
-  //     } catch (error) {
-  //       console.error("Error fetching data:", error.message);
-  //     }
-  //   };
-
-  //   fetchData();
-  // }, []);
   useEffect(() => {
     handleFetchProperties();
   }, []);
@@ -124,7 +109,7 @@ function Home() {
                 key={i}
               >
                 <img
-                  src={propertyImage}
+                  src={property?.images[0]?.image}
                   className={`${carouselStyles.CarouselImage} img-fluid`}
                   alt="property"
                 />
@@ -402,7 +387,15 @@ function Home() {
           </div>
           <div className="row">
             <div className={styles.gallery}>
-              <ImageGallery />
+              <ImageGallery
+                image1={propertiesData[0]?.images[0]?.image}
+                image2={propertiesData[1]?.images[1]?.image}
+                image3={propertiesData[0]?.images[2]?.image}
+                image4={propertiesData[1]?.images[4]?.image}
+                image5={propertiesData[0]?.images[4]?.image}
+                image6={propertiesData[1]?.images[5]?.image}
+                image7={propertiesData[0]?.images[5]?.image}
+              />
             </div>
           </div>
         </div>

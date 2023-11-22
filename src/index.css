@@ -172,8 +172,12 @@ body {
   margin-left: 3px;
   position: absolute;
 }
+.footer_link {
+  text-decoration: none;
+  color: #222;
+}
 
-.testimonialSlider .slick-slider .slick-dots li{
+.testimonialSlider .slick-slider .slick-dots li {
   margin: 0;
 }
 .dropdown-menu {

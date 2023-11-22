@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
 import { FaLocationDot } from "react-icons/fa6";
 import styles from "./Carousel.module.css";
-import propertyImage from "../../data/property-1.png";
 import ContactFormModal from "../contact-form-modal/ContactFormModal";
 import { NavLink } from "react-router-dom";
 import { allPropertiesData } from "../../service/PropertyService";
@@ -37,7 +36,7 @@ function Carousel() {
           return (
             <div className={styles.CarouselBox} key={i}>
               <img
-                src={propertyImage}
+                src={property?.images[0]?.image}
                 className={`${styles.CarouselImage} img-fluid`}
                 alt="property"
               />
