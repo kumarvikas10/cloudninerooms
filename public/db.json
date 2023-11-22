@@ -7,9 +7,9 @@
       "address": "Sector 43, Gurugram",
       "descriptions": "We are offering quality services ensures a comfortable, secure and pleasant living environment Experience, meeting the needs and expectations of tenant. We provide a responsive Management Team that addressed concerns and requests in a timely manner. We provide Reliable access to all important Utilities such as Electricity, water and Meals. We have Adequate Security measures like CCTV suveillance, swcure locks and Security Guard to ensure Safety and Security of the Tenants.",
       "price": [
-        { "Private Room": "30,999" },
-        { "Double Sharing": "15,999" },
-        { "Triple Sharing": "12,499" }
+        { "type": "Private Room", "price": "30,999" },
+        { "type": "Double Sharing", "price": "15,999" },
+        { "type": "Triple Sharing", "price": "12,499" }
       ],
       "amenities": [
         "Easily Commutable Property",
@@ -25,9 +25,9 @@
       "address": "Sector 43, Gurugram",
       "descriptions": "We are offering quality services ensures a comfortable, secure and pleasant living environment Experience, meeting the needs and expectations of tenant. We provide a responsive Management Team that addressed concerns and requests in a timely manner. We provide Reliable access to all important Utilities such as Electricity, water and Meals. We have Adequate Security measures like CCTV suveillance, swcure locks and Security Guard to ensure Safety and Security of the Tenants.",
       "price": [
-        { "Private Room": "33,999" },
-        { "Double Sharing": "17,999" },
-        { "Triple Sharing": "13,999" }
+        { "type": "Private Room", "price": "33,999" },
+        { "type": "Double Sharing", "price": "17,999" },
+        { "type": "Triple Sharing", "price": "13,999" }
       ],
       "amenities": [
         "Premium property",

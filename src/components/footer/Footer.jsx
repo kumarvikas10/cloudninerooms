@@ -1,12 +1,27 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import logo from "../../data/logo.png";
 import styles from "./Footer.module.css";
 import { Link } from "react-router-dom";
 import instagram from "../../data/Instagram.png";
 import facebook from "../../data/Facebook.png";
 import linkedin from "../../data/Linkedin.png";
+import { allPropertiesData } from "../../service/PropertyService";
 
 function Footer() {
+  const [propertiesData, setPropertiesData] = useState([]);
+
+  const handleFetchProperties = async () => {
+    try {
+      await allPropertiesData(setPropertiesData);
+    } catch (error) {
+      console.error(error.message);
+    }
+  };
+
+  useEffect(() => {
+    handleFetchProperties();
+  }, []);
+
   return (
     <>
       <div className="container mt100">
@@ -24,11 +39,18 @@ function Footer() {
               experience.
             </p>
           </div>
-          <div className="col-md-3 col-8">
+          <div className="col-md-3 col-8 footer_col">
             <h4 className={styles.footer_heading}>Our properties</h4>
-            <p className={styles.first_p}>Sector 45, Gurugram</p>
+            {propertiesData?.map((property, i) => {
+              return (
+                <p key={i} className={`p${i}`}>
+                  {property?.name}
+                </p>
+              );
+            })}
+            {/* <p className={styles.first_p}>Sector 45, Gurugram</p>
             <p>Sector 43, Gurugram</p>
-            <p>Sector 38, Gurugram</p>
+            <p>Sector 38, Gurugram</p> */}
           </div>
           <div className="col-md-2 col-4">
             <h4 className={styles.footer_heading}>Our Company</h4>

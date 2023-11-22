@@ -5,8 +5,8 @@ import teammember1 from "../../data/boy.png";
 import teammember2 from "../../data/girl.png";
 import ourValues from "../../data/our-values.jpg";
 import valueBanner from "../../data/banner.jpg";
-import style from "../Homepage/Home.module.css";
 import ReadMoreLess from "../read-more-less-btn/ReadMoreLess";
+import ContactFormModal from "../contact-form-modal/ContactFormModal";
 
 function AboutUs() {
   const missionText = `At Cloud Nine Rooms, our mission is to create a haven where
@@ -202,9 +202,7 @@ function AboutUs() {
             <p className="mob_hide">
               Where finding the best rooms for your stay is effortless
             </p>
-            <button className={`btn btn-primary mt0 ${style.numberBtn}`}>
-              Book a visit
-            </button>
+            <ContactFormModal modalId={"exampleModal3"} isBanner={true} />
           </div>
         </div>
       </div>

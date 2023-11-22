@@ -49,7 +49,7 @@
   border-radius: 20px;
 }
 
-.accomodation_card div {
+.accomodation_card > div {
   width: 50%;
 }
 

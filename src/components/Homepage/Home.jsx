@@ -1,10 +1,11 @@
+import React, { useState, useEffect } from "react";
 import styles from "./Home.module.css";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import Carousel from "../Carousel/Carousel";
 import threePointsImage from "../../data/Three ways-2.png";
 import ConvenienceImg from "../../data/convenienceImg.png";
 import ComfortImg from "../../data/comfortImg.png";
-import BudgetImg from '../../data/BudgetImg.png'
+import BudgetImg from "../../data/BudgetImg.png";
 import privateBedroomImg from "../../data/private-bedrooms.png";
 import kitchenImg from "../../data/high-end-kitchen.png";
 import livingRoomImg from "../../data/Spacious-living-room.png";
@@ -29,8 +30,38 @@ import propertyImage from "../../data/property-1.png";
 import carouselStyles from "../Carousel/Carousel.module.css";
 import { FaLocationDot } from "react-icons/fa6";
 import ContactFormModal from "../contact-form-modal/ContactFormModal";
+import axios from "axios";
+import { NavLink } from "react-router-dom";
+import { allPropertiesData } from "../../service/PropertyService";
 
 function Home() {
+  const [propertiesData, setPropertiesData] = useState([]);
+
+  const handleFetchProperties = async () => {
+    try {
+      await allPropertiesData(setPropertiesData);
+    } catch (error) {
+      console.error(error.message);
+    }
+  };
+
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     try {
+  //       const response = await axios.get(`/db.json`);
+  //       setPropertiesData(response.data.colivingSpaces);
+  //       // console.log(response.data.colivingSpaces);
+  //     } catch (error) {
+  //       console.error("Error fetching data:", error.message);
+  //     }
+  //   };
+
+  //   fetchData();
+  // }, []);
+  useEffect(() => {
+    handleFetchProperties();
+  }, []);
+
   return (
     <div className={styles.homepageMain}>
       <section className={styles.homepageBanner}>
@@ -81,107 +112,43 @@ function Home() {
           </div>
         </div>
         <div className={`desk_hide row ${styles.property_row}`}>
-          <div
-            className={`${carouselStyles.CarouselBox}`}
-            style={{
-              width: "250px",
-              marginLeft: "30px",
-              marginRight: "30px !important",
-              padding: "0",
-            }}
-          >
-            <img
-              src={propertyImage}
-              className={`${carouselStyles.CarouselImage} img-fluid`}
-              alt="property"
-            />
-            <div className={carouselStyles.CarouselText}>
-              <h4>Cloud Nine Rooms Girls PG</h4>
-              <p>
-                <FaLocationDot className={carouselStyles.loction} /> Sector 45,
-                Gurugram
-              </p>
-              <div className={carouselStyles.CarouselBtn}>
-                <button
-                  type="button"
-                  className={`${carouselStyles.exploreBtn} btn btn-primary`}
-                >
-                  Explore Now
-                </button>
-                <ContactFormModal modalId={"exampleModal1"} />
+          {propertiesData?.map((property, i) => {
+            return (
+              <div
+                className={`${carouselStyles.CarouselBox}`}
+                style={{
+                  width: "250px",
+                  marginLeft: "30px",
+                  padding: "0",
+                }}
+                key={i}
+              >
+                <img
+                  src={propertyImage}
+                  className={`${carouselStyles.CarouselImage} img-fluid`}
+                  alt="property"
+                />
+                <div className={carouselStyles.CarouselText}>
+                  <h4>{property?.name}</h4>
+                  <p>
+                    <FaLocationDot className={carouselStyles.loction} />{" "}
+                    {property?.address}
+                  </p>
+                  <div className={carouselStyles.CarouselBtn}>
+                    <NavLink to={`/our-properties/${property?.slug}`}>
+                      <button
+                        type="button"
+                        className={`${carouselStyles.exploreBtn} btn btn-primary`}
+                      >
+                        Explore Now
+                      </button>
+                    </NavLink>
+                    <ContactFormModal modalId={"exampleModal1"} />
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div
-            className={`${carouselStyles.CarouselBox}`}
-            style={{
-              width: "250px",
-              marginRight: "30px !important",
-              padding: "0",
-            }}
-          >
-            <img
-              src={propertyImage}
-              className={`${carouselStyles.CarouselImage} img-fluid`}
-              alt="property"
-            />
-            <div className={carouselStyles.CarouselText}>
-              <h4>Cloud Nine Rooms Girls PG</h4>
-              <p>
-                <FaLocationDot className={carouselStyles.loction} /> Sector 45,
-                Gurugram
-              </p>
-              <div className={carouselStyles.CarouselBtn}>
-                <button
-                  type="button"
-                  className={`${carouselStyles.exploreBtn} btn btn-primary`}
-                >
-                  Explore Now
-                </button>
-                <button
-                  type="button"
-                  className={`${carouselStyles.visitBtn} btn btn-outline-primary`}
-                >
-                  Book a Visit
-                </button>
-              </div>
-            </div>
-          </div>
-          <div
-            className={`${carouselStyles.CarouselBox}`}
-            style={{
-              width: "250px",
-              marginRight: "30px !important",
-              padding: "0",
-            }}
-          >
-            <img
-              src={propertyImage}
-              className={`${carouselStyles.CarouselImage} img-fluid`}
-              alt="property"
-            />
-            <div className={carouselStyles.CarouselText}>
-              <h4>Cloud Nine Rooms Girls PG</h4>
-              <p>
-                <FaLocationDot className={carouselStyles.loction} /> Sector 45,
-                Gurugram
-              </p>
-              <div className={carouselStyles.CarouselBtn}>
-                <button
-                  type="button"
-                  className={`${carouselStyles.exploreBtn} btn btn-primary`}
-                >
-                  Explore Now
-                </button>
-                <button
-                  type="button"
-                  className={`${carouselStyles.visitBtn} btn btn-outline-primary`}
-                >
-                  Book a Visit
-                </button>
-              </div>
-            </div>
-          </div>
+            );
+          })}
         </div>
       </section>
       <section className={`${styles.threePoints} mt-100`}>

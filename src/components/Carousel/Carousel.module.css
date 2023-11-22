@@ -3,11 +3,7 @@
   border-radius: 20px;
   background: #fff;
   box-shadow: 0px 0px 4px 0px rgba(174, 174, 174, 0.15);
-  margin-right: 20px !important;
   transition: 0.3s;
-}
-.CarouselBox:not(:last-child) {
-    margin-right: 20px !important;
 }
 
 .CarouselBox:last-child {
