@@ -39,6 +39,7 @@ function ContactFormModal({ modalId, isBanner }) {
             <h2 className="text-center modal_title">
               Book a <span style={{ color: "#fc4102" }}>Visit</span>
             </h2>
+            <p className="text-center mb-0" >Flexible, Convenient & Affordable Coliving</p>
             <div className="modal-body">
               <FormFields isModal={true} />
               <div className="modal_contact_details text-center">
