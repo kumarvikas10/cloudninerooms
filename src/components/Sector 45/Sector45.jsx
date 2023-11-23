@@ -19,7 +19,6 @@ import wifiImg from "../../data/Icons-data/High Speed Wifi.png";
 import supportImg from "../../data/Icons-data/247 Support.png";
 import communityImg from "../../data/Icons-data/Great Community.png";
 import parkingImg from "../../data/Icons-data/Parking.png";
-import homepageStyles from "../Homepage/Home.module.css";
 import ImageGallery from "../Image Gallery/MyGallery";
 import ContactForm from "../Contact-form/contactForm";
 import BedTypeImg from "../../data/Icons-data/BedType.png";
@@ -196,6 +195,7 @@ function Sector45() {
                   <br className="mob_hide" /> with{" "}
                   <span>Premium Amenities</span>
                 </h2>
+                <p className="mob_hide">Elevate Your Living Experience at Cloud Nine Rooms with Premium Amenities</p>
               </div>
             </div>
           </div>
@@ -389,10 +389,10 @@ function Sector45() {
           </div>
         </div>
       </section>
-      <section className={homepageStyles.pictureGallery}>
+      <section className={css.pictureGallery}>
         <div className="container">
           <div className="row">
-            <div className={homepageStyles.mainHeading}>
+            <div className={css.mainHeading}>
               <h2>
                 Capturing Coliving's <span>Vibrant</span> Essence
               </h2>
@@ -404,7 +404,7 @@ function Sector45() {
             </div>
           </div>
           <div className="row">
-            <div className={homepageStyles.gallery}>
+            <div className={css.gallery}>
               <ImageGallery
                 image1={filteredProperty[0]?.images[0]?.image}
                 image2={filteredProperty[0]?.images[1]?.image}
@@ -418,9 +418,9 @@ function Sector45() {
           </div>
         </div>
       </section>
-      <section className={homepageStyles.contactFormSection}>
+      <section className={css.contactFormSection}>
         <div className="container">
-          <div className={`${homepageStyles.contactForm} row`}>
+          <div className={`${css.contactForm} row`}>
             <ContactForm />
           </div>
         </div>

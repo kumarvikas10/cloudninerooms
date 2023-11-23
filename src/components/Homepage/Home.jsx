@@ -87,6 +87,7 @@ function Home() {
                 <h2>
                   Our <span>Properties</span>
                 </h2>
+                <p className="mob_hide">Located in a prime Gurugram location, right at the center of major corporate hubs, our accommodations are thoughtfully<br/> designed to leave a lasting impression</p>
               </div>
             </div>
           </div>
@@ -228,6 +229,7 @@ function Home() {
                   Every Cloud <span>Nine Rooms</span> comes <br /> with{" "}
                   <span>Premium Amenities</span>
                 </h2>
+                <p className="mob_hide">Elevate Your Living Experience at Cloud Nine Rooms with Premium Amenities</p>
               </div>
             </div>
           </div>

@@ -30,6 +30,7 @@
 .navbar .navbarRight p {
   margin-bottom: 0px;
 }
+
 .navbarRight {
   width: 100%;
   justify-content: end;
@@ -60,14 +61,17 @@
   --bs-gradient: none;
   background: #fff;
 }
+
 .visitBtn:hover {
   background: #fc4102 !important;
 }
+
 .visitBtnDark {
   background-color: #fc4102;
   color: #fff;
   width: 150px;
 }
+
 .visitBtnDark:hover {
   background-color: #fff;
   border-color: #fc4102;
@@ -84,6 +88,7 @@
     right: 0px;
     transition: 0.3s;
   }
+
   .navbar .navbarRight p {
     margin-bottom: 8px;
   }
@@ -94,12 +99,15 @@
     padding: 10px 20px;
     border-right: none;
   }
+
   .logo {
     height: 35px;
   }
+
   .navbar {
     padding: 10px 0px;
   }
+
   .navbarRight {
     width: 50%;
     position: absolute;
@@ -108,11 +116,19 @@
     box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
   }
-  .navbarRight > li {
+
+  .navbarRight>li {
     padding-left: 10px;
     border-bottom: 1px solid #fc41023d;
   }
+
   .visitBtn {
+    font-size: 13px;
+  }
+
+  .visitBtnDark {
+    width: 100px;
+    padding: 5px;
     font-size: 13px;
   }
 }

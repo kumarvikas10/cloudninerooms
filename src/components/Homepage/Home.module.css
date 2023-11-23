@@ -127,7 +127,10 @@
     font-weight: 500;
     color: #000;
     line-height: 38px;
-    margin-bottom: 60px;
+}
+
+.mainHeading p{
+    margin-bottom: 40px;
 }
 
 .mainHeading h2 span {
@@ -275,9 +278,9 @@
     text-align: center;
 }
 
-.pictureGallery .gallery {
+/* .pictureGallery .gallery {
     margin-top: 40px;
-}
+} */
 
 .contactFormSection {
     margin-top: 100px;
