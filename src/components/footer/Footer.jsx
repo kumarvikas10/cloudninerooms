@@ -72,16 +72,16 @@ function Footer() {
           <div className="col-md-7">
             <div className={styles.footer_socials}>
               <div>
-                <a href="tel:9999998992" className={styles.footer_link}>
-                  Call : 9999-998-992
+                <a href="tel:9289900006" className={styles.footer_link}>
+                  Call : 9289900006
                 </a>
               </div>
               <div>
                 <a
-                  href="mailto:support@cloud9rooms.com"
+                  href="mailto:hello@cloudninerooms.com"
                   className={styles.footer_link}
                 >
-                  Email : support@cloud9rooms.com
+                  Email : hello@cloudninerooms.com
                 </a>
               </div>
               <div>
