@@ -192,10 +192,10 @@ function AboutUs() {
             </div>
           </div>
         </div>
-        <div className={`${styles.mt100} ${styles.banner}`}>
-          <img src={valueBanner} alt="banner" className={styles.banner_image} />
+        <div className={`${styles.mt100} ${styles.banner}`} style={{ backgroundImage: `url(${valueBanner})` }}>
+          {/* <img src={valueBanner} alt="banner" className= {`${style.banner_image} img-fluid`} /> */}
           <div className={styles.banner_text}>
-            <h2 className={`mb-0 ${styles.heading_team}`}>
+            <h2 className={styles.heading}>
               Find The Best <span style={{ color: "#FC4102" }}>Rooms</span> For
               Stay
             </h2>

@@ -91,8 +91,8 @@ function TheIdea() {
             </div>
           </div>
         </div>
-        <div className={`${style.mt100} ${style.banner}`}>
-          <img src={valueBanner} alt="banner" className={style.banner_image} />
+        <div className={`${style.mt100} ${style.banner}`} style={{ backgroundImage: `url(${valueBanner})` }}>
+          {/* <img src={valueBanner} alt="banner" className= {`${style.banner_image} img-fluid`} /> */}
           <div className={style.banner_text}>
             <h2 className={styles.heading}>
               Find The Best <span style={{ color: "#FC4102" }}>Rooms</span> For
