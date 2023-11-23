@@ -12,6 +12,8 @@
 
 .CarouselImage {
   border-radius: 20px 20px 0px 0px;
+  height: 300px;
+  width: 100%;
 }
 
 .CarouselText {
@@ -91,6 +93,10 @@
     font-size: 13px;
     line-height: 16px;
     margin-bottom: 12px !important;
+  }
+  .CarouselImage {
+    height: 225px;
+    width: 100%;
   }
 
   .exploreBtn {

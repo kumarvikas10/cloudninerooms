@@ -128,19 +128,19 @@
         "Biometric Entrance"
       ],
       "images": [
-        { "image": "/images/cloud-nine-259/1.jpeg" },
-        { "image": "/images/cloud-nine-259/2.jpeg" },
-        { "image": "/images/cloud-nine-259/3.jpeg" },
-        { "image": "/images/cloud-nine-259/4.jpeg" },
-        { "image": "/images/cloud-nine-259/5.jpeg" },
-        { "image": "/images/cloud-nine-259/6.jpeg" },
-        { "image": "/images/cloud-nine-259/7.jpeg" }
+        { "image": "/images/cloud-nine-2014/1.jpeg" },
+        { "image": "/images/cloud-nine-2014/2.jpeg" },
+        { "image": "/images/cloud-nine-2014/3.jpeg" },
+        { "image": "/images/cloud-nine-2014/4.jpeg" },
+        { "image": "/images/cloud-nine-2014/5.jpeg" },
+        { "image": "/images/cloud-nine-2014/6.jpeg" },
+        { "image": "/images/cloud-nine-2014/7.jpeg" }
       ]
     },
     {
       "id": 6,
-      "name": "Coud Nine Rooms 1980(Boys)",
-      "slug": "cloud-nine-rooms-1980-boys",
+      "name": "Elegant Rooms 1980(Boys)",
+      "slug": "elegant-rooms-1980-boys",
       "address": "Sector 45, Gurugram",
       "descriptions": "Welcome to Cloud Nine Rooms 1980(Boys), a haven of contemporary living in the vibrant city of Gurugram. Our apartment requires just a one-month rent and a refundable security deposit, offering a seamless combination of comfort and convenience. Experience the pinnacle of accommodation with fully furnished rooms featuring air conditioning, microwaves, toasters, refrigerators, and 32-inch LED TVs with Tata Sky. Each room also boasts a balcony and an attached bathroom. At Cloud Nine Rooms 1980(Boys), we guarantee hassle-free accommodations with amenities such as high-speed WiFi, daily housekeeping, biometric entry, and round-the-clock power and water backup. Our reputable PG for boys provides three meals a day, emphasizing quality and cleanliness. Nestled in a gated community with CCTV, the property is conveniently located near ATMs, markets, gyms, banks, and more. Welcome to a lifestyle where comfort meets modern living at Cloud Nine Rooms 1980(Boys).",
       "price": [
@@ -155,13 +155,13 @@
         "Biometric Entrance"
       ],
       "images": [
-        { "image": "/images/cloud-nine-259/1.jpeg" },
-        { "image": "/images/cloud-nine-259/2.jpeg" },
-        { "image": "/images/cloud-nine-259/3.jpeg" },
-        { "image": "/images/cloud-nine-259/4.jpeg" },
-        { "image": "/images/cloud-nine-259/5.jpeg" },
-        { "image": "/images/cloud-nine-259/6.jpeg" },
-        { "image": "/images/cloud-nine-259/7.jpeg" }
+        { "image": "/images/elegant-room-boys/1.jpeg" },
+        { "image": "/images/elegant-room-boys/2.jpeg" },
+        { "image": "/images/elegant-room-boys/3.jpeg" },
+        { "image": "/images/elegant-room-boys/4.jpeg" },
+        { "image": "/images/elegant-room-boys/5.jpeg" },
+        { "image": "/images/elegant-room-boys/6.jpeg" },
+        { "image": "/images/elegant-room-boys/7.jpeg" }
       ]
     }
   ]

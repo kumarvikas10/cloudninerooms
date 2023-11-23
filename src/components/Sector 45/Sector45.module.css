@@ -149,7 +149,6 @@
 }
 
 @media screen and (max-width: 768px) {
-
   .main_heading {
     font-size: 26px;
   }
@@ -162,9 +161,9 @@
     width: 40px;
   }
 
-  /* .mobIconText{
-    padding: 0px;
-  } */
+  .accomodation_card > div:nth-child(1) {
+    height: auto;
+  }
 
   .mobUspPoints .mobIconText p {
     color: #fc4102;
@@ -222,6 +221,7 @@
 
   .property_img img {
     height: 150px;
+    object-fit: cover;
   }
 
   .accomodation_card {
