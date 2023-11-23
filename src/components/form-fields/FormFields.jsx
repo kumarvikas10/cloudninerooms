@@ -127,9 +127,7 @@ function FormFields({ isModal }) {
                     name="typeofspace"
                     className={styles.selectItem}
                   >
-                    <option defaultValue="Type of Space" disabled>
-                      Type of Space
-                    </option>
+                    <option defaultValue="Type of Space">Type of Space</option>
                     <option value="Private Room">Private Room</option>
                     <option value="Double Sharing">Double Sharing</option>
                     <option value="Triple Sharing">Triple Sharing</option>
@@ -154,9 +152,7 @@ function FormFields({ isModal }) {
                   }
                 >
                   <Field as="select" name="city" className={styles.selectItem}>
-                    <option defaultValue="Select City" disabled>
-                      Select City
-                    </option>
+                    <option defaultValue="Select City">Select City</option>
                     <option value="Gurugram">Gurugram</option>
                   </Field>
                   <ErrorMessage name="city">

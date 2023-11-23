@@ -52,10 +52,16 @@
 .accomodation_card > div {
   width: 50%;
 }
+.accomodation_card > div:nth-child(1) {
+  height: 243px;
+  overflow: hidden;
+  border-radius: 20px 0 0 20px;
+}
 
 .property_img img {
   width: 100%;
   border-radius: 20px 0 0 20px;
+  object-fit: contain;
 }
 
 .accomodation_card_text {

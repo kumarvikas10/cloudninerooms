@@ -5,7 +5,7 @@
       "name": "Cloud Nine Rooms 679",
       "slug": "cloud-nine-rooms-679",
       "address": "Sector 43, Gurugram",
-      "descriptions": "We are offering quality services ensures a comfortable, secure and pleasant living environment Experience, meeting the needs and expectations of tenant. We provide a responsive Management Team that addressed concerns and requests in a timely manner. We provide Reliable access to all important Utilities such as Electricity, water and Meals. We have Adequate Security measures like CCTV suveillance, swcure locks and Security Guard to ensure Safety and Security of the Tenants.",
+      "descriptions": "Welcome to Cloud Nine Rooms 679, a haven of contemporary living in the vibrant city of Gurugram. Our apartment requires just a one-month rent and a refundable security deposit, offering a seamless combination of comfort and convenience. Experience the pinnacle of accommodation with fully furnished rooms featuring air conditioning, microwaves, toasters, refrigerators, and 32-inch LED TVs with Tata Sky. Each room also boasts a balcony and an attached bathroom. At Cloud Nine Rooms 679, we guarantee hassle-free accommodations with amenities such as high-speed WiFi, daily housekeeping, biometric entry, and round-the-clock power and water backup. Our reputable PG for boys and girls provides three meals a day, emphasizing quality and cleanliness. Nestled in a gated community with CCTV, the property is conveniently located near ATMs, markets, gyms, banks, and more. Welcome to a lifestyle where comfort meets modern living at Cloud Nine Rooms 679.",
       "price": [
         { "type": "Private Room", "price": "30,999" },
         { "type": "Double Sharing", "price": "15,999" },
@@ -32,7 +32,7 @@
       "name": "Cloud Nine Rooms 56",
       "slug": "cloud-nine-rooms-56",
       "address": "Sector 43, Gurugram",
-      "descriptions": "We are offering quality services ensures a comfortable, secure and pleasant living environment Experience, meeting the needs and expectations of tenant. We provide a responsive Management Team that addressed concerns and requests in a timely manner. We provide Reliable access to all important Utilities such as Electricity, water and Meals. We have Adequate Security measures like CCTV suveillance, swcure locks and Security Guard to ensure Safety and Security of the Tenants.",
+      "descriptions": "Welcome to Cloud Nine Rooms 56, a haven of contemporary living in the vibrant city of Gurugram. Our apartment requires just a one-month rent and a refundable security deposit, offering a seamless combination of comfort and convenience. Experience the pinnacle of accommodation with fully furnished rooms featuring air conditioning, microwaves, toasters, refrigerators, and 32-inch LED TVs with Tata Sky. Each room also boasts a balcony and an attached bathroom. At Cloud Nine Rooms 56, we guarantee hassle-free accommodations with amenities such as high-speed WiFi, daily housekeeping, biometric entry, and round-the-clock power and water backup. Our reputable PG for boys and girls provides three meals a day, emphasizing quality and cleanliness. Nestled in a gated community with CCTV, the property is conveniently located near ATMs, markets, gyms, banks, and more. Welcome to a lifestyle where comfort meets modern living at Cloud Nine Rooms 56.",
       "price": [
         { "type": "Private Room", "price": "33,999" },
         { "type": "Double Sharing", "price": "17,999" },
@@ -52,6 +52,116 @@
         { "image": "/images/cloud-nine-56/5.jpeg" },
         { "image": "/images/cloud-nine-56/6.jpeg" },
         { "image": "/images/cloud-nine-56/7.jpeg" }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Cloud Nine Rooms 259",
+      "slug": "cloud-nine-rooms-259",
+      "address": "Sector 55, Gurugram",
+      "descriptions": "Welcome to Cloud Nine Rooms 259, a haven of contemporary living in the vibrant city of Gurugram. Our apartment requires just a one-month rent and a refundable security deposit, offering a seamless combination of comfort and convenience. Experience the pinnacle of accommodation with fully furnished rooms featuring air conditioning, microwaves, toasters, refrigerators, and 32-inch LED TVs with Tata Sky. Each room also boasts a balcony and an attached bathroom. At Cloud Nine Rooms 259, we guarantee hassle-free accommodations with amenities such as high-speed WiFi, daily housekeeping, biometric entry, and round-the-clock power and water backup. Our reputable PG for boys and girls provides three meals a day, emphasizing quality and cleanliness. Nestled in a gated community with CCTV, the property is conveniently located near ATMs, markets, gyms, banks, and more. Welcome to a lifestyle where comfort meets modern living at Cloud Nine Rooms 259.",
+      "price": [
+        { "type": "Private Room", "price": "33,999" },
+        { "type": "Double Sharing", "price": "17,999" },
+        { "type": "Triple Sharing", "price": "12,999" }
+      ],
+      "amenities": [
+        "Premium property",
+        "Gaming zone available",
+        "Biometric Entrance",
+        "Advance Steam Iron"
+      ],
+      "images": [
+        { "image": "/images/cloud-nine-259/1.jpeg" },
+        { "image": "/images/cloud-nine-259/2.jpeg" },
+        { "image": "/images/cloud-nine-259/3.jpeg" },
+        { "image": "/images/cloud-nine-259/4.jpeg" },
+        { "image": "/images/cloud-nine-259/5.jpeg" },
+        { "image": "/images/cloud-nine-259/6.jpeg" },
+        { "image": "/images/cloud-nine-259/7.jpeg" }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Cloud Nine Rooms 803",
+      "slug": "cloud-nine-rooms-803",
+      "address": "Sector 38, Gurugram",
+      "descriptions": "Welcome to Cloud Nine Rooms 803, a haven of contemporary living in the vibrant city of Gurugram. Our apartment requires just a one-month rent and a refundable security deposit, offering a seamless combination of comfort and convenience. Experience the pinnacle of accommodation with fully furnished rooms featuring air conditioning, microwaves, toasters, refrigerators, and 32-inch LED TVs with Tata Sky. Each room also boasts a balcony and an attached bathroom. At Cloud Nine Rooms 803, we guarantee hassle-free accommodations with amenities such as high-speed WiFi, daily housekeeping, biometric entry, and round-the-clock power and water backup. Our reputable PG for boys and girls provides three meals a day, emphasizing quality and cleanliness. Nestled in a gated community with CCTV, the property is conveniently located near ATMs, markets, gyms, banks, and more. Welcome to a lifestyle where comfort meets modern living at Cloud Nine Rooms 803.",
+      "price": [
+        { "type": "Private Room", "price": "21,999" },
+        { "type": "Double Sharing", "price": "11,999" },
+        { "type": "Triple Sharing", "price": "8,999" },
+        { "type": "Four Sharing", "price": "7,499" }
+      ],
+      "amenities": [
+        "Easily Commutable Property",
+        "Delicious Breakfast",
+        "Daily Cleaning",
+        "Biometric Entrance"
+      ],
+      "images": [
+        { "image": "/images/cloud-nine-803/1.jpeg" },
+        { "image": "/images/cloud-nine-803/2.jpeg" },
+        { "image": "/images/cloud-nine-803/3.jpeg" },
+        { "image": "/images/cloud-nine-803/4.jpeg" },
+        { "image": "/images/cloud-nine-803/5.jpeg" },
+        { "image": "/images/cloud-nine-803/6.jpeg" },
+        { "image": "/images/cloud-nine-803/7.jpeg" }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Cloud Nine Rooms 2014(Girls)",
+      "slug": "cloud-nine-rooms-2014-girls",
+      "address": "Sector 45, Gurugram",
+      "descriptions": "Welcome to Cloud Nine Rooms 2014(Girls), a haven of contemporary living in the vibrant city of Gurugram. Our apartment requires just a one-month rent and a refundable security deposit, offering a seamless combination of comfort and convenience. Experience the pinnacle of accommodation with fully furnished rooms featuring air conditioning, microwaves, toasters, refrigerators, and 32-inch LED TVs with Tata Sky. Each room also boasts a balcony and an attached bathroom. At Cloud Nine Rooms 2014(Girls), we guarantee hassle-free accommodations with amenities such as high-speed WiFi, daily housekeeping, biometric entry, and round-the-clock power and water backup. Our reputable PG for girls provides three meals a day, emphasizing quality and cleanliness. Nestled in a gated community with CCTV, the property is conveniently located near ATMs, markets, gyms, banks, and more. Welcome to a lifestyle where comfort meets modern living at Cloud Nine Rooms 2014(Girls).",
+      "price": [
+        { "type": "Private Room", "price": "23,999" },
+        { "type": "Double Sharing", "price": "11,999" },
+        { "type": "Triple Sharing", "price": "9,499" },
+        { "type": "Four Sharing", "price": "7,999" }
+      ],
+      "amenities": [
+        "Easily Commutable Property",
+        "Delicious Breakfast",
+        "Daily Cleaning",
+        "Biometric Entrance"
+      ],
+      "images": [
+        { "image": "/images/cloud-nine-259/1.jpeg" },
+        { "image": "/images/cloud-nine-259/2.jpeg" },
+        { "image": "/images/cloud-nine-259/3.jpeg" },
+        { "image": "/images/cloud-nine-259/4.jpeg" },
+        { "image": "/images/cloud-nine-259/5.jpeg" },
+        { "image": "/images/cloud-nine-259/6.jpeg" },
+        { "image": "/images/cloud-nine-259/7.jpeg" }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Coud Nine Rooms 1980(Boys)",
+      "slug": "cloud-nine-rooms-1980-boys",
+      "address": "Sector 45, Gurugram",
+      "descriptions": "Welcome to Cloud Nine Rooms 1980(Boys), a haven of contemporary living in the vibrant city of Gurugram. Our apartment requires just a one-month rent and a refundable security deposit, offering a seamless combination of comfort and convenience. Experience the pinnacle of accommodation with fully furnished rooms featuring air conditioning, microwaves, toasters, refrigerators, and 32-inch LED TVs with Tata Sky. Each room also boasts a balcony and an attached bathroom. At Cloud Nine Rooms 1980(Boys), we guarantee hassle-free accommodations with amenities such as high-speed WiFi, daily housekeeping, biometric entry, and round-the-clock power and water backup. Our reputable PG for boys provides three meals a day, emphasizing quality and cleanliness. Nestled in a gated community with CCTV, the property is conveniently located near ATMs, markets, gyms, banks, and more. Welcome to a lifestyle where comfort meets modern living at Cloud Nine Rooms 1980(Boys).",
+      "price": [
+        { "type": "Private Room", "price": "23,999" },
+        { "type": "Double Sharing", "price": "12,999" },
+        { "type": "Triple Sharing", "price": "8,499" }
+      ],
+      "amenities": [
+        "Easily Commutable Property",
+        "Delicious Breakfast",
+        "Daily Cleaning",
+        "Biometric Entrance"
+      ],
+      "images": [
+        { "image": "/images/cloud-nine-259/1.jpeg" },
+        { "image": "/images/cloud-nine-259/2.jpeg" },
+        { "image": "/images/cloud-nine-259/3.jpeg" },
+        { "image": "/images/cloud-nine-259/4.jpeg" },
+        { "image": "/images/cloud-nine-259/5.jpeg" },
+        { "image": "/images/cloud-nine-259/6.jpeg" },
+        { "image": "/images/cloud-nine-259/7.jpeg" }
       ]
     }
   ]
