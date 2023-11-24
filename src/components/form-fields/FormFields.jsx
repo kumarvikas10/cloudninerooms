@@ -3,9 +3,12 @@ import styles from "../Contact-form/ContactForm.module.css";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import emailjs from "emailjs-com";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function FormFields({ isModal }) {
   const digitsOnly = (value) => /^\d+$/.test(value);
+  const notify = () => toast.success("Thanks for submitting the query!");
 
   const SignupSchema = Yup.object().shape({
     name: Yup.string()
@@ -42,14 +45,14 @@ function FormFields({ isModal }) {
         onSubmit={(values, { setSubmitting, resetForm }) => {
           emailjs
             .send(
-              "service_jipk2bu",
-              "template_w7x9ttf",
+              "service_9kwtl99",
+              "template_iylli3n",
               values,
-              "plO505kYb-iv1wUHb"
+              "EekPCK5PonEq6MqTI"
             )
             .then((response) => {
               console.log("Email sent successfully:", response);
-              alert("Form submitted successfully!");
+              notify();
             })
             .catch((error) => {
               console.error("Error sending email:", error);
@@ -181,6 +184,7 @@ function FormFields({ isModal }) {
                   </button>
                 </div>
               </div>
+              <ToastContainer />
             </div>
           </Form>
         )}

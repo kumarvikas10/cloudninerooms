@@ -12,10 +12,19 @@
         { "type": "Triple Sharing", "price": "12,499" }
       ],
       "amenities": [
-        "Easily Commutable Property",
-        "Delicious Breakfast",
-        "Daily Cleaning",
-        "Biometric Entrance"
+        {
+          "name": "Easily Commutable Property",
+          "img": "/images/easily-commutable.png"
+        },
+        {
+          "name": "Delicious Breakfast",
+          "img": "/images/delicious-breakfast.png"
+        },
+        { "name": "Daily Cleaning", "img": "/images/daily-cleaning.png" },
+        {
+          "name": "Biometric Entrance",
+          "img": "/images/biometric-entrance.png"
+        }
       ],
       "images": [
         { "image": "/images/cloud-nine-679/1.jpeg" },
@@ -39,10 +48,16 @@
         { "type": "Triple Sharing", "price": "13,999" }
       ],
       "amenities": [
-        "Premium property",
-        "Gaming zone available",
-        "Biometric Entrance",
-        "Advance Steam Iron"
+        { "name": "Premium property", "img": "/images/premium-property.png" },
+        { "name": "Gaming zone available", "img": "/images/gaming-zone.png" },
+        {
+          "name": "Biometric Entrance",
+          "img": "/images/biometric-entrance.png"
+        },
+        {
+          "name": "Advance Steam Iron",
+          "img": "/images/advance-steam-iron.png"
+        }
       ],
       "images": [
         { "image": "/images/cloud-nine-56/1.jpeg" },
@@ -66,10 +81,16 @@
         { "type": "Triple Sharing", "price": "12,999" }
       ],
       "amenities": [
-        "Premium property",
-        "Gaming zone available",
-        "Biometric Entrance",
-        "Advance Steam Iron"
+        { "name": "Premium property", "img": "/images/premium-property.png" },
+        { "name": "Gaming zone available", "img": "/images/gaming-zone.png" },
+        {
+          "name": "Biometric Entrance",
+          "img": "/images/biometric-entrance.png"
+        },
+        {
+          "name": "Advance Steam Iron",
+          "img": "/images/advance-steam-iron.png"
+        }
       ],
       "images": [
         { "image": "/images/cloud-nine-259/1.jpeg" },
@@ -94,10 +115,19 @@
         { "type": "Four Sharing", "price": "7,499" }
       ],
       "amenities": [
-        "Easily Commutable Property",
-        "Delicious Breakfast",
-        "Daily Cleaning",
-        "Biometric Entrance"
+        {
+          "name": "Easily Commutable Property",
+          "img": "/images/easily-commutable.png"
+        },
+        {
+          "name": "Delicious Breakfast",
+          "img": "/images/delicious-breakfast.png"
+        },
+        { "name": "Daily Cleaning", "img": "/images/daily-cleaning.png" },
+        {
+          "name": "Biometric Entrance",
+          "img": "/images/biometric-entrance.png"
+        }
       ],
       "images": [
         { "image": "/images/cloud-nine-803/1.jpeg" },
@@ -122,10 +152,19 @@
         { "type": "Four Sharing", "price": "7,999" }
       ],
       "amenities": [
-        "Easily Commutable Property",
-        "Delicious Breakfast",
-        "Daily Cleaning",
-        "Biometric Entrance"
+        {
+          "name": "Easily Commutable Property",
+          "img": "/images/easily-commutable.png"
+        },
+        {
+          "name": "Delicious Breakfast",
+          "img": "/images/delicious-breakfast.png"
+        },
+        { "name": "Daily Cleaning", "img": "/images/daily-cleaning.png" },
+        {
+          "name": "Biometric Entrance",
+          "img": "/images/biometric-entrance.png"
+        }
       ],
       "images": [
         { "image": "/images/cloud-nine-2014/1.jpeg" },
@@ -149,10 +188,19 @@
         { "type": "Triple Sharing", "price": "8,499" }
       ],
       "amenities": [
-        "Easily Commutable Property",
-        "Delicious Breakfast",
-        "Daily Cleaning",
-        "Biometric Entrance"
+        {
+          "name": "Easily Commutable Property",
+          "img": "/images/easily-commutable.png"
+        },
+        {
+          "name": "Delicious Breakfast",
+          "img": "/images/delicious-breakfast.png"
+        },
+        { "name": "Daily Cleaning", "img": "/images/daily-cleaning.png" },
+        {
+          "name": "Biometric Entrance",
+          "img": "/images/biometric-entrance.png"
+        }
       ],
       "images": [
         { "image": "/images/elegant-room-boys/1.jpeg" },

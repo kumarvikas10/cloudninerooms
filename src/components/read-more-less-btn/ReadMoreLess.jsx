@@ -11,7 +11,7 @@ const ReadMoreLess = ({ text, maxLength }) => {
 
   const displayText = isFullTextVisible
     ? text
-    : `${text.slice(0, maxLength)}...`;
+    : `${text?.slice(0, maxLength)}...`;
 
   return (
     <div>

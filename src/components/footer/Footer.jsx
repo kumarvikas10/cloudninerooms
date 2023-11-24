@@ -86,7 +86,13 @@ function Footer() {
               </div>
               <div>
                 <img src={instagram} alt="cloud nine instagram" />
-                <img src={facebook} alt="cloud nine facebook" />
+                <a
+                  href="https://www.facebook.com/profile.php?id=100086061260397&mibextid=ZbWKwL"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src={facebook} alt="cloud nine facebook" />
+                </a>
                 <img src={linkedin} alt="cloud nine linkedin" />
               </div>
             </div>
