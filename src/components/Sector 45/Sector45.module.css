@@ -196,11 +196,11 @@
     padding: 40px 10px;
   }
 
-  .accomodation_card div:nth-child(1) {
+  .accomodation_card > div:nth-child(1) {
     width: 35%;
   }
 
-  .accomodation_card div:nth-child(2) {
+  .accomodation_card > div:nth-child(2) {
     width: 65%;
   }
 

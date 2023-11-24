@@ -47,6 +47,12 @@ body {
 .desk_hide {
   display: none;
 }
+.footer_btn button {
+  width: 100%;
+  padding: 10px;
+  font-size: 13px;
+  font-weight: 500;
+}
 
 .testimonialSlider .slick-slide {
   padding: 10px;
@@ -58,18 +64,19 @@ body {
 }
 
 .testimonialSlider .slick-dots li.slick-active button::before {
-	color: #fc4102;
+  color: #fc4102;
 }
 
 .testimonialSlider .slick-dots li button::before {
-	color: #fc4102;
+  color: #fc4102;
 }
 
-.carouselSlider .slick-next::before, .slick-prev::before {
-	font-size: 20px;
-	line-height: 1;
-	opacity: .75;
-	color: #FC4102 !important;
+.carouselSlider .slick-next::before,
+.slick-prev::before {
+  font-size: 20px;
+  line-height: 1;
+  opacity: 0.75;
+  color: #fc4102 !important;
 }
 .carouselSlider .slick-next::before,
 .slick-prev::before {

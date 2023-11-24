@@ -22,7 +22,7 @@ const MyGallery = ({
                   ref={ref}
                   onClick={open}
                   src={image1}
-                  alt="image1"
+                  alt="cloud nine rooms"
                   className="img-fluid"
                 />
               )}
@@ -39,7 +39,7 @@ const MyGallery = ({
                   ref={ref}
                   onClick={open}
                   src={image2}
-                  alt="image1"
+                  alt="cloud nine rooms"
                   className="img-fluid"
                 />
               )}
@@ -56,7 +56,7 @@ const MyGallery = ({
                   ref={ref}
                   onClick={open}
                   src={image3}
-                  alt="image1"
+                  alt="cloud nine rooms"
                   className="img-fluid"
                 />
               )}
@@ -73,7 +73,7 @@ const MyGallery = ({
                   ref={ref}
                   onClick={open}
                   src={image4}
-                  alt="image1"
+                  alt="cloud nine rooms"
                   className="img-fluid"
                 />
               )}
@@ -90,7 +90,7 @@ const MyGallery = ({
                   ref={ref}
                   onClick={open}
                   src={image5}
-                  alt="image1"
+                  alt="cloud nine rooms"
                   className="img-fluid"
                 />
               )}
@@ -107,7 +107,7 @@ const MyGallery = ({
                   ref={ref}
                   onClick={open}
                   src={image6}
-                  alt="image1"
+                  alt="cloud nine rooms"
                   className="img-fluid"
                 />
               )}
@@ -124,7 +124,7 @@ const MyGallery = ({
                   ref={ref}
                   onClick={open}
                   src={image7}
-                  alt="image1"
+                  alt="cloud nine rooms"
                   className="img-fluid"
                 />
               )}
