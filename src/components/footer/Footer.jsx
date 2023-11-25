@@ -29,14 +29,7 @@ function Footer() {
           <div className="col-md-7">
             <img src={logo} alt="cloud nine logo" className="footer_logo" />
             <p className={`mob_hide ${styles.footer_text}`}>
-              Cloud Nine Rooms at Gurugram is your premier destination for
-              co-living and room stays, where comfort and community harmoniously
-              coexist. Nestled in the heart of Gurugram, our thoughtfully
-              designed rooms offer a perfect blend of modern luxury and
-              practicality. From solo travelers to remote professionals seeking
-              a home away from home, our meticulously curated spaces provide a
-              welcoming haven for those in search of a vibrant yet cozy living
-              experience.
+            Welcome to Cloud Nine Rooms at Gurugram, your premier destination for exceptional co-living and room stays. Nestled in the heart of Gurugram, our thoughtfully designed rooms offer a perfect blend of modern luxury and practicality, providing a comfortable and welcoming haven for a diverse range of residents. Whether you're a solo traveler, a remote professional seeking a home away from home, or someone simply looking for a vibrant yet cozy living experience, our meticulously curated spaces cater to your unique needs. Our prime location ensures convenience, while our commitment to fostering a sense of community ensures that comfort and companionship harmoniously coexist. Join us at Cloud Nine Rooms for an unparalleled living experience where every detail is designed to enhance your stay and create lasting memories
             </p>
           </div>
           <div className="col-md-3 col-8 footer_col">
@@ -68,7 +61,7 @@ function Footer() {
             </p>
           </div>
         </div>
-        <div className="row mt-3">
+        <div className="row mt-0">
           <div className="col-md-7">
             <div className={styles.footer_socials}>
               <div>
