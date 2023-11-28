@@ -60,8 +60,8 @@
         }
       ],
       "images": [
-        { "image": "/images/cloud-nine-56/2.jpeg" },
         { "image": "/images/cloud-nine-56/1.jpeg" },
+        { "image": "/images/cloud-nine-56/2.jpeg" },
         { "image": "/images/cloud-nine-56/3.jpeg" },
         { "image": "/images/cloud-nine-56/4.jpeg" },
         { "image": "/images/cloud-nine-56/5.jpeg" },
