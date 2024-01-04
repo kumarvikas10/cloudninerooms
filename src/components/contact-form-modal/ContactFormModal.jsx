@@ -48,7 +48,7 @@ function ContactFormModal({ modalId, isBanner }) {
             <div className="modal-body">
               <FormFields isModal={true} />
               <div className="modal_contact_details text-center">
-                <a href="tel:7678575035">Call : 7678575035</a>
+                <a href="tel:9991590000">Call : 9991590000</a>
                 <a href="mailto:hello@cloudninerooms.com ">
                   Email : hello@cloudninerooms.com
                 </a>

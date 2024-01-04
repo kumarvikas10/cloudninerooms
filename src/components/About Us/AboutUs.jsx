@@ -1,8 +1,10 @@
 import styles from "./AboutUs.module.css";
 import mission1 from "../../data/our-mission.jpg";
 import story from "../../data/our-story.jpg";
-import teammember1 from "../../data/boy.png";
-import teammember2 from "../../data/girl.png";
+import story1 from "../../data/story1.jpg";
+import story2 from "../../data/story2.jpg";
+import story3 from "../../data/story3.jpg";
+import story4 from "../../data/story4.jpg";
 import ourValues from "../../data/our-values.jpg";
 import valueBanner from "../../data/banner.jpg";
 import ReadMoreLess from "../read-more-less-btn/ReadMoreLess";
@@ -74,61 +76,53 @@ function AboutUs() {
       </div>
       <div className={styles.our_team_bg}>
         <div className={`${styles.our_team_container} container`}>
-          <h2 className={styles.heading_team}>Meet Our Team</h2>
+          <h2 className={styles.heading_team}>Member Stories</h2>
           <div className={`row ${styles.team_row}`}>
-            <div className="col-3 w65">
-              <div className={`card ${styles.team_card}`}>
+          <div className="col-3 w65">
+              <div className={styles.team_card}>
                 <img
-                  src={teammember1}
+                  src={story1}
                   class={`card-img-top ${styles.card_img}`}
                   alt="team1"
                 />
-                <div className="card-body">
-                  <h5 className="card-title">Edlio Gal</h5>
-                  <p className={`card-text ${styles.card_text}`}>
-                    Ceo & Co Founder
-                  </p>
+                <div className={styles.story_text}>
+                  <h5>“Discover a sense of family wherever you are with Cloud Nine Rooms”</h5>
                 </div>
               </div>
             </div>
             <div className="col-3 w65">
-              <div className={`card ${styles.team_card}`}>
+              <div className={styles.team_card}>
                 <img
-                  src={teammember2}
+                  src={story2}
                   class={`card-img-top ${styles.card_img}`}
                   alt="team1"
                 />
-                <div className="card-body">
-                  <h5 className="card-title">Chloe Gal</h5>
-                  <p className={`card-text ${styles.card_text}`}>Co Founder</p>
+                <div className={styles.story_text}>
+                  <h5>“You meet people that you wouldn’t meet in real life”</h5>
                 </div>
               </div>
             </div>
             <div className="col-3 w65">
-              <div className={`card ${styles.team_card}`}>
+              <div className={styles.team_card}>
                 <img
-                  src={teammember1}
+                  src={story3}
                   class={`card-img-top ${styles.card_img}`}
                   alt="team1"
                 />
-                <div className="card-body">
-                  <h5 className="card-title">Edlio Gal</h5>
-                  <p className={`card-text ${styles.card_text}`}>
-                    Ceo & Co Founder
-                  </p>
+                <div className={styles.story_text}>
+                  <h5>"Share enriching experiences with people from diverse backgrounds"</h5>
                 </div>
               </div>
             </div>
             <div className="col-3 w65">
-              <div className={`card ${styles.team_card}`}>
+              <div className={styles.team_card}>
                 <img
-                  src={teammember2}
+                  src={story4}
                   class={`card-img-top ${styles.card_img}`}
                   alt="team1"
                 />
-                <div className="card-body">
-                  <h5 className="card-title">Chloe Gal</h5>
-                  <p className={`card-text ${styles.card_text}`}>Co Founder</p>
+                <div className={styles.story_text}>
+                  <h5>“Cloud nine rooms truly fosters a feeling of community and family”</h5>
                 </div>
               </div>
             </div>

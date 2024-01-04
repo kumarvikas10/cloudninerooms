@@ -80,17 +80,36 @@
   padding: 80px 0 65px;
 }
 
-.card_text {
+/* .card_text {
   color: #fc4102;
 }
 
 .card_img {
   border-radius: 17px 17px 0 0;
-}
+} */
 
 .team_card {
   border-radius: 17px !important;
-  box-shadow: 0px 0px 4px 0px rgba(253, 65, 1, 0.15) !important;
+  /* box-shadow: 0px 0px 4px 0px rgba(253, 65, 1, 0.15) !important; */
+  position: relative;
+}
+
+.team_card img{
+  border-radius: 20px;
+}
+
+.story_text{
+  position: absolute;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+}
+
+.story_text h5{
+  font-size: 16px;
+  color: #fff;
+  line-height: 27px;
 }
 
 .heading_team span {
@@ -213,5 +232,11 @@
 
   .about_bg {
     height: 386px;
+  }
+
+  .story_text h5{
+    font-size: 14px;
+    color: #fff;
+    line-height: 24px;
   }
 }

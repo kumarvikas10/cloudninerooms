@@ -26,7 +26,7 @@ function contactForm() {
           <div className={`${styles.contactDetails} row`}>
             <div className="col-md-12">
               <div className={styles.Details}>
-                <a href="tel:7678575035">Call : 7678575035</a>
+                <a href="tel:9991590000">Call : 9991590000</a>
               </div>
               <div className={styles.Details}>
                 <a href="mailto:hello@cloudninerooms.com">
