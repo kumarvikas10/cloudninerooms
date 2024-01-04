@@ -70,7 +70,7 @@ function Home() {
                     className={`${styles.numberBtn} btn btn-primary`}
                   >
                     <BsFillTelephoneFill className={styles.telephone} />
-                    <a href="tel:7678575035">7678575035</a>
+                    <a href="tel:9991590000">9991590000</a>
                   </button>
                   <ContactFormModal modalId={"exampleModal1"} />
                 </div>
