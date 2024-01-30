@@ -23,17 +23,20 @@ import foodImg from "../../data/Icons-data/Food.png";
 import ReadMoreLess from "../read-more-less-btn/ReadMoreLess";
 import { useParams } from "react-router-dom";
 import ContactFormModal from "../contact-form-modal/ContactFormModal";
-import { allPropertiesData } from "../../service/PropertyService";
+// import { allPropertiesData } from "../../service/PropertyService";
+import axios from "axios";
 
 function Sector45() {
   const [propertiesData, setPropertiesData] = useState([]);
   const [filteredProperty, setFilteredProperty] = useState([]);
+  const { slug } = useParams();
 
   const handleFetchProperties = async () => {
     try {
-      await allPropertiesData(setPropertiesData);
+      const { data } = await axios.get(`/db.json`);
+      setPropertiesData(data.colivingSpaces);
     } catch (error) {
-      console.error(error.message);
+      console.error("Error fetching data:", error.message);
     }
   };
 
@@ -41,19 +44,25 @@ function Sector45() {
     handleFetchProperties();
   }, []);
 
-  const { slug } = useParams();
-
-  const newData = propertiesData?.filter((property) => {
-    return property?.slug === slug;
-  });
-
   useEffect(() => {
-    if (newData) {
-      setFilteredProperty(newData);
-    }
+    const newData = propertiesData?.filter((property) => property?.slug === slug);
+    setFilteredProperty(newData);
   }, [propertiesData, slug]);
 
   const aboutText = filteredProperty[0]?.descriptions;
+
+  const boldSpecificParts = (text) => {
+    const partsToBold = ["Sector 42 - 43 Rapid Metro station", "Sector 55-56 Metro Station"];
+
+    const boldedText = partsToBold.reduce((result, part) => {
+      const regex = new RegExp(part, 'gi');
+      return result.replace(regex, `<strong>${part}</strong>`);
+    }, text);
+
+    return { __html: boldedText };
+  };
+
+
 
   return (
     <>
@@ -122,7 +131,10 @@ function Sector45() {
         <div className="row desk_hide">
           <ReadMoreLess text={aboutText} maxLength={326} />
         </div>
-        <p className="mob_hide">{filteredProperty[0]?.descriptions}</p>
+        {aboutText && (
+        <p dangerouslySetInnerHTML={boldSpecificParts(aboutText)} />
+      )}
+        {/* <p className="mob_hide">{filteredProperty[0]?.descriptions}</p> */}
       </div>
       <div className={`mt100 ${styles.accomadation_banner}`}>
         <div className={`container ${styles.accomodation_container}`}>
