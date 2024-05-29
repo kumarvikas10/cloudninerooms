@@ -5,6 +5,7 @@
       "name": "Cloud Nine Rooms 679",
       "slug": "cloud-nine-rooms-679",
       "address": "Sector 43, Gurugram",
+      "googleMapsUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28062.189129221984!2d77.0581322791016!3d28.456239199999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d19287c0f66e9%3A0xa1ddeba869c9397b!2sCloud%20Nine%20PG!5e0!3m2!1sen!2sus!4v1716465879545!5m2!1sen!2sus",
       "descriptions": "Welcome to Cloud Nine Rooms 679, a haven of contemporary living in the vibrant city of Gurugram. Our apartment requires just a one-month rent and a refundable security deposit, offering a seamless combination of comfort and convenience. Experience the pinnacle of accommodation with fully furnished rooms featuring air conditioning, microwaves, toasters, refrigerators, and 32-inch LED TVs with Tata Sky. Each room also boasts a balcony and an attached bathroom. At Cloud Nine Rooms 679, we guarantee hassle-free accommodations with amenities such as high-speed WiFi, daily housekeeping, biometric entry, and round-the-clock power and water backup. Our reputable PG for boys and girls provides three meals a day, emphasizing quality and cleanliness. Nestled in the prestigious Golf Course Road and situated along the renowned Raghvendra Marg, our location offers proximity to key corporate hubs, including Walmart India, Alpha Corp, Dell, and Global Foyer. Cloud Nine Rooms 679 is strategically positioned to cater to both corporate professionals and students, ensuring easy access to essential facilities such as ATMs, markets, gyms, banks, and the Sector 55-56 Metro Station. Our property is located in a gated community with CCTV, providing a secure and serene environment. Whether you are a corporate executive looking for a convenient and comfortable stay close to your workplace or a student seeking a well-connected and vibrant living space, Cloud Nine Rooms 679 welcomes you to a lifestyle where comfort meets modern living in the heart of Gurugram.",
       "price": [
         { "type": "Private Room", "price": "30,999" },
@@ -41,6 +42,7 @@
       "name": "Cloud Nine Rooms 56",
       "slug": "cloud-nine-rooms-56",
       "address": "Sector 43, Gurugram",
+      "googleMapsUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28062.189129221984!2d77.0581322791016!3d28.456239199999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d2366c302723f%3A0xd0c45a2fdcad52c3!2sCloud%20Nine%20Rooms!5e0!3m2!1sen!2sus!4v1716466003047!5m2!1sen!2sus",
       "descriptions": "Welcome to Cloud Nine Rooms 56, an urban sanctuary situated in the heart of Gurugram, offering contemporary living with a perfect blend of comfort and convenience. Catering to the diverse needs of our residents, our apartments require just a one-month rent and a refundable security deposit. Whether you're a corporate professional or a student, Cloud Nine Rooms 56 is your ideal home. Our fully furnished rooms provide a haven of modern amenities, including air conditioning, microwaves, toasters, refrigerators, and 32-inch LED TVs with Tata Sky. Each room features a private balcony and an attached bathroom, creating a personal space where you can unwind and relax. As a resident at Cloud Nine Rooms 56, enjoy hassle-free living with high-speed WiFi, daily housekeeping, biometric entry, and round-the-clock power and water backup. Catering to the culinary needs of our residents, we offer three delicious meals a day, ensuring a healthy and nourishing diet. Our commitment to quality living is underscored by the reputation we hold as a leading PG for both boys and girls. Conveniently located in a secure gated community with CCTV surveillance, Cloud Nine Rooms 56 is in close proximity to key establishments. Explore the nearby corporate offices of Genpact and KIA, indulge in the luxurious accommodations of Ibis Hotel and The Palm Springs, and enjoy easy access to the Sector 42 - 43 Rapid Metro station. Additionally, our location offers convenience with nearby attractions like Vivo, Central Plaza, ATMs, markets, gyms, banks, and more. Experience the epitome of accommodation where comfort meets modern living at Cloud Nine Rooms 56.",
       "price": [
         { "type": "Private Room", "price": "33,999" },
@@ -66,7 +68,11 @@
         { "image": "/images/cloud-nine-56/4.jpeg" },
         { "image": "/images/cloud-nine-56/5.jpeg" },
         { "image": "/images/cloud-nine-56/6.jpeg" },
-        { "image": "/images/cloud-nine-56/7.jpeg" }
+        { "image": "/images/cloud-nine-56/7.jpeg" },
+        { "image": "/images/cloud-nine-56/8.jpeg" },
+        { "image": "/images/cloud-nine-56/9.jpeg" },
+        { "image": "/images/cloud-nine-56/10.jpeg" },
+        { "image": "/images/cloud-nine-56/11.jpeg" }
       ]
     },
     {
@@ -96,7 +102,7 @@
         { "image": "/images/cloud-nine-259/1.jpeg" },
         { "image": "/images/cloud-nine-259/2.jpeg" },
         { "image": "/images/cloud-nine-259/3.jpeg" },
-        { "image": "/images/cloud-nine-259/4.jpeg" },
+        { "image": "/images/cloud-nine-259/4.jpg" },
         { "image": "/images/cloud-nine-259/5.jpeg" },
         { "image": "/images/cloud-nine-259/6.jpeg" },
         { "image": "/images/cloud-nine-259/7.jpeg" }
@@ -144,6 +150,7 @@
       "name": "Cloud Nine Rooms 2014(Girls)",
       "slug": "cloud-nine-rooms-2014-girls",
       "address": "Sector 45, Gurugram",
+      "googleMapsUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28062.189129221984!2d77.0581322791016!3d28.456239199999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d19c3b2c497d3%3A0xe3430c41e76f1eed!2sCloud%20nine%20Rooms%20Girls%20PG!5e0!3m2!1sen!2sus!4v1716466060686!5m2!1sen!2sus",
       "descriptions": "Welcome to Cloud Nine Rooms 2014(Girls), a haven of contemporary living in the vibrant city of Gurugram. Our apartment, strategically located near prominent corporate entities and educational institutions, offers a seamless combination of comfort and convenience. With just a one-month rent and a refundable security deposit, experience the pinnacle of accommodation in our fully furnished rooms featuring air conditioning, microwaves, toasters, refrigerators, and 32-inch LED TVs with Tata Sky. Each room at Cloud Nine Rooms 2014(Girls) boasts a balcony and an attached bathroom, providing a comfortable living space. We guarantee hassle-free accommodations with amenities such as high-speed WiFi, daily housekeeping, biometric entry, and round-the-clock power and water backup. Our reputable PG for girls goes the extra mile by providing three meals a day, emphasizing quality and cleanliness. Nestled in a gated community with CCTV, our property is conveniently located near ATMs, markets, gyms, banks, and more. The proximity to key corporate hubs and educational institutions, including JBM Group, New Times Group, Horizon, Spinny, LIC, Hindustan Wellness, and Shopclues.com, makes Cloud Nine Rooms 2014(Girls) an ideal choice for both corporate professionals and students. Indulge in a lifestyle where comfort meets modern living at Cloud Nine Rooms 2014(Girls). Join us and enjoy the convenience of living near prominent companies and educational institutions while relishing the comfort and amenities our accommodation has to offer.",
       "price": [
         { "type": "Private Room", "price": "23,999" },

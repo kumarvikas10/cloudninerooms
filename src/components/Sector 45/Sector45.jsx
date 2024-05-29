@@ -45,24 +45,34 @@ function Sector45() {
   }, []);
 
   useEffect(() => {
-    const newData = propertiesData?.filter((property) => property?.slug === slug);
+    console.log("Properties Data:", propertiesData);
+    const newData = propertiesData?.filter(
+      (property) => property?.slug === slug
+    );
+    console.log("Filtered Property Data:", newData);
     setFilteredProperty(newData);
   }, [propertiesData, slug]);
+
+  // useEffect(() => {
+  //   const newData = propertiesData?.filter((property) => property?.slug === slug);
+  //   setFilteredProperty(newData);
+  // }, [propertiesData, slug]);
 
   const aboutText = filteredProperty[0]?.descriptions;
 
   const boldSpecificParts = (text) => {
-    const partsToBold = ["Sector 42 - 43 Rapid Metro station", "Sector 55-56 Metro Station"];
+    const partsToBold = [
+      "Sector 42 - 43 Rapid Metro station",
+      "Sector 55-56 Metro Station",
+    ];
 
     const boldedText = partsToBold.reduce((result, part) => {
-      const regex = new RegExp(part, 'gi');
+      const regex = new RegExp(part, "gi");
       return result.replace(regex, `<strong>${part}</strong>`);
     }, text);
 
     return { __html: boldedText };
   };
-
-
 
   return (
     <>
@@ -132,9 +142,11 @@ function Sector45() {
           <ReadMoreLess text={aboutText} maxLength={326} />
         </div>
         {aboutText && (
-        <p dangerouslySetInnerHTML={boldSpecificParts(aboutText)} />
-      )}
-        {/* <p className="mob_hide">{filteredProperty[0]?.descriptions}</p> */}
+          <p
+            className="mob_hide"
+            dangerouslySetInnerHTML={boldSpecificParts(aboutText)}
+          />
+        )}
       </div>
       <div className={`mt100 ${styles.accomadation_banner}`}>
         <div className={`container ${styles.accomodation_container}`}>
@@ -369,19 +381,35 @@ function Sector45() {
           </div>
           <div className="row">
             <div className={css.gallery}>
-              <ImageGallery
-                image1={filteredProperty[0]?.images[0]?.image}
-                image2={filteredProperty[0]?.images[1]?.image}
-                image3={filteredProperty[0]?.images[2]?.image}
-                image4={filteredProperty[0]?.images[3]?.image}
-                image5={filteredProperty[0]?.images[4]?.image}
-                image6={filteredProperty[0]?.images[5]?.image}
-                image7={filteredProperty[0]?.images[6]?.image}
-              />
+              <ImageGallery images={filteredProperty[0]?.images} />
             </div>
           </div>
         </div>
       </section>
+      {filteredProperty[0]?.googleMapsUrl && (
+        <section className={styles.mapSection}>
+        <div className="container">
+          <div className={`${styles.mapFrame} row`}>
+            <div className={css.mainHeading}>
+              <h2>
+                {filteredProperty[0]?.name} <span>Map Location</span>
+              </h2>
+              <p>{filteredProperty[0]?.address}</p>
+            </div>
+            <div className={`${styles.mapFrame} col-md-12`}>
+              <iframe
+                src={filteredProperty[0]?.googleMapsUrl}
+                title="Example iframe"
+                width="100%"
+                height="400"
+                className={styles.iframeRounded}
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+      )}
       <section className={css.contactFormSection}>
         <div className="container">
           <div className={`${css.contactForm} row`}>
