@@ -30,22 +30,65 @@ import carouselStyles from "../Carousel/Carousel.module.css";
 import { FaLocationDot } from "react-icons/fa6";
 import ContactFormModal from "../contact-form-modal/ContactFormModal";
 import { NavLink } from "react-router-dom";
-import { allPropertiesData } from "../../service/PropertyService";
+import axios from "axios";
+// import { allPropertiesData } from "../../service/PropertyService";
 
 function Home() {
   const [propertiesData, setPropertiesData] = useState([]);
 
   const handleFetchProperties = async () => {
     try {
-      await allPropertiesData(setPropertiesData);
+      const { data } = await axios.get(`/db.json`);
+      setPropertiesData(data.colivingSpaces);
     } catch (error) {
-      console.error(error.message);
+      console.error("Error fetching data:", error.message);
     }
   };
 
   useEffect(() => {
     handleFetchProperties();
   }, []);
+
+  console.log("Properties Data:", propertiesData);
+
+  const getFirstAndAdditionalImages = (properties) => {
+    let images = [];
+    
+    // Iterate through the first two properties
+    for (let i = 0; i < Math.min(2, properties.length); i++) {
+      const property = properties[i];
+      if (property.images.length > 0) {
+        // Add the first image of each property
+        images.push(property.images[0].image);
+        
+        // Add additional images if available, up to a total of 8
+        for (let j = 1; j < Math.min(4, property.images.length); j++) {
+          images.push(property.images[j].image);
+        }
+      }
+    }
+    
+    return images;
+  };
+
+  // const getFirstImageForEachProperty = (properties) => {
+  //   return properties.map(property => {
+  //     return property.images.length > 0 ? property.images[0].image : null;
+  //   }).filter(imageUrl => imageUrl !== null);
+  // };
+
+  // const handleFetchProperties = async () => {
+  //   try {
+  //     await allPropertiesData(setPropertiesData);
+  //   } catch (error) {
+  //     console.error(error.message);
+  //   }
+  // };
+
+  // useEffect(() => {
+  //   handleFetchProperties();
+  //   console.log(propertiesData);
+  // }, []);
 
   return (
     <div className={styles.homepageMain}>
@@ -87,7 +130,11 @@ function Home() {
                 <h2>
                   Our <span>Properties</span>
                 </h2>
-                <p className="mob_hide">Located in a prime Gurugram location, right at the center of major corporate hubs, our accommodations are thoughtfully<br/> designed to leave a lasting impression</p>
+                <p className="mob_hide">
+                  Located in a prime Gurugram location, right at the center of
+                  major corporate hubs, our accommodations are thoughtfully
+                  <br /> designed to leave a lasting impression
+                </p>
               </div>
             </div>
           </div>
@@ -229,7 +276,10 @@ function Home() {
                   Every Cloud <span>Nine Rooms</span> comes <br /> with{" "}
                   <span>Premium Amenities</span>
                 </h2>
-                <p className="mob_hide">Elevate Your Living Experience at Cloud Nine Rooms with Premium Amenities</p>
+                <p className="mob_hide">
+                  Elevate Your Living Experience at Cloud Nine Rooms with
+                  Premium Amenities
+                </p>
               </div>
             </div>
           </div>
@@ -389,15 +439,7 @@ function Home() {
           </div>
           <div className="row">
             <div className={styles.gallery}>
-              <ImageGallery
-                image1={propertiesData[0]?.images[0]?.image}
-                image2={propertiesData[1]?.images[1]?.image}
-                image3={propertiesData[0]?.images[2]?.image}
-                image4={propertiesData[1]?.images[4]?.image}
-                image5={propertiesData[0]?.images[4]?.image}
-                image6={propertiesData[1]?.images[5]?.image}
-                image7={propertiesData[0]?.images[5]?.image}
-              />
+            <ImageGallery images={propertiesData.length > 0 ? getFirstAndAdditionalImages(propertiesData) : []} />
             </div>
           </div>
         </div>

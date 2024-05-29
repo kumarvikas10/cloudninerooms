@@ -148,6 +148,20 @@
   background-color: rgba(var(--bs-white-rgb), var(--bs-bg-opacity)) !important; */
 }
 
+.mapSection{
+  margin-top: 100px;
+  text-align: center;
+}
+
+.mapFrame{
+  border-radius: 20px;
+}
+
+.iframeRounded{
+  border-radius: 20px;
+  border: none;
+}
+
 @media screen and (max-width: 768px) {
   .main_heading {
     font-size: 26px;
@@ -248,5 +262,22 @@
 
   .amenity_box div img {
     width: 20px;
+  }
+
+  .mapSection{
+    margin-top: 30px;
+  }
+
+  .mapSection p{
+    margin-bottom: 20px !important;
+  }
+
+  .mapFrame{
+    border-radius: 10px;
+  }
+
+  .iframeRounded{
+    border-radius: 10px;
+    height: 350px;
   }
 }
