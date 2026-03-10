@@ -24,7 +24,7 @@ import Testimonials from "../Testimonials/testimonials";
 import TestmonialsSvg from "../../data/testimonials-vector.png";
 import amenitiesPattern from "../../data/Patterns.png";
 import uspPattern from "../../data/pattern-2.png";
-import ImageGallery from "../Image Gallery/MyGallery";
+import ImageGallery from "../ImageGallery/MyGallery";
 import ContactForm from "../Contact-form/contactForm";
 import carouselStyles from "../Carousel/Carousel.module.css";
 import { FaLocationDot } from "react-icons/fa6";

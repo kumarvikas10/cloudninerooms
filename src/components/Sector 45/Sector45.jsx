@@ -15,7 +15,7 @@ import wifiImg from "../../data/Icons-data/High Speed Wifi.png";
 import supportImg from "../../data/Icons-data/247 Support.png";
 import communityImg from "../../data/Icons-data/Great Community.png";
 import parkingImg from "../../data/Icons-data/Parking.png";
-import ImageGallery from "../Image Gallery/MyGallery";
+import ImageGallery from "../ImageGallery/MyGallery";
 import ContactForm from "../Contact-form/contactForm";
 import BedTypeImg from "../../data/Icons-data/BedType.png";
 import DepositImg from "../../data/Icons-data/deposit.png";
