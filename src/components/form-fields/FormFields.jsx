@@ -11,7 +11,6 @@ console.log("Script URL:", scriptURL);
 
 function FormFields({ isModal }) {
   const digitsOnly = (value) => /^\d+$/.test(value);
-  const notify = () => toast.success("Thanks for submitting the query!");
 
   const SignupSchema = Yup.object().shape({
     name: Yup.string()
