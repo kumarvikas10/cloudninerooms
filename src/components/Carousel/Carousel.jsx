@@ -70,10 +70,10 @@ function Carousel() {
                       type="button"
                       className={`${styles.exploreBtn} btn btn-primary`}
                     >
-                      ₹{property?.price[0]?.price}
+                      Enquire Now
                     </button>
                   </NavLink>
-                  <ContactFormModal buttonText="Enquire Now" modalId={"exampleModal1"} />
+                  <ContactFormModal buttonText="Book Visit" modalId={"exampleModal1"} />
                 </div>
               </div>
             </div>

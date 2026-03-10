@@ -73,25 +73,6 @@ function Home() {
     return images;
   };
 
-  // const getFirstImageForEachProperty = (properties) => {
-  //   return properties.map(property => {
-  //     return property.images.length > 0 ? property.images[0].image : null;
-  //   }).filter(imageUrl => imageUrl !== null);
-  // };
-
-  // const handleFetchProperties = async () => {
-  //   try {
-  //     await allPropertiesData(setPropertiesData);
-  //   } catch (error) {
-  //     console.error(error.message);
-  //   }
-  // };
-
-  // useEffect(() => {
-  //   handleFetchProperties();
-  //   console.log(propertiesData);
-  // }, []);
-
   return (
     <div className={styles.homepageMain}>
       <section className={styles.homepageBanner}>
@@ -149,55 +130,6 @@ function Home() {
                 <div className={styles.websiteStat}>
                   <h4>24/7</h4>
                   <p>Security & Support</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className={`mt100 ${styles.pgSection}`}>
-        <div className="container">
-          <div className="row">
-            <div className="col-md-12 text-center">
-              <div className={styles.mainHeading}>
-                <span className={styles.label}>Paying Guest</span>
-                <h2>Find PGs based on your need</h2>
-              </div>
-              <div className={styles.websiteGrid}>
-                <div className={styles.websiteBox}>
-                  <img src={Pgboy} alt="pg boys" />
-
-                  <ContactFormModal
-                    variant="overlay"
-                    buttonText="PGs for Boys"
-                    modalId="boysModal"
-                    title="PG for Boys"
-                    subtitle="PG accommodation for boys in Gurgaon"
-                  />
-                </div>
-
-                <div className={styles.websiteBox}>
-                  <img src={Pggirl} alt="pg girls" />
-
-                  <ContactFormModal
-                    variant="overlay"
-                    buttonText="PGs for Girls"
-                    modalId="girlsModal"
-                    title="PG for Girls"
-                    subtitle="Safe & secure accommodation for girls"
-                  />
-                </div>
-
-                <div className={styles.websiteBox}>
-                  <img src={Pgliving} alt="pg coliving" />
-
-                  <ContactFormModal
-                    variant="overlay"
-                    buttonText="PGs for Co-Living"
-                    modalId="colivingModal"
-                    title="PG for Co-Living"
-                    subtitle="Modern coliving spaces in Gurgaon"
-                  />
                 </div>
               </div>
             </div>
@@ -264,6 +196,51 @@ function Home() {
               </div>
             );
           })}
+        </div>
+      </section>
+      <section className={`mt100 ${styles.pgSection}`}>
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12 text-center">
+              <div className={styles.mainHeading}>
+                <span className={styles.label}>Paying Guest</span>
+                <h2>Find PGs based on your need</h2>
+              </div>
+              <div className={styles.websiteGrid}>
+                <div className={styles.websiteBox}>
+                  <img src={Pgboy} alt="pg boys" />
+                  <ContactFormModal
+                    variant="overlay"
+                    buttonText="PGs for Boys"
+                    modalId="boysModal"
+                    title="PG for Boys"
+                    subtitle="PG accommodation for boys in Gurgaon"
+                  />
+                </div>
+                <div className={styles.websiteBox}>
+                  <img src={Pggirl} alt="pg girls" />
+
+                  <ContactFormModal
+                    variant="overlay"
+                    buttonText="PGs for Girls"
+                    modalId="girlsModal"
+                    title="PG for Girls"
+                    subtitle="Safe & secure accommodation for girls"
+                  />
+                </div>
+                <div className={styles.websiteBox}>
+                  <img src={Pgliving} alt="pg coliving" />
+                  <ContactFormModal
+                    variant="overlay"
+                    buttonText="PGs for Co-Living"
+                    modalId="colivingModal"
+                    title="PG for Co-Living"
+                    subtitle="Modern coliving spaces in Gurgaon"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <section className={`${styles.threePoints} mt-100`}>

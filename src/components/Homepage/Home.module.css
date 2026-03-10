@@ -128,7 +128,7 @@
     line-height: 38px;
 }
 
-.mainHeading p{
+.mainHeading p {
     margin-bottom: 40px;
 }
 
@@ -136,7 +136,7 @@
     color: #fc4102;
 }
 
-.mainHeading .label{
+.mainHeading .label {
     color: #fc4102;
     font-size: 14px;
 }
@@ -284,10 +284,6 @@
     text-align: center;
 }
 
-/* .pictureGallery .gallery {
-    margin-top: 40px;
-} */
-
 .contactFormSection {
     margin-top: 100px;
     padding: 100px 0px;
@@ -302,67 +298,67 @@
     align-items: center;
 }
 
-.websiteStatGrid{
+.websiteStatGrid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 40px;
     margin-top: 60px;
 }
 
-.websiteStat h4{
+.websiteStat h4 {
     font-size: 30px;
     font-weight: 600;
     color: #FC4102;
 }
 
-.websiteStat p{
+.websiteStat p {
     font-size: 16px;
     font-weight: 400;
     color: #000;
 }
 
-.pgSection{
-    padding:100px 0;
+.pgSection {
+    padding: 100px 0;
     background-color: #fff8f5;
 }
 
-.websiteGrid{
+.websiteGrid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap:40px;
+    gap: 40px;
     margin-top: 40px;
 }
 
 .websiteBox {
-  position: relative;
-  overflow: hidden;
-  border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
 }
 
 .websiteBox img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 20px;
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
 }
 
 .overlayBtn {
-  position: absolute;
-  bottom: 15px;
-  left: 20px;
-  background: rgba(0,0,0,0.45);
-  color: #fff;
-  border: none;
-  padding: 8px 14px;
-  border-radius: 6px;
-  font-size: 14px;
-  backdrop-filter: blur(3px);
-  cursor: pointer;
-  transition: 0.3s;
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+    background: rgba(0, 0, 0, 0.45);
+    color: #fff;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-size: 14px;
+    backdrop-filter: blur(3px);
+    cursor: pointer;
+    transition: 0.3s;
 }
 
 .overlayBtn:hover {
-  background: #fc4102;
+    background: #fc4102;
 }
 
 @media (max-width: 768px) {
@@ -646,5 +642,47 @@
 
     .pictureGallery .gallery {
         margin-top: 20px;
+    }
+
+    .websiteStatGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+        margin-top: 40px;
+    }
+
+    .websiteStat h4 {
+        font-size: 24px;
+        font-weight: 600;
+        color: #FC4102;
+    }
+
+    .websiteStat p {
+        font-size: 12px;
+        font-weight: 400;
+        color: #000;
+    }
+
+    .websiteGrid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 40px;
+        margin-top: 40px;
+    }
+
+    .websiteBox {
+        position: relative;
+        overflow: hidden;
+        border-radius: 20px;
+    }
+
+    .websiteBox img {
+        max-height: 300px;
+        border-radius: 20px;
+    }
+
+
+    .pgSection {
+        padding: 60px 0;
     }
 }
