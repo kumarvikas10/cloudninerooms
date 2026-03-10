@@ -86,8 +86,8 @@ function Home() {
                     <li>Comfort</li>
                     <li>Budget Friendly</li>
                   </ul>
-                  <h1>
-                    Stay Above the Rest at <br></br>Cloud Nine Rooms
+                  <h1 className={styles.mainTitle}>
+                    Find Your Perfect <br/>PG in <span>Gurgaon</span>
                   </h1>
                 </div>
                 <div className={styles.mainBtn}>

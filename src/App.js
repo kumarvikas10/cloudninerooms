@@ -7,6 +7,7 @@ import AboutUs from "./components/About Us/AboutUs";
 import TheIdea from "./components/The Idea/TheIdea";
 import Footer from "./components/footer/Footer";
 import ScrollToTop from "./components/scroll-to-top/ScrollToTop";
+import WhatsappFloat from './components/WhatsappFloat/WhatsappFloat';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <BrowserRouter>
         <ScrollToTop />
         <div className={styles.layout}>
+          <WhatsappFloat />
           <Navbar />
           <Routes>
             <Route
