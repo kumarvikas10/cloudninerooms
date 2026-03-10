@@ -194,6 +194,25 @@ body {
   margin-top: 31px;
 }
 
+.overlayBtn {
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
+  background: rgba(224, 224, 224, 0.45);
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  backdrop-filter: blur(3px);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.overlayBtn:hover {
+  background: #fc4102;
+}
+
 @media screen and (max-width: 768px) {
   .p0 {
     margin-top: 20px;

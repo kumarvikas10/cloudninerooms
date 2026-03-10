@@ -31,7 +31,7 @@
 }
 
 .CarouselText p {
-  font-size: 17px;
+  font-size: 14px;
   line-height: 24px;
   font-weight: 400;
   white-space: nowrap;
@@ -45,8 +45,40 @@
   margin-right: 8px;
 }
 
+.cardStat {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  border-top: 0.7px solid #949494;
+  padding: 12px 0;
+}
+
+.cardStat p {
+  font-size: 14px;
+  display: flex;
+  gap: 12px;
+  margin-bottom: 0px !important;
+}
+
+.cardStat img {
+  width: 20px;
+}
+
+.categoryText {
+  color: #949494;
+}
+
+.CarouselBtn {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+
+}
+
 .exploreBtn {
   margin-right: 10px;
+  width: 100%;
   --bs-btn-color: #fff;
   --bs-btn-bg: #fc4102 !important;
   --bs-btn-border-color: #fc4102 !important;
@@ -62,6 +94,7 @@
   --bs-btn-disabled-bg: #fc4102 !important;
   --bs-btn-disabled-border-color: #fc4102 !important;
 }
+
 
 .visitBtn {
   --bs-btn-color: #fc4102 !important;
@@ -86,14 +119,17 @@
     line-height: 19px !important;
     font-weight: 600 !important;
   }
+
   .CarouselText {
     padding: 10px 10px 20px 10px;
   }
+
   .CarouselText p {
     font-size: 13px;
     line-height: 16px;
     margin-bottom: 12px !important;
   }
+
   .CarouselImage {
     height: 225px;
     width: 100%;
@@ -102,11 +138,13 @@
   .exploreBtn {
     font-size: 13px;
   }
+
   .visitBtn {
     font-size: 13px;
   }
+
   .CarouselBox {
     box-shadow: 0px 0px 4px 0px rgba(174, 174, 174, 0.95);
-    width:300px !important;
+    width: 300px !important;
   }
 }

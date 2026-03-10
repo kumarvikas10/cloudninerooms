@@ -31,7 +31,9 @@ import { FaLocationDot } from "react-icons/fa6";
 import ContactFormModal from "../contact-form-modal/ContactFormModal";
 import { NavLink } from "react-router-dom";
 import axios from "axios";
-// import { allPropertiesData } from "../../service/PropertyService";
+import Pgboy from "../../data/Pgboy.png";
+import Pggirl from "../../data/Pggirl.png";
+import Pgliving from "../../data/Pgliving.png";
 
 function Home() {
   const [propertiesData, setPropertiesData] = useState([]);
@@ -53,21 +55,21 @@ function Home() {
 
   const getFirstAndAdditionalImages = (properties) => {
     let images = [];
-    
+
     // Iterate through the first two properties
     for (let i = 0; i < Math.min(2, properties.length); i++) {
       const property = properties[i];
       if (property.images.length > 0) {
         // Add the first image of each property
         images.push(property.images[0].image);
-        
+
         // Add additional images if available, up to a total of 8
         for (let j = 1; j < Math.min(4, property.images.length); j++) {
           images.push(property.images[j].image);
         }
       }
     }
-    
+
     return images;
   };
 
@@ -116,6 +118,86 @@ function Home() {
                     <a href="tel:9991590000">9991590000</a>
                   </button>
                   <ContactFormModal modalId={"exampleModal1"} />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="mt100">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12 text-center">
+              <div className={styles.mainHeading}>
+                <h2>
+                  Comfortable & Safe PG Accommodation in <span>Gurgaon</span>
+                </h2>
+              </div>
+              <div className={styles.websiteStatGrid}>
+                <div className={styles.websiteStat}>
+                  <h4>10K+</h4>
+                  <p>Satisfied Residents</p>
+                </div>
+                <div className={styles.websiteStat}>
+                  <h4>10+</h4>
+                  <p>Prime Locations in Gurgaon</p>
+                </div>
+                <div className={styles.websiteStat}>
+                  <h4>5+ Years</h4>
+                  <p>Trusted PG Service in Gurgaon</p>
+                </div>
+                <div className={styles.websiteStat}>
+                  <h4>24/7</h4>
+                  <p>Security & Support</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className={`mt100 ${styles.pgSection}`}>
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12 text-center">
+              <div className={styles.mainHeading}>
+                <span className={styles.label}>Paying Guest</span>
+                <h2>Find PGs based on your need</h2>
+              </div>
+              <div className={styles.websiteGrid}>
+                <div className={styles.websiteBox}>
+                  <img src={Pgboy} alt="pg boys" />
+
+                  <ContactFormModal
+                    variant="overlay"
+                    buttonText="PGs for Boys"
+                    modalId="boysModal"
+                    title="PG for Boys"
+                    subtitle="PG accommodation for boys in Gurgaon"
+                  />
+                </div>
+
+                <div className={styles.websiteBox}>
+                  <img src={Pggirl} alt="pg girls" />
+
+                  <ContactFormModal
+                    variant="overlay"
+                    buttonText="PGs for Girls"
+                    modalId="girlsModal"
+                    title="PG for Girls"
+                    subtitle="Safe & secure accommodation for girls"
+                  />
+                </div>
+
+                <div className={styles.websiteBox}>
+                  <img src={Pgliving} alt="pg coliving" />
+
+                  <ContactFormModal
+                    variant="overlay"
+                    buttonText="PGs for Co-Living"
+                    modalId="colivingModal"
+                    title="PG for Co-Living"
+                    subtitle="Modern coliving spaces in Gurgaon"
+                  />
                 </div>
               </div>
             </div>
@@ -439,7 +521,13 @@ function Home() {
           </div>
           <div className="row">
             <div className={styles.gallery}>
-            <ImageGallery images={propertiesData.length > 0 ? getFirstAndAdditionalImages(propertiesData) : []} />
+              <ImageGallery
+                images={
+                  propertiesData.length > 0
+                    ? getFirstAndAdditionalImages(propertiesData)
+                    : []
+                }
+              />
             </div>
           </div>
         </div>

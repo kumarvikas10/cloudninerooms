@@ -2,9 +2,12 @@ import React from "react";
 import styles from "../Contact-form/ContactForm.module.css";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
-import emailjs from "emailjs-com";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+
+const scriptURL = process.env.REACT_APP_GOOGLE_SCRIPT_URL;
+
+console.log("Script URL:", scriptURL);
 
 function FormFields({ isModal }) {
   const digitsOnly = (value) => /^\d+$/.test(value);
@@ -43,24 +46,27 @@ function FormFields({ isModal }) {
         }}
         validationSchema={SignupSchema}
         onSubmit={(values, { setSubmitting, resetForm }) => {
-          emailjs
-            .send(
-              "service_9kwtl99",
-              "template_iylli3n",
-              values,
-              "EekPCK5PonEq6MqTI"
-            )
-            .then((response) => {
-              console.log("Email sent successfully:", response);
-              notify();
+          const formData = new FormData();
+
+          Object.keys(values).forEach((key) => {
+            formData.append(key, values[key]);
+          });
+
+          fetch(process.env.REACT_APP_GOOGLE_SCRIPT_URL, {
+            method: "POST",
+            body: formData,
+            mode: "no-cors",
+          })
+            .then(() => {
+              toast.success("Thanks for submitting the query!");
+              resetForm();
             })
-            .catch((error) => {
-              console.error("Error sending email:", error);
-              alert("Error submitting the form. Please try again.");
+            .catch((err) => {
+              console.error(err);
+              alert("Error submitting form");
             })
             .finally(() => {
               setSubmitting(false);
-              resetForm();
             });
         }}
       >

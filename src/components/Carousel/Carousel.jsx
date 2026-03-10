@@ -5,6 +5,9 @@ import styles from "./Carousel.module.css";
 import ContactFormModal from "../contact-form-modal/ContactFormModal";
 import { NavLink } from "react-router-dom";
 import { allPropertiesData } from "../../service/PropertyService";
+import Wifi from "../../data/Icons-data/Wifi.svg";
+import Bed from "../../data/Icons-data/Bed.svg";
+import Food from "../../data/Icons-data/Food.svg";
 
 function Carousel() {
   const [propertiesData, setPropertiesData] = useState([]);
@@ -46,16 +49,31 @@ function Carousel() {
                   <FaLocationDot className={styles.loction} />{" "}
                   {property?.address}
                 </p>
+                <div className={styles.cardStat}>
+                  <p>
+                    <img src={Wifi} />
+                    Wifi
+                  </p>
+                  <p>
+                    <img src={Bed} />
+                    Bed
+                  </p>
+                  <p>
+                    <img src={Food} />
+                    Food
+                  </p>
+                </div>
+                <p className={styles.categoryText}>Private Room • Double Sharing • Triple Sharing</p>
                 <div className={styles.CarouselBtn}>
                   <NavLink to={`/our-properties/${property?.slug}`}>
                     <button
                       type="button"
                       className={`${styles.exploreBtn} btn btn-primary`}
                     >
-                      Explore Now
+                      ₹{property?.price[0]?.price}
                     </button>
                   </NavLink>
-                  <ContactFormModal modalId={"exampleModal1"} />
+                  <ContactFormModal buttonText="Enquire Now" modalId={"exampleModal1"} />
                 </div>
               </div>
             </div>

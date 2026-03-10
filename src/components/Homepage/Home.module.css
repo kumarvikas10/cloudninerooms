@@ -136,6 +136,13 @@
     color: #fc4102;
 }
 
+.mainHeading .label{
+    color: #fc4102;
+    font-size: 14px;
+}
+
+
+
 .threePoints {
     margin-top: 120px;
     position: relative;
@@ -293,6 +300,69 @@
 
 .contactForm {
     align-items: center;
+}
+
+.websiteStatGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.websiteStat h4{
+    font-size: 30px;
+    font-weight: 600;
+    color: #FC4102;
+}
+
+.websiteStat p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+}
+
+.pgSection{
+    padding:100px 0;
+    background-color: #fff8f5;
+}
+
+.websiteGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:40px;
+    margin-top: 40px;
+}
+
+.websiteBox {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.websiteBox img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 20px;
+}
+
+.overlayBtn {
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
+  background: rgba(0,0,0,0.45);
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  backdrop-filter: blur(3px);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.overlayBtn:hover {
+  background: #fc4102;
 }
 
 @media (max-width: 768px) {
